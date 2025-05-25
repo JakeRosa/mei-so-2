@@ -1,0 +1,53 @@
+function bestSolution = steepestAscentHillClimbing(G, initialSolution, Cmax)
+% Steepest Ascent Hill Climbing for local search improvement
+% Inputs:
+%   G - graph representing the network
+%   initialSolution - initial solution from greedy randomized construction
+%   Cmax - maximum allowed shortest path length between controllers
+% Output:
+%   bestSolution - improved solution after local search
+
+    bestSolution = initialSolution;
+    [bestObjective, ~] = PerfSNS(G, bestSolution);
+    
+    improved = true;
+    
+    while improved
+        improved = false;
+        currentBest = bestObjective;
+        candidateSolution = bestSolution;
+        
+        % Generate all possible neighbors using swap operations
+        nNodes = numnodes(G);
+        allNodes = 1:nNodes;
+        notSelected = setdiff(allNodes, bestSolution);
+        
+        % Try swapping each selected node with each non-selected node
+        for i = 1:length(bestSolution)
+            for j = 1:length(notSelected)
+                % Create neighbor by swapping
+                neighbor = bestSolution;
+                neighbor(i) = notSelected(j);
+                
+                % Check Cmax constraint
+                [avgSP, maxSP] = PerfSNS(G, neighbor);
+                if maxSP > Cmax
+                    continue; % Skip this neighbor as it violates constraint
+                end
+                
+                % Check if this neighbor is better
+                if avgSP < currentBest
+                    currentBest = avgSP;
+                    candidateSolution = neighbor;
+                    improved = true;
+                end
+            end
+        end
+        
+        % Update best solution if improvement found
+        if improved
+            bestSolution = candidateSolution;
+            bestObjective = currentBest;
+        end
+    end
+end
