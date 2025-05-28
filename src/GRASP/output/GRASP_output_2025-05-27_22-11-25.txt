@@ -1,0 +1,25 @@
+Loaded network with 200 nodes and 500 links
+=== PARAMETER TUNING ===
+
+Testing r = 1...
+Starting GRASP with n=12, Cmax=1000, r=1, maxTime=60 seconds
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('graph/distances', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\graphfun\@graph\distances.m', 83)" style="font-weight:bold">graph/distances</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\graphfun\@graph\distances.m',83,0)">line 83</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('PerfSNS', 'C:\Users\hf_co\Documents\GitHub\mei-so-2\src\PerfSNS.m', 24)" style="font-weight:bold">PerfSNS</a> (<a href="matlab: opentoline('C:\Users\hf_co\Documents\GitHub\mei-so-2\src\PerfSNS.m',24,0)">line 24</a>)
+    dist= distances(G,sNodes,clients);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('steepestAscentHillClimbing', 'C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\steepestAscentHillClimbing.m', 33)" style="font-weight:bold">steepestAscentHillClimbing</a> (<a href="matlab: opentoline('C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\steepestAscentHillClimbing.m',33,0)">line 33</a>)
+                [avgSP, maxSP] = PerfSNS(G, neighbor);
+                                 ^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('GRASP', 'C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\GRASP.m', 43)" style="font-weight:bold">GRASP</a> (<a href="matlab: opentoline('C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\GRASP.m',43,0)">line 43</a>)
+        solution = steepestAscentHillClimbing(G, solution, Cmax);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('runGRASP', 'C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\runGRASP.m', 39)" style="font-weight:bold">runGRASP</a> (<a href="matlab: opentoline('C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\runGRASP.m',39,0)">line 39</a>)
+        [~, avgSP, ~, ~] = GRASP(G, n, Cmax, r, testTime);
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+load('C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\results\GRASP_results.mat')
+load('C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\results\GRASP_results.mat', 'allResults')
+runGRASP
+Starting GRASP run - output will be saved to: output/GRASP_output_2025-05-27_22-24-13.txt
