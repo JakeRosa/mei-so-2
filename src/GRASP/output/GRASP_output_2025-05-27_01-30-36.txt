@@ -1,0 +1,8 @@
+Loaded network with 200 nodes and 500 links
+=== PARAMETER TUNING ===
+
+Testing r = 1...
+Starting GRASP with n=12, Cmax=1000, r=1, maxTime=60 seconds
+New best solution found at iteration 1: 146.7500 (maxSP: 997.0000)
+runGRASP
+Starting GRASP run - output will be saved to: output/GRASP_output_2025-05-27_01-31-03.txt

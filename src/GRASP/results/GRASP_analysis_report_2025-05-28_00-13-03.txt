@@ -1,0 +1,56 @@
+=== GRASP COMPREHENSIVE ANALYSIS REPORT ===
+Generated: 28-May-2025 12:32:13
+Data timestamp: 2025-05-28_00-13-03
+
+DATASET OVERVIEW:
+  Total runs analyzed: 10
+  Total iterations: 49
+  Total computation time: 344.9 seconds
+
+SOLUTION QUALITY ANALYSIS:
+  Best objective: 143.085000
+  Average objective: 143.411000
+  Worst objective: 144.745000
+  Standard deviation: 0.574731
+  Coefficient of variation: 0.40%
+  Range: 1.660000
+
+CONSTRAINT SATISFACTION ANALYSIS:
+  All solutions satisfy Cmax ≤ 1000: Yes
+  Average MaxSP: 998.20
+  Minimum MaxSP: 998.00
+  Maximum MaxSP: 1000.00
+  Tightest constraint: 1000.00 (100.0% of limit)
+  Constraint margin: 0.00
+
+ALGORITHM EFFICIENCY ANALYSIS:
+  Average iterations per run: 4.9
+  Minimum iterations: 3
+  Maximum iterations: 6
+  Average time per run: 34.49 seconds
+  Average time per iteration: 7.400 seconds
+  Fastest run: 30.23 seconds
+  Slowest run: 49.55 seconds
+
+CONVERGENCE BEHAVIOR ANALYSIS:
+  Best solutions found on average at iteration: 3.5
+  Earliest convergence: iteration 1
+  Latest convergence: iteration 6
+  Early convergence (≤50% iterations): 2 runs (20.0%)
+  Late convergence (>50% iterations): 8 runs (80.0%)
+
+DETAILED RUN BREAKDOWN:
+Run | Final_Obj | MaxSP | Iters | Time(s) | Best_Iter
+----|-----------|-------|-------|---------|----------
+  1 |  144.7450 |  1000 |     5 |   30.23 |         4
+  2 |  143.0850 |   998 |     4 |   49.55 |         3
+  3 |  143.8850 |   998 |     3 |   32.60 |         3
+  4 |  143.8850 |   998 |     6 |   35.60 |         1
+  5 |  143.0850 |   998 |     4 |   32.26 |         4
+  6 |  143.0850 |   998 |     6 |   33.12 |         6
+  7 |  143.0850 |   998 |     5 |   33.30 |         4
+  8 |  143.0850 |   998 |     6 |   34.07 |         1
+  9 |  143.0850 |   998 |     5 |   31.71 |         4
+ 10 |  143.0850 |   998 |     5 |   32.48 |         5
+
+=== END OF ANALYSIS ===
