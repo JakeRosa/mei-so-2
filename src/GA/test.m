@@ -1,4 +1,4 @@
-function testGA()
+function test()
 % Quick test function to verify GA implementation
     
     addpath('../'); % Add path to PerfSNS function
