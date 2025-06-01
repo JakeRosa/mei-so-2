@@ -1,0 +1,202 @@
+Loaded network with 200 nodes and 500 links
+=== PARAMETER TUNING ===
+
+Testing r = 1...
+Starting GRASP with n=12, Cmax=1000, r=1, maxTime=60 seconds
+New best solution found at iteration 1: 146.7500 (maxSP: 997.0000)
+Iteration 10, Time: 57.93 s, Current best: 146.7500
+
+GRASP completed:
+Total iterations: 11
+Total time: 63.69 seconds
+Best average shortest path: 146.7500
+Best max shortest path: 997.0000
+Best solution: [78  122  161   59  129  163   36   18   30   83  138  107]
+r = 1, Best average shortest path = 146.7500
+
+Testing r = 2...
+Starting GRASP with n=12, Cmax=1000, r=2, maxTime=60 seconds
+New best solution found at iteration 1: 150.3100 (maxSP: 992.0000)
+New best solution found at iteration 2: 146.7500 (maxSP: 997.0000)
+New best solution found at iteration 5: 146.2250 (maxSP: 998.0000)
+New best solution found at iteration 9: 146.0600 (maxSP: 1000.0000)
+New best solution found at iteration 10: 144.7450 (maxSP: 1000.0000)
+Iteration 10, Time: 47.79 s, Current best: 144.7450
+New best solution found at iteration 12: 143.9000 (maxSP: 1000.0000)
+New best solution found at iteration 13: 143.0850 (maxSP: 998.0000)
+
+GRASP completed:
+Total iterations: 13
+Total time: 62.16 seconds
+Best average shortest path: 143.0850
+Best max shortest path: 998.0000
+Best solution: [91  108  173   20  163  131   68   65   90  107  146   30]
+r = 2, Best average shortest path = 143.0850
+
+Testing r = 3...
+Starting GRASP with n=12, Cmax=1000, r=3, maxTime=60 seconds
+New best solution found at iteration 1: 147.4000 (maxSP: 998.0000)
+New best solution found at iteration 3: 146.1700 (maxSP: 998.0000)
+New best solution found at iteration 5: 143.0850 (maxSP: 998.0000)
+Iteration 10, Time: 46.34 s, Current best: 143.0850
+
+GRASP completed:
+Total iterations: 13
+Total time: 60.72 seconds
+Best average shortest path: 143.0850
+Best max shortest path: 998.0000
+Best solution: [91  108  173   20  163   90   30   65  107  131   68  146]
+r = 3, Best average shortest path = 143.0850
+
+Testing r = 5...
+Starting GRASP with n=12, Cmax=1000, r=5, maxTime=60 seconds
+New best solution found at iteration 1: 151.3200 (maxSP: 1000.0000)
+New best solution found at iteration 2: 147.6650 (maxSP: 992.0000)
+New best solution found at iteration 3: 146.1300 (maxSP: 998.0000)
+New best solution found at iteration 5: 144.7450 (maxSP: 1000.0000)
+New best solution found at iteration 8: 144.5200 (maxSP: 1000.0000)
+
+GRASP completed:
+Total iterations: 8
+Total time: 60.07 seconds
+Best average shortest path: 144.5200
+Best max shortest path: 1000.0000
+Best solution: [91   21  171   30  103  122   68   52  163  107  150  121]
+r = 5, Best average shortest path = 144.5200
+
+Testing r = 8...
+Starting GRASP with n=12, Cmax=1000, r=8, maxTime=60 seconds
+New best solution found at iteration 1: 143.0850 (maxSP: 998.0000)
+
+GRASP completed:
+Total iterations: 9
+Total time: 61.21 seconds
+Best average shortest path: 143.0850
+Best max shortest path: 998.0000
+Best solution: [91  108  163   20  131   30  107  173   90   65  146   68]
+r = 8, Best average shortest path = 143.0850
+
+Testing r = 10...
+Starting GRASP with n=12, Cmax=1000, r=10, maxTime=60 seconds
+New best solution found at iteration 1: 146.7550 (maxSP: 998.0000)
+New best solution found at iteration 2: 144.6600 (maxSP: 997.0000)
+New best solution found at iteration 3: 143.0850 (maxSP: 998.0000)
+Iteration 10, Time: 62.16 s, Current best: 143.0850
+
+GRASP completed:
+Total iterations: 10
+Total time: 62.16 seconds
+Best average shortest path: 143.0850
+Best max shortest path: 998.0000
+Best solution: [91  163   20  131   68   30  146  108   65   90  107  173]
+r = 10, Best average shortest path = 143.0850
+Creating parameter variation plot...
+Generating random baseline...
+Generating solutions for r = 1...
+Generating solutions for r = 2...
+Generating solutions for r = 3...
+Generating solutions for r = 5...
+Generating solutions for r = 8...
+Generating solutions for r = 10...
+Parameter variation plot saved to: plots/GRASP_parameter_r_variation_2025-05-26_23-28-19.png
+
+=== PARAMETER VARIATION STATISTICS ===
+r = 1: Min=156.83, Avg=156.83, Max=156.83 (100 solutions)
+r = 2: Min=145.03, Avg=153.87, Max=166.49 (100 solutions)
+r = 3: Min=145.66, Avg=154.33, Max=165.29 (100 solutions)
+r = 5: Min=148.09, Avg=157.56, Max=169.25 (100 solutions)
+r = 8: Min=149.88, Avg=161.10, Max=180.62 (100 solutions)
+r = 10: Min=153.66, Avg=162.61, Max=173.91 (100 solutions)
+Random: Avg=217.40 (2 solutions)
+
+=== BEST PARAMETER FOUND ===
+Best r = 2 with average shortest path = 143.0850
+
+=== RUNNING 10 TIMES WITH BEST SETTINGS ===
+
+--- RUN 1/10 ---
+Starting GRASP with n=12, Cmax=1000, r=2, maxTime=30 seconds
+New best solution found at iteration 1: 144.7450 (maxSP: 980.0000)
+New best solution found at iteration 2: 143.2800 (maxSP: 1000.0000)
+
+GRASP completed:
+Total iterations: 7
+Total time: 30.06 seconds
+Best average shortest path: 143.2800
+Best max shortest path: 1000.0000
+Best solution: [78  144   20  173  131   30   65  177  104   87   93  146]
+Run 1 completed: avgSP = 143.2800, maxSP = 1000.0000
+
+--- RUN 2/10 ---
+Starting GRASP with n=12, Cmax=1000, r=2, maxTime=30 seconds
+New best solution found at iteration 1: 145.7000 (maxSP: 998.0000)
+New best solution found at iteration 3: 143.0850 (maxSP: 998.0000)
+
+GRASP completed:
+Total iterations: 7
+Total time: 33.73 seconds
+Best average shortest path: 143.0850
+Best max shortest path: 998.0000
+Best solution: [91  108  173   20  163  131   68   65   90  107   30  146]
+Run 2 completed: avgSP = 143.0850, maxSP = 998.0000
+
+--- RUN 3/10 ---
+Starting GRASP with n=12, Cmax=1000, r=2, maxTime=30 seconds
+New best solution found at iteration 1: 143.9000 (maxSP: 1000.0000)
+New best solution found at iteration 4: 143.0850 (maxSP: 998.0000)
+
+GRASP completed:
+Total iterations: 6
+Total time: 34.50 seconds
+Best average shortest path: 143.0850
+Best max shortest path: 998.0000
+Best solution: [91  108  173   20  163  131   30   65   90  107   68  146]
+Run 3 completed: avgSP = 143.0850, maxSP = 998.0000
+
+--- RUN 4/10 ---
+Starting GRASP with n=12, Cmax=1000, r=2, maxTime=30 seconds
+New best solution found at iteration 1: 151.4050 (maxSP: 996.0000)
+New best solution found at iteration 2: 145.7000 (maxSP: 998.0000)
+
+GRASP completed:
+Total iterations: 5
+Total time: 42.28 seconds
+Best average shortest path: 145.7000
+Best max shortest path: 998.0000
+Best solution: [78   59   28  129   30  154   18   90  108  107  148  163]
+Run 4 completed: avgSP = 145.7000, maxSP = 998.0000
+
+--- RUN 5/10 ---
+Starting GRASP with n=12, Cmax=1000, r=2, maxTime=30 seconds
+New best solution found at iteration 1: 146.6800 (maxSP: 998.0000)
+New best solution found at iteration 3: 144.8100 (maxSP: 998.0000)
+
+GRASP completed:
+Total iterations: 3
+Total time: 43.22 seconds
+Best average shortest path: 144.8100
+Best max shortest path: 998.0000
+Best solution: [91   65   26  131  163  173   40   90  108   20  107  146]
+Run 5 completed: avgSP = 144.8100, maxSP = 998.0000
+
+--- RUN 6/10 ---
+Starting GRASP with n=12, Cmax=1000, r=2, maxTime=30 seconds
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('graph/distances', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\graphfun\@graph\distances.m', 83)" style="font-weight:bold">graph/distances</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\graphfun\@graph\distances.m',83,0)">line 83</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('PerfSNS', 'C:\Users\hf_co\Documents\GitHub\mei-so-2\src\PerfSNS.m', 27)" style="font-weight:bold">PerfSNS</a> (<a href="matlab: opentoline('C:\Users\hf_co\Documents\GitHub\mei-so-2\src\PerfSNS.m',27,0)">line 27</a>)
+        maxSP= max(max(distances(G,sNodes,sNodes)));
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('greedyRandomized', 'C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\greedyRandomized.m', 33)" style="font-weight:bold">greedyRandomized</a> (<a href="matlab: opentoline('C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\greedyRandomized.m',33,0)">line 33</a>)
+            [avgSP, ~] = PerfSNS(G, tempSolution);
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('GRASP', 'C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\GRASP.m', 35)" style="font-weight:bold">GRASP</a> (<a href="matlab: opentoline('C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\GRASP.m',35,0)">line 35</a>)
+        solution = greedyRandomized(G, n, r, Cmax);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('runGRASP', 'C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\runGRASP.m', 70)" style="font-weight:bold">runGRASP</a> (<a href="matlab: opentoline('C:\Users\hf_co\Documents\GitHub\mei-so-2\src\GRASP\runGRASP.m',70,0)">line 70</a>)
+        [solution, avgSP, maxSP, results] = GRASP(G, n, Cmax, bestR, runTime);
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+render process terminated: TS_PROCESS_WAS_KILLED
+render process terminated: TS_PROCESS_WAS_KILLED
+render process terminated: TS_PROCESS_WAS_KILLED

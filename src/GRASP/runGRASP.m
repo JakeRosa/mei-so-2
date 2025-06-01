@@ -13,6 +13,7 @@ function runGRASP()
     diary on;
 
     addpath('../'); % Add path to PerfSNS and plotting functions
+    addpath("exports/")
 
     % Load network data
     [G, nNodes, nLinks] = loadData();
@@ -31,9 +32,17 @@ function runGRASP()
     bestR = 2;
     bestTestAvgSP = inf;
 
+    testResults = struct();
+    testIdx = 1;
+
     for r = rValues
         fprintf('\nTesting r = %d...\n', r);
         [~, avgSP, ~, ~] = GRASP(G, n, Cmax, r, testTime);
+
+        % Store for plot
+        testResults(testIdx).r = r;
+        testResults(testIdx).avgSP = avgSP;
+        testIdx = testIdx + 1;
 
         if avgSP < bestTestAvgSP
             bestTestAvgSP = avgSP;
@@ -42,6 +51,8 @@ function runGRASP()
 
         fprintf('r = %d, Best average shortest path = %.4f\n', r, avgSP);
     end
+
+    plotParameterVariation(G, n, Cmax, rValues, testResults);
 
     fprintf('\n=== BEST PARAMETER FOUND ===\n');
     fprintf('Best r = %d with average shortest path = %.4f\n', bestR, bestTestAvgSP);
@@ -112,6 +123,8 @@ function runGRASP()
         % Save results
         save('results/GRASP_results.mat', 'allResults', 'bestR', 'G', 'n', 'Cmax');
         fprintf('\nResults saved to GRASP_results.mat\n');
+
+        exportGraspResults(allResults, bestR, timestamp);
     else
         fprintf('No valid solutions found!\n');
     end
@@ -121,4 +134,7 @@ function runGRASP()
     
     fprintf('\nOutput successfully saved to: %s\n', logFilename);
     fprintf('Plots saved to plots/ directory\n');
+
+    fprintf('\n=== CREATING 3D OPTIMIZATION LANDSCAPE ===\n');
+    plotOptimizationLandscape(allResults);
 end
