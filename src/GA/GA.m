@@ -36,8 +36,18 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GA(G, n, Cmax, popu
     results.generations = [];
     
     % Initialize population
-    fprintf('Initializing population...\n');
-    population = initializePopulation(populationSize, n, nNodes, Cmax, G);
+    fprintf('Initializing %d random individuals...\n', populationSize);
+
+    population = cell(populationSize, 1);
+
+    % Generate purely random individuals - no constraint checkingAdd commentMore actions
+    for i = 1:populationSize
+        % Generate random individual (select n nodes randomly)
+        selectedNodes = sort(randperm(nNodes, n));
+        population{i} = selectedNodes;
+    end
+    
+    fprintf('Population initialization completed.\n');
     
     % Evaluate initial population
     fitnessValues = zeros(populationSize, 1);
@@ -80,7 +90,7 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GA(G, n, Cmax, popu
             
             % Mutation
             if rand < mutationRate
-                offspring = mutation(offspring, nNodes, 0.2); % 20% of genes mutated
+                offspring = mutation(offspring, nNodes);
             end
             
             newPopulation{i} = offspring;
