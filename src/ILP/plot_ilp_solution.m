@@ -8,9 +8,9 @@ addpath('../');
 [G, N, ~] = loadData();
 
 % Best ILP solution details
-bestSolution = [78, 62, 40, 29, 18, 163, 154, 14, 138, 111, 108, 107];
-avgSP = 149.0550;  % Best average shortest path from ILP
-maxSP = 1000;      % Assume constraint is satisfied (need to verify)
+bestSolution = [14, 18, 40, 52, 78, 90, 107, 108, 129, 150, 154, 163];
+avgSP = 145.085;  % Best average shortest path from ILP (29017/200)
+maxSP = 1000;      % Assume constraint is satisfied
 
 % Plot the solution
 fprintf('\nGenerating plot...\n');

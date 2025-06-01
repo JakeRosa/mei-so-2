@@ -23,10 +23,10 @@ function runGA()
     fprintf('=== PARAMETER TUNING ===\n');
     
     % GA Parameters to test
-    populationSizes = [50, 100];
-    mutationRates = [0.1, 0.2, 0.3];
-    eliteCounts = [5, 10];
-    testTime = 45; % seconds for each test
+    populationSizes = [20, 50, 100, 150];
+    mutationRates = [0.05, 0.1, 0.2];
+    eliteCounts = [1, 5, 10];
+    testTime = 30; % seconds for each test
     
     bestParams = struct();
     bestTestObjective = inf;

@@ -1,0 +1,305 @@
+✓ Paths configured for organized GRASP structure
+Loaded network with 200 nodes and 500 links
+=== PARAMETER TUNING ===
+
+Testing r = 1 (5 runs)...
+  Run 1/5... 146.7500
+  Run 2/5... 146.7500
+  Run 3/5... 146.7500
+  Run 4/5... 146.7500
+  Run 5/5... 146.7500
+  r=1: Mean=146.7500±0.0000, Best=146.7500, Success=5/5 (100.0%)
+
+Testing r = 2 (5 runs)...
+  Run 1/5... 143.0850
+  Run 2/5... 144.7450
+  Run 3/5... 143.9000
+  Run 4/5... 143.0850
+  Run 5/5... 143.9000
+  r=2: Mean=143.7430±0.6927, Best=143.0850, Success=5/5 (100.0%)
+
+Testing r = 3 (5 runs)...
+  Run 1/5... 143.0850
+  Run 2/5... 143.0850
+  Run 3/5... 143.4050
+  Run 4/5... 143.4050
+  Run 5/5... 143.4050
+  r=3: Mean=143.2770±0.1753, Best=143.0850, Success=5/5 (100.0%)
+
+Testing r = 5 (5 runs)...
+  Run 1/5... 143.2800
+  Run 2/5... 143.4050
+  Run 3/5... 143.0850
+  Run 4/5... 146.1850
+  Run 5/5... 143.8850
+  r=5: Mean=143.9680±1.2740, Best=143.0850, Success=5/5 (100.0%)
+
+Testing r = 8 (5 runs)...
+  Run 1/5... 143.1600
+  Run 2/5... 144.5200
+  Run 3/5... 144.6950
+  Run 4/5... 143.4050
+  Run 5/5... 147.1050
+  r=8: Mean=144.5770±1.5644, Best=143.1600, Success=5/5 (100.0%)
+
+Testing r = 10 (5 runs)...
+  Run 1/5... 143.1600
+  Run 2/5... 143.4050
+  Run 3/5... 146.7900
+  Run 4/5... 143.4050
+  Run 5/5... 143.0850
+  r=10: Mean=143.9690±1.5835, Best=143.0850, Success=5/5 (100.0%)
+Creating parameter analysis plots...
+Plot saved: plots/parameters/distribution_analysis_2025-06-01_03-21-42.png
+Plot saved: plots/parameters/mean_performance_2025-06-01_03-21-42.png
+Plot saved: plots/parameters/best_mean_worst_comparison_2025-06-01_03-21-42.png
+Plot saved: plots/parameters/success_rate_analysis_2025-06-01_03-21-42.png
+Plot saved: plots/parameters/stability_analysis_2025-06-01_03-21-42.png
+Plot saved: plots/parameters/performance_stability_tradeoff_2025-06-01_03-21-42.png
+Plot saved: plots/parameters/performance_range_2025-06-01_03-21-42.png
+
+Parameter analysis complete! Individual plots saved in: plots/parameters/
+Plot saved: plots/parameters/statistical_significance_2025-06-01_03-21-42.png
+Plot saved: plots/parameters/performance_ranking_2025-06-01_03-21-42.png
+Plot saved: plots/parameters/performance_summary_2025-06-01_03-21-42.png
+Statistical analysis plots saved in: plots/parameters/
+
+=== PARAMETER TUNING RESULTS ===
+Best parameter: r = 3 (mean avgSP = 143.2770)
+Best individual result: 143.0850
+
+Parameter Summary:
+r    Mean     Std      Best     Worst    Success%  
+---- -------- -------- -------- -------- ----------
+1    146.7500 0.0000   146.7500 146.7500 100.0     
+2    143.7430 0.6927   143.0850 144.7450 100.0     
+3    143.2770 0.1753   143.0850 143.4050 100.0     
+5    143.9680 1.2740   143.0850 146.1850 100.0     
+8    144.5770 1.5644   143.1600 147.1050 100.0     
+10   143.9690 1.5835   143.0850 146.7900 100.0     
+
+=== RUNNING 10 TIMES WITH BEST SETTINGS ===
+
+--- RUN 1/10 ---
+Starting Optimized GRASP with n=12, Cmax=1000, r=3, maxTime=30 seconds
+  - Caching enabled
+  - Early termination after 50 stagnant iterations
+New best solution found at iteration 1: 146.2250 (maxSP: 998.0000)
+New best solution found at iteration 3: 143.8850 (maxSP: 998.0000)
+
+Optimized GRASP completed:
+Total iterations: 5
+Total time: 31.04 seconds
+Termination reason: time_limit
+Last improvement at iteration: 3
+Best average shortest path: 143.8850
+Best max shortest path: 998.0000
+Best solution: [91  122   20  173   30  121  163   65  107  103   68  154]
+Cache statistics: 15.4% hit rate (1799 hits, 9871 misses)
+Core nodes (>50% frequency): [20   65  107  154  173]
+Run 1 completed: avgSP = 143.8850, maxSP = 998.0000
+
+--- RUN 2/10 ---
+Starting Optimized GRASP with n=12, Cmax=1000, r=3, maxTime=30 seconds
+  - Caching enabled
+  - Early termination after 50 stagnant iterations
+New best solution found at iteration 1: 146.0600 (maxSP: 1000.0000)
+New best solution found at iteration 4: 143.4050 (maxSP: 1000.0000)
+
+Optimized GRASP completed:
+Total iterations: 4
+Total time: 35.58 seconds
+Termination reason: time_limit
+Last improvement at iteration: 4
+Best average shortest path: 143.4050
+Best max shortest path: 1000.0000
+Best solution: [110   65   61   30  129   20  122  173  177  103  107   68]
+Cache statistics: 10.7% hit rate (1002 hits, 8334 misses)
+Core nodes (>50% frequency): [20   30   65   68  107  173  177]
+Run 2 completed: avgSP = 143.4050, maxSP = 1000.0000
+
+--- RUN 3/10 ---
+Starting Optimized GRASP with n=12, Cmax=1000, r=3, maxTime=30 seconds
+  - Caching enabled
+  - Early termination after 50 stagnant iterations
+New best solution found at iteration 1: 146.2250 (maxSP: 998.0000)
+New best solution found at iteration 2: 144.8900 (maxSP: 980.0000)
+New best solution found at iteration 5: 144.7450 (maxSP: 980.0000)
+
+Optimized GRASP completed:
+Total iterations: 5
+Total time: 37.05 seconds
+Termination reason: time_limit
+Last improvement at iteration: 5
+Best average shortest path: 144.7450
+Best max shortest path: 980.0000
+Best solution: [78  108  160   20  163   90   40   65  107   14  146  131]
+Cache statistics: 10.4% hit rate (1208 hits, 10462 misses)
+Core nodes (>50% frequency): [14   40   65   90   91  107  108  131  146  160  163]
+Run 3 completed: avgSP = 144.7450, maxSP = 980.0000
+
+--- RUN 4/10 ---
+Starting Optimized GRASP with n=12, Cmax=1000, r=3, maxTime=30 seconds
+  - Caching enabled
+  - Early termination after 50 stagnant iterations
+New best solution found at iteration 1: 147.4000 (maxSP: 998.0000)
+New best solution found at iteration 3: 146.2250 (maxSP: 998.0000)
+New best solution found at iteration 5: 143.0850 (maxSP: 998.0000)
+
+Optimized GRASP completed:
+Total iterations: 5
+Total time: 35.60 seconds
+Termination reason: time_limit
+Last improvement at iteration: 5
+Best average shortest path: 143.0850
+Best max shortest path: 998.0000
+Best solution: [91  108  173   20   90   30  163   68  107  146   65  131]
+Cache statistics: 12.0% hit rate (1402 hits, 10268 misses)
+Core nodes (>50% frequency): [20   26   65   90  107  108  110  146  173]
+Run 4 completed: avgSP = 143.0850, maxSP = 998.0000
+
+--- RUN 5/10 ---
+Starting Optimized GRASP with n=12, Cmax=1000, r=3, maxTime=30 seconds
+  - Caching enabled
+  - Early termination after 50 stagnant iterations
+New best solution found at iteration 1: 147.4900 (maxSP: 998.0000)
+New best solution found at iteration 2: 143.0850 (maxSP: 998.0000)
+
+Optimized GRASP completed:
+Total iterations: 5
+Total time: 36.48 seconds
+Termination reason: time_limit
+Last improvement at iteration: 2
+Best average shortest path: 143.0850
+Best max shortest path: 998.0000
+Best solution: [91  108  173   20   30  163  146   65  107   90  131   68]
+Cache statistics: 13.7% hit rate (1602 hits, 10068 misses)
+Core nodes (>50% frequency): [20   65  107  146  173]
+Run 5 completed: avgSP = 143.0850, maxSP = 998.0000
+
+--- RUN 6/10 ---
+Starting Optimized GRASP with n=12, Cmax=1000, r=3, maxTime=30 seconds
+  - Caching enabled
+  - Early termination after 50 stagnant iterations
+New best solution found at iteration 1: 148.8650 (maxSP: 998.0000)
+New best solution found at iteration 2: 146.2250 (maxSP: 998.0000)
+New best solution found at iteration 5: 146.0900 (maxSP: 998.0000)
+
+Optimized GRASP completed:
+Total iterations: 5
+Total time: 32.85 seconds
+Termination reason: time_limit
+Last improvement at iteration: 5
+Best average shortest path: 146.0900
+Best max shortest path: 998.0000
+Best solution: [91  122   18  148   30  154   28  103  163   59  107  121]
+Cache statistics: 13.7% hit rate (1602 hits, 10068 misses)
+Core nodes (>50% frequency): [20   26   56   65   90   91  107  108  154  173]
+Run 6 completed: avgSP = 146.0900, maxSP = 998.0000
+
+--- RUN 7/10 ---
+Starting Optimized GRASP with n=12, Cmax=1000, r=3, maxTime=30 seconds
+  - Caching enabled
+  - Early termination after 50 stagnant iterations
+New best solution found at iteration 1: 147.3000 (maxSP: 997.0000)
+New best solution found at iteration 2: 146.1200 (maxSP: 990.0000)
+New best solution found at iteration 3: 143.8850 (maxSP: 998.0000)
+
+Optimized GRASP completed:
+Total iterations: 5
+Total time: 35.22 seconds
+Termination reason: time_limit
+Last improvement at iteration: 3
+Best average shortest path: 143.8850
+Best max shortest path: 998.0000
+Best solution: [91  122   20  173  121   30  163   65  107  103   68  154]
+Cache statistics: 10.3% hit rate (1203 hits, 10467 misses)
+Core nodes (>50% frequency): [30   33   65  103  107  110  122  129  163  173]
+Run 7 completed: avgSP = 143.8850, maxSP = 998.0000
+
+--- RUN 8/10 ---
+Starting Optimized GRASP with n=12, Cmax=1000, r=3, maxTime=30 seconds
+  - Caching enabled
+  - Early termination after 50 stagnant iterations
+New best solution found at iteration 1: 143.4050 (maxSP: 1000.0000)
+New best solution found at iteration 2: 143.0850 (maxSP: 998.0000)
+
+Optimized GRASP completed:
+Total iterations: 4
+Total time: 33.53 seconds
+Termination reason: time_limit
+Last improvement at iteration: 2
+Best average shortest path: 143.0850
+Best max shortest path: 998.0000
+Best solution: [91  108  173   20   90   30  163   68  146  107  131   65]
+Cache statistics: 10.7% hit rate (1001 hits, 8335 misses)
+Core nodes (>50% frequency): [20   30   65  107  173]
+Run 8 completed: avgSP = 143.0850, maxSP = 998.0000
+
+--- RUN 9/10 ---
+Starting Optimized GRASP with n=12, Cmax=1000, r=3, maxTime=30 seconds
+  - Caching enabled
+  - Early termination after 50 stagnant iterations
+New best solution found at iteration 1: 150.2650 (maxSP: 992.0000)
+New best solution found at iteration 2: 143.1600 (maxSP: 998.0000)
+
+Optimized GRASP completed:
+Total iterations: 4
+Total time: 30.98 seconds
+Termination reason: time_limit
+Last improvement at iteration: 2
+Best average shortest path: 143.1600
+Best max shortest path: 998.0000
+Best solution: [110  108   20  121  163   30  173   53   90  107  146   65]
+Cache statistics: 8.6% hit rate (803 hits, 8533 misses)
+Core nodes (>50% frequency): [107  163]
+Run 9 completed: avgSP = 143.1600, maxSP = 998.0000
+
+--- RUN 10/10 ---
+Starting Optimized GRASP with n=12, Cmax=1000, r=3, maxTime=30 seconds
+  - Caching enabled
+  - Early termination after 50 stagnant iterations
+New best solution found at iteration 1: 144.8100 (maxSP: 998.0000)
+New best solution found at iteration 4: 143.8850 (maxSP: 998.0000)
+New best solution found at iteration 5: 143.0850 (maxSP: 998.0000)
+
+Optimized GRASP completed:
+Total iterations: 5
+Total time: 42.94 seconds
+Termination reason: time_limit
+Last improvement at iteration: 5
+Best average shortest path: 143.0850
+Best max shortest path: 998.0000
+Best solution: [91  108  173   20   30  131  146  163   90  107   65   68]
+Cache statistics: 13.7% hit rate (1601 hits, 10069 misses)
+Core nodes (>50% frequency): [20   30   65   68   90   91  107  108  131  146  163  173]
+Run 10 completed: avgSP = 143.0850, maxSP = 998.0000
+
+=== FINAL RESULTS ANALYSIS ===
+Valid runs: 10/10
+Minimum avgSP: 143.0850
+Average avgSP: 143.7510
+Maximum avgSP: 146.0900
+Standard deviation: 0.9853
+
+Maximum shortest path statistics:
+Minimum maxSP: 980.0000
+Average maxSP: 996.4000
+Maximum maxSP: 1000.0000
+
+Best run (#4):
+Solution: [91  108  173   20   90   30  163   68  107  146   65  131]
+Average shortest path: 143.0850
+Max shortest path: 998.0000
+Plot saved to: plots//grasp_best_solution_run_4.png
+
+Results saved to GRASP_results.mat
+Exporting GRASP results to CSV files...
+Summary results saved to: results/GRASP_summary_2025-06-01_03-21-42.csv
+Convergence data saved to: results/GRASP_convergence_2025-06-01_03-21-42.csv
+Metadata saved to: results/GRASP_metadata_2025-06-01_03-21-42.csv
+
+CSV Export Summary:
+- Summary: results/GRASP_summary_2025-06-01_03-21-42.csv (one row per run)
+- Convergence: results/GRASP_convergence_2025-06-01_03-21-42.csv (one row per iteration)
+- Metadata: results/GRASP_metadata_2025-06-01_03-21-42.csv (parameters and statistics)

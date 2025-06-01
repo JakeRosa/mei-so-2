@@ -1,0 +1,86 @@
+✓ Paths configured for organized GRASP structure
+Loaded network with 200 nodes and 500 links
+=== PARAMETER TUNING ===
+
+Testing r = 1 (5 runs)...
+  Run 1/5... 146.7500
+  Run 2/5... 146.7500
+  Run 3/5... 146.7500
+  Run 4/5... 146.7500
+  Run 5/5... 146.7500
+  r=1: Mean=146.7500±0.0000, Best=146.7500, Success=5/5 (100.0%)
+
+Testing r = 2 (5 runs)...
+  Run 1/5... 143.0850
+  Run 2/5... 143.0850
+  Run 3/5... 144.8100
+  Run 4/5... 143.0850
+  Run 5/5... 143.0850
+  r=2: Mean=143.4300±0.7714, Best=143.0850, Success=5/5 (100.0%)
+
+Testing r = 3 (5 runs)...
+  Run 1/5... 143.6350
+  Run 2/5... 143.4050
+  Run 3/5... 143.0850
+  Run 4/5... 143.0850
+  Run 5/5... 143.0850
+  r=3: Mean=143.2590±0.2518, Best=143.0850, Success=5/5 (100.0%)
+
+Testing r = 5 (5 runs)...
+  Run 1/5... 143.1600
+  Run 2/5... 143.4050
+  Run 3/5... 143.2800
+  Run 4/5... 143.0850
+  Run 5/5... 143.0850
+  r=5: Mean=143.2030±0.1382, Best=143.0850, Success=5/5 (100.0%)
+
+Testing r = 8 (5 runs)...
+  Run 1/5... 146.1950
+  Run 2/5... 143.4050
+  Run 3/5... 143.1600
+  Run 4/5... 144.4400
+  Run 5/5... 143.1600
+  r=8: Mean=144.0720±1.2991, Best=143.1600, Success=5/5 (100.0%)
+
+Testing r = 10 (5 runs)...
+  Run 1/5... 143.4050
+  Run 2/5... 143.4050
+  Run 3/5... 146.1950
+  Run 4/5... 143.2800
+  Run 5/5... 143.8850
+  r=10: Mean=144.0340±1.2300, Best=143.2800, Success=5/5 (100.0%)
+Creating parameter analysis plots...
+Plot saved: plots/parameters/distribution_analysis_2025-06-01_00-47-53.png
+Plot saved: plots/parameters/mean_performance_2025-06-01_00-47-53.png
+Plot saved: plots/parameters/best_mean_worst_comparison_2025-06-01_00-47-53.png
+Plot saved: plots/parameters/success_rate_analysis_2025-06-01_00-47-53.png
+Plot saved: plots/parameters/stability_analysis_2025-06-01_00-47-53.png
+Plot saved: plots/parameters/performance_stability_tradeoff_2025-06-01_00-47-53.png
+Plot saved: plots/parameters/performance_range_2025-06-01_00-47-53.png
+
+Parameter analysis complete! Individual plots saved in: plots/parameters/
+Plot saved: plots/parameters/statistical_significance_2025-06-01_00-47-53.png
+Plot saved: plots/parameters/performance_ranking_2025-06-01_00-47-53.png
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('plot')" style="font-weight:bold">plot</a>
+Invalid color name or hexadecimal color code. Valid names include: 'red', 'green', 'blue', 'cyan', 'magenta', 'yellow', 'black', 'white', 'auto', and 'none'. Valid hexadecimal
+color codes consist of '#' followed by three or six hexadecimal digits.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createParameterAnalysisPlot', '/MATLAB Drive/src/GRASP/analysis/createParameterAnalysisPlot.m', 252)" style="font-weight:bold">createParameterAnalysisPlot</a> (<a href="matlab: opentoline('/MATLAB Drive/src/GRASP/analysis/createParameterAnalysisPlot.m',252,0)">line 252</a>)
+        plot(validRValues(bestIdx), means(bestIdx), 'o', 'MarkerSize', 10, 'LineWidth', 2, ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('runGRASP', '/MATLAB Drive/src/GRASP/runners/runGRASP.m', 164)" style="font-weight:bold">runGRASP</a> (<a href="matlab: opentoline('/MATLAB Drive/src/GRASP/runners/runGRASP.m',164,0)">line 164</a>)
+    createParameterAnalysisPlot(parameterResults, timestamp);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main', '/MATLAB Drive/src/GRASP/main.m', 58)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/MATLAB Drive/src/GRASP/main.m',58,0)">line 58</a>)
+    runGRASP(varargin{:});
+    ^^^^^^^^^^^^^^^^^^^^^
+} 
+matlab.lang.internal.introspective.errorDocCallback('createParameterAnalysisPlot', '/MATLAB Drive/src/GRASP/analysis/createParameterAnalysisPlot.m', 252)
+ opentoline('/MATLAB Drive/src/GRASP/analysis/createParameterAnalysisPlot.m',252,0)
+main('optimized')
+=== GRASP Implementation - Organized Version ===
+
+✓ Paths configured for organized GRASP structure
+Running GRASP with options: optimized
+Starting GRASP run - output will be saved to: output/GRASP_output_2025-06-01_01-08-32.txt
+Using optimized GRASP implementation

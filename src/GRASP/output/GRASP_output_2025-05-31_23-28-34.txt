@@ -1,0 +1,85 @@
+✓ Paths configured for organized GRASP structure
+Loaded network with 200 nodes and 500 links
+=== PARAMETER TUNING ===
+
+Testing r = 1 (5 runs)...
+  Run 1/5... 146.7500
+  Run 2/5... 146.7500
+  Run 3/5... 146.7500
+  Run 4/5... 146.7500
+  Run 5/5... 146.7500
+  r=1: Mean=146.7500±0.0000, Best=146.7500, Success=5/5 (100.0%)
+
+Testing r = 2 (5 runs)...
+  Run 1/5... 143.8850
+  Run 2/5... 143.0850
+  Run 3/5... 143.0850
+  Run 4/5... 144.6950
+  Run 5/5... 144.8100
+  r=2: Mean=143.9120±0.8349, Best=143.0850, Success=5/5 (100.0%)
+
+Testing r = 3 (5 runs)...
+  Run 1/5... 143.0850
+  Run 2/5... 143.8850
+  Run 3/5... 143.0850
+  Run 4/5... 143.0850
+  Run 5/5... 143.2800
+  r=3: Mean=143.2840±0.3464, Best=143.0850, Success=5/5 (100.0%)
+
+Testing r = 5 (5 runs)...
+  Run 1/5... 143.0850
+  Run 2/5... 143.1600
+  Run 3/5... 145.0050
+  Run 4/5... 143.0850
+  Run 5/5... 143.1600
+  r=5: Mean=143.4990±0.8427, Best=143.0850, Success=5/5 (100.0%)
+
+Testing r = 8 (5 runs)...
+  Run 1/5... 143.0850
+  Run 2/5... 143.8850
+  Run 3/5... 143.1600
+  Run 4/5... 143.8850
+  Run 5/5... 143.8850
+  r=8: Mean=143.5800±0.4185, Best=143.0850, Success=5/5 (100.0%)
+
+Testing r = 10 (5 runs)...
+  Run 1/5... 145.8750
+  Run 2/5... 143.0850
+  Run 3/5... 144.5200
+  Run 4/5... 147.1050
+  Run 5/5... 143.1600
+  r=10: Mean=144.7490±1.7439, Best=143.0850, Success=5/5 (100.0%)
+Creating parameter analysis plots...
+{Unrecognized function or variable 'saveAnalysisPlot'.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createParameterAnalysisPlot', '/MATLAB Drive/src/GRASP/analysis/createParameterAnalysisPlot.m', 97)" style="font-weight:bold">createParameterAnalysisPlot</a> (<a href="matlab: opentoline('/MATLAB Drive/src/GRASP/analysis/createParameterAnalysisPlot.m',97,0)">line 97</a>)
+        saveAnalysisPlot(gcf, 'parameters', 'success_rate_analysis', timestamp);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('runGRASP', '/MATLAB Drive/src/GRASP/runners/runGRASP.m', 164)" style="font-weight:bold">runGRASP</a> (<a href="matlab: opentoline('/MATLAB Drive/src/GRASP/runners/runGRASP.m',164,0)">line 164</a>)
+    createParameterAnalysisPlot(parameterResults, timestamp);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main', '/MATLAB Drive/src/GRASP/main.m', 58)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/MATLAB Drive/src/GRASP/main.m',58,0)">line 58</a>)
+    runGRASP(varargin{:});
+    ^^^^^^^^^^^^^^^^^^^^^^
+} 
+cd ..
+cd ILP/
+generate_lp()
+Loaded network with 200 nodes and 500 links
+Network loaded: 200 nodes
+
+=== OPTIMIZED LP FILE GENERATED ===
+File: ILP.lp
+Problem size: 200 nodes, 12 controllers, Cmax = 1000
+Variables: 200 z-variables + 39800 g-variables = 40000 total
+Eliminated 200 unnecessary self-assignment variables
+Controller distance constraints: 3454
+Reduced problem size by 0.5%
+cd GRASP/
+main('optimized')
+=== GRASP Implementation - Organized Version ===
+
+✓ Paths configured for organized GRASP structure
+Running GRASP with options: optimized
+Starting GRASP run - output will be saved to: output/GRASP_output_2025-06-01_00-05-56.txt
+Using optimized GRASP implementation

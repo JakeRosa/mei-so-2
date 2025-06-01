@@ -1,0 +1,51 @@
+✓ Paths configured for organized GRASP structure
+Loaded network with 200 nodes and 500 links
+=== PARAMETER TUNING ===
+
+Testing r = 1 (5 runs)...
+  Run 1/5...Starting GRASP with n=12, Cmax=1000, r=1, maxTime=30 seconds
+New best solution found at iteration 1: 146.7500 (maxSP: 997.0000)
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('tabular/dotReference', '/MATLAB/toolbox/matlab/datatypes/tabular/@tabular/dotReference.m', 60)" style="font-weight:bold"> . </a> (<a href="matlab: opentoline('/MATLAB/toolbox/matlab/datatypes/tabular/@tabular/dotReference.m',60,0)">line 60</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('matlab.internal.graph.hasvar', '/MATLAB/toolbox/matlab/graphfun/+matlab/+internal/+graph/hasvar.m', 9)" style="font-weight:bold">matlab.internal.graph.hasvar</a> (<a href="matlab: opentoline('/MATLAB/toolbox/matlab/graphfun/+matlab/+internal/+graph/hasvar.m',9,0)">line 9</a>)
+varnames = t.Properties.VariableNames;
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('graph/getNodeNames', '/MATLAB/toolbox/matlab/graphfun/@graph/graph.m', 572)" style="font-weight:bold">graph/getNodeNames</a> (<a href="matlab: opentoline('/MATLAB/toolbox/matlab/graphfun/@graph/graph.m',572,0)">line 572</a>)
+            elseif size(np, 2) > 0 && matlab.internal.graph.hasvar(np, "Name")
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('graph/distances>isNodeName', '/MATLAB/toolbox/matlab/graphfun/@graph/distances.m', 172)" style="font-weight:bold">graph/distances>isNodeName</a> (<a href="matlab: opentoline('/MATLAB/toolbox/matlab/graphfun/@graph/distances.m',172,0)">line 172</a>)
+[names, hasNodeNames] = getNodeNames(G);
+                        ^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('graph/distances>parseSubset', '/MATLAB/toolbox/matlab/graphfun/@graph/distances.m', 155)" style="font-weight:bold">graph/distances>parseSubset</a> (<a href="matlab: opentoline('/MATLAB/toolbox/matlab/graphfun/@graph/distances.m',155,0)">line 155</a>)
+if isNodeName(param, G)
+   ^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('graph/distances>parseFlags', '/MATLAB/toolbox/matlab/graphfun/@graph/distances.m', 110)" style="font-weight:bold">graph/distances>parseFlags</a> (<a href="matlab: opentoline('/MATLAB/toolbox/matlab/graphfun/@graph/distances.m',110,0)">line 110</a>)
+    [setTARG, t] = parseSubset(G, varargin{1}, 'DuplicateTARG');
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('graph/distances', '/MATLAB/toolbox/matlab/graphfun/@graph/distances.m', 47)" style="font-weight:bold">graph/distances</a> (<a href="matlab: opentoline('/MATLAB/toolbox/matlab/graphfun/@graph/distances.m',47,0)">line 47</a>)
+[method, source, target] = parseFlags(G, varargin{:});
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('PerfSNS', '/MATLAB Drive/src/PerfSNS.m', 24)" style="font-weight:bold">PerfSNS</a> (<a href="matlab: opentoline('/MATLAB Drive/src/PerfSNS.m',24,0)">line 24</a>)
+    dist= distances(G,sNodes,clients);
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('greedyRandomized', '/MATLAB Drive/src/GRASP/core/greedyRandomized.m', 33)" style="font-weight:bold">greedyRandomized</a> (<a href="matlab: opentoline('/MATLAB Drive/src/GRASP/core/greedyRandomized.m',33,0)">line 33</a>)
+            [avgSP, ~] = PerfSNS(G, tempSolution);
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('GRASP', '/MATLAB Drive/src/GRASP/core/GRASP.m', 35)" style="font-weight:bold">GRASP</a> (<a href="matlab: opentoline('/MATLAB Drive/src/GRASP/core/GRASP.m',35,0)">line 35</a>)
+        solution = greedyRandomized(G, n, r, Cmax);
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('runGRASP', '/MATLAB Drive/src/GRASP/runners/runGRASP.m', 108)" style="font-weight:bold">runGRASP</a> (<a href="matlab: opentoline('/MATLAB Drive/src/GRASP/runners/runGRASP.m',108,0)">line 108</a>)
+                    [~, avgSP, maxSP, ~] = GRASP(G, n, Cmax, r, testTime);
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main', '/MATLAB Drive/src/GRASP/main.m', 58)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('/MATLAB Drive/src/GRASP/main.m',58,0)">line 58</a>)
+    runGRASP(varargin{:});
+    ^^^^^^^^^^^^^^^^^^^^^
+} 
+main('optimized', 'analysis') 
+=== GRASP Implementation - Organized Version ===
+
+✓ Paths configured for organized GRASP structure
+Running GRASP with options: optimized, analysis
+Starting GRASP run - output will be saved to: output/GRASP_output_2025-06-01_14-24-59.txt
+Using optimized GRASP implementation
