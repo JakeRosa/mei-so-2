@@ -15,15 +15,16 @@ function mutatedIndividual = mutation(individual, nNodes, mutationRate)
     
     % Only mutate if there are available nodes to swap with
     if ~isempty(notSelected)
-        % Randomly select one position to mutate
-        mutationPosition = randi(n);
+        % IMPORTANT: Only mutate the first node as specified
+        % Find which position contains the smallest node value
+        [minNode, minPos] = min(individual);
         
         % Randomly select one non-selected node
         newNodeIdx = randi(length(notSelected));
         newNode = notSelected(newNodeIdx);
         
-        % Replace the selected node with the new node
-        mutatedIndividual(mutationPosition) = newNode;
+        % Replace the first node (smallest value) with the new node
+        mutatedIndividual(minPos) = newNode;
         
         % Ensure the result is sorted
         mutatedIndividual = sort(mutatedIndividual);

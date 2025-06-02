@@ -1,23 +1,11 @@
-function [bestSolution, bestObjective, bestMaxSP, results] = GA(G, n, Cmax, populationSize, mutationRate, eliteCount, maxTime)
-% Genetic Algorithm with elitist selection for Server Node Selection problem
-% Inputs:
-%   G - graph representing the network
-%   n - number of nodes to select
-%   Cmax - maximum allowed shortest path length between controllers
-%   populationSize - size of population
-%   mutationRate - probability of mutation
-%   eliteCount - number of elite individuals to preserve
-%   maxTime - maximum running time in seconds
-% Outputs:
-%   bestSolution - best solution found
-%   bestObjective - objective value of best solution (avgSP)
-%   bestMaxSP - maximum shortest path between controllers in best solution
-%   results - struct with detailed results
+function [bestSolution, bestObjective, bestMaxSP, results] = GAOptimized(G, n, Cmax, populationSize, mutationRate, eliteCount, maxTime)
+% Optimized Genetic Algorithm with caching for Server Node Selection problem
+% Includes fitness caching and improved performance tracking
 
-    fprintf('Starting GA with popSize=%d, mutRate=%.2f, eliteCount=%d, maxTime=%d seconds\n', ...
+    fprintf('Starting Optimized GA with popSize=%d, mutRate=%.2f, eliteCount=%d, maxTime=%d seconds\n', ...
             populationSize, mutationRate, eliteCount, maxTime);
     
-    addpath('../'); % Add path to PerfSNS function
+    addpath('../../'); % Add path to PerfSNS function
     nNodes = numnodes(G);
     
     % Initialize
@@ -27,6 +15,11 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GA(G, n, Cmax, popu
     generation = 0;
     startTime = tic;
     
+    % Initialize cache for fitness evaluations
+    fitnessCache = containers.Map('KeyType', 'char', 'ValueType', 'any');
+    cacheHits = 0;
+    totalEvaluations = 0;
+    
     % Results tracking
     results.objectives = [];
     results.maxSPs = [];
@@ -34,28 +27,35 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GA(G, n, Cmax, popu
     results.bestFitness = [];
     results.times = [];
     results.generations = [];
+    results.cacheHitRate = [];
+    results.evaluationsPerGen = [];
+    results.diversityMetrics = [];
     
     % Initialize population
     fprintf('Initializing %d random individuals...\n', populationSize);
-
+    
     population = cell(populationSize, 1);
-
-    % Generate purely random individuals - no constraint checkingAdd commentMore actions
+    
+    % Generate purely random individuals
     for i = 1:populationSize
-        % Generate random individual (select n nodes randomly)
         selectedNodes = sort(randperm(nNodes, n));
         population{i} = selectedNodes;
     end
     
     fprintf('Population initialization completed.\n');
     
-    % Evaluate initial population
+    % Evaluate initial population with caching
     fitnessValues = zeros(populationSize, 1);
     avgSPValues = zeros(populationSize, 1);
     maxSPValues = zeros(populationSize, 1);
     
     for i = 1:populationSize
-        [fitnessValues(i), avgSPValues(i), maxSPValues(i)] = evaluateFitness(population{i}, G, Cmax);
+        [fitnessValues(i), avgSPValues(i), maxSPValues(i), cacheHit] = ...
+            evaluateFitnessCached(population{i}, G, Cmax, fitnessCache);
+        if cacheHit
+            cacheHits = cacheHits + 1;
+        end
+        totalEvaluations = totalEvaluations + 1;
     end
     
     % Update best solution from initial population
@@ -76,6 +76,7 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GA(G, n, Cmax, popu
     % Main GA loop
     while toc(startTime) < maxTime
         generation = generation + 1;
+        genEvaluations = 0;
         
         % Create new population through crossover and mutation
         newPopulation = cell(populationSize, 1);
@@ -88,28 +89,33 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GA(G, n, Cmax, popu
             % Crossover
             offspring = crossover(parent1, parent2, n, nNodes);
             
-            % Mutation
+            % Mutation (only on first node as specified)
             if rand < mutationRate
-                offspring = mutation(offspring, nNodes);
+                offspring = mutationFirstNode(offspring, nNodes);
             end
             
             newPopulation{i} = offspring;
         end
         
-        % Evaluate new population
+        % Evaluate new population with caching
         newFitnessValues = zeros(populationSize, 1);
         newAvgSPValues = zeros(populationSize, 1);
         newMaxSPValues = zeros(populationSize, 1);
         
         for i = 1:populationSize
-            [newFitnessValues(i), newAvgSPValues(i), newMaxSPValues(i)] = ...
-                evaluateFitness(newPopulation{i}, G, Cmax);
+            [newFitnessValues(i), newAvgSPValues(i), newMaxSPValues(i), cacheHit] = ...
+                evaluateFitnessCached(newPopulation{i}, G, Cmax, fitnessCache);
+            if cacheHit
+                cacheHits = cacheHits + 1;
+            end
+            totalEvaluations = totalEvaluations + 1;
+            genEvaluations = genEvaluations + 1;
         end
         
         % Elitist selection
         population = elitistSelection(population, newPopulation, fitnessValues, newFitnessValues, eliteCount);
         
-        % Re-evaluate population after selection (combine old and new evaluations)
+        % Re-evaluate population after selection
         combinedPopulation = [population; newPopulation];
         combinedFitness = [fitnessValues; newFitnessValues];
         combinedAvgSP = [avgSPValues; newAvgSPValues];
@@ -142,6 +148,9 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GA(G, n, Cmax, popu
             end
         end
         
+        % Calculate diversity metric
+        diversity = calculateDiversity(population);
+        
         % Store results
         results.objectives = [results.objectives, bestObjective];
         results.maxSPs = [results.maxSPs, bestMaxSP];
@@ -149,24 +158,94 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GA(G, n, Cmax, popu
         results.bestFitness = [results.bestFitness, max(fitnessValues)];
         results.times = [results.times, toc(startTime)];
         results.generations = [results.generations, generation];
+        results.cacheHitRate = [results.cacheHitRate, cacheHits/totalEvaluations];
+        results.evaluationsPerGen = [results.evaluationsPerGen, genEvaluations];
+        results.diversityMetrics = [results.diversityMetrics, diversity];
         
         % Progress report every 50 generations
         if mod(generation, 50) == 0
-            fprintf('Generation %d, Time: %.2f s, Best: %.4f, Avg fitness: %.4f\n', ...
-                    generation, toc(startTime), bestObjective, mean(fitnessValues));
+            fprintf('Generation %d, Time: %.2f s, Best: %.4f, Avg fitness: %.4f, Cache hit rate: %.2f%%\n', ...
+                    generation, toc(startTime), bestObjective, mean(fitnessValues), ...
+                    (cacheHits/totalEvaluations)*100);
         end
     end
     
     totalTime = toc(startTime);
-    fprintf('\nGA completed:\n');
+    fprintf('\nOptimized GA completed:\n');
     fprintf('Total generations: %d\n', generation);
     fprintf('Total time: %.2f seconds\n', totalTime);
+    fprintf('Total evaluations: %d\n', totalEvaluations);
+    fprintf('Cache hits: %d (%.2f%%)\n', cacheHits, (cacheHits/totalEvaluations)*100);
     fprintf('Best objective: %.4f\n', bestObjective);
     fprintf('Best max shortest path: %.4f\n', bestMaxSP);
     fprintf('Best solution: [%s]\n', num2str(bestSolution));
+    
+    % Add cache statistics to results
+    results.totalEvaluations = totalEvaluations;
+    results.cacheHits = cacheHits;
+    results.finalCacheHitRate = cacheHits/totalEvaluations;
     
     % Final validation
     if bestMaxSP > Cmax
         fprintf('Warning: Best solution violates Cmax constraint (%.4f > %d)\n', bestMaxSP, Cmax);
     end
+end
+
+function [fitness, avgSP, maxSP, cacheHit] = evaluateFitnessCached(individual, G, Cmax, cache)
+    % Create cache key from individual
+    key = mat2str(individual);
+    cacheHit = false;
+    
+    % Check cache
+    if isKey(cache, key)
+        cachedValue = cache(key);
+        fitness = cachedValue.fitness;
+        avgSP = cachedValue.avgSP;
+        maxSP = cachedValue.maxSP;
+        cacheHit = true;
+        return;
+    end
+    
+    % Evaluate if not in cache
+    [fitness, avgSP, maxSP] = evaluateFitness(individual, G, Cmax);
+    
+    % Store in cache
+    cachedValue.fitness = fitness;
+    cachedValue.avgSP = avgSP;
+    cachedValue.maxSP = maxSP;
+    cache(key) = cachedValue;
+end
+
+function mutatedIndividual = mutationFirstNode(individual, nNodes)
+    % Mutation operator that only mutates the first node
+    n = length(individual);
+    mutatedIndividual = individual;
+    
+    % Get nodes not currently selected
+    allNodes = 1:nNodes;
+    notSelected = setdiff(allNodes, individual);
+    
+    % Only mutate if there are available nodes to swap with
+    if ~isempty(notSelected)
+        % Always mutate the first position
+        newNodeIdx = randi(length(notSelected));
+        newNode = notSelected(newNodeIdx);
+        
+        % Replace the first node with the new node
+        mutatedIndividual(1) = newNode;
+        
+        % Ensure the result is sorted
+        mutatedIndividual = sort(mutatedIndividual);
+    end
+end
+
+function diversity = calculateDiversity(population)
+    % Calculate population diversity (percentage of unique genes)
+    allGenes = [];
+    for i = 1:length(population)
+        allGenes = [allGenes, population{i}];
+    end
+    uniqueGenes = length(unique(allGenes));
+    totalGenes = length(allGenes);
+    diversity = uniqueGenes / totalGenes;
 end

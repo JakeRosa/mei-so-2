@@ -27,6 +27,7 @@ function runGA()
     mutationRates = [0.05, 0.1, 0.2];
     eliteCounts = [1, 5, 10];
     testTime = 30; % seconds for each test
+    numberOfTests = 10; % Number of tests per configuration
     
     bestParams = struct();
     bestTestObjective = inf;
