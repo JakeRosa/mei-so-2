@@ -12,18 +12,18 @@ function newPopulation = elitistSelection(oldPopulation, newPopulation, oldFitne
     if nargin < 5
         eliteCount = max(1, round(0.1 * length(oldPopulation))); % Default: 10% elitism
     end
-    
+
     % Combine populations and fitness values
     combinedPopulation = [oldPopulation; newPopulation];
     combinedFitness = [oldFitness; newFitness];
-    
+
     % Sort by fitness (descending - higher fitness is better)
     [~, sortedIndices] = sort(combinedFitness, 'descend');
-    
+
     % Select top individuals
     populationSize = length(newPopulation);
     selectedIndices = sortedIndices(1:populationSize);
-    
+
     % Create new population
     newPopulation = cell(populationSize, 1);
     for i = 1:populationSize

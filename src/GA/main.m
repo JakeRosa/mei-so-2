@@ -52,9 +52,14 @@ function main(varargin)
             % First run tuning
             bestParams = runParameterTuning(config);
             
-            % Then run full GA with best parameters
+            % Update config with best parameters
             config.params = bestParams;
+            
+            % Run standard GA with best parameters
             runGA_standard(config);
+            
+            % Run optimized GA with best parameters  
+            runGA_optimized(config);
             
         case 'test'
             fprintf('=== GA TEST MODE ===\n');
@@ -122,8 +127,8 @@ function config = loadGAConfig()
     
     % Default GA parameters (can be overridden by tuning)
     config.params.populationSize = 100;
-    config.params.mutationRate = 0.1;
-    config.params.eliteCount = 10;
+    config.params.mutationRate = 0.3;
+    config.params.eliteCount = 5;
     
     % Tuning parameters
     config.tuning.populationSizes = [20, 50, 100, 150];

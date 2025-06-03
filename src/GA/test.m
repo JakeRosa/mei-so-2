@@ -9,10 +9,10 @@ function test()
     % Problem parameters
     n = 12;              % Number of nodes to select
     Cmax = 1000;         % Maximum shortest path constraint
-    populationSize = 30; % Small population for quick test
-    mutationRate = 0.2;  % 20% mutation rate
-    eliteCount = 3;      % Keep 3 best individuals
-    maxTime = 10;        % seconds
+    populationSize = 100; % Small population for quick test
+    mutationRate = 0.3;  % 20% mutation rate
+    eliteCount = 5;      % Keep 3 best individuals
+    maxTime = 30;        % seconds
     
     fprintf('Running quick GA test...\n');
     

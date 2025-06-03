@@ -13,10 +13,10 @@ function [fitness, avgSP, maxSP] = evaluateFitness(individual, G, Cmax, penaltyF
     if nargin < 4
         penaltyFactor = 1000; % Default penalty factor
     end
-    
+
     % Evaluate using PerfSNS function
     [avgSP, maxSP] = PerfSNS(G, individual);
-    
+
     % Handle constraint violation
     if maxSP > Cmax
         % Apply penalty for constraint violation
@@ -25,7 +25,7 @@ function [fitness, avgSP, maxSP] = evaluateFitness(individual, G, Cmax, penaltyF
     else
         fitness = avgSP;
     end
-    
+
     % Convert to maximization problem (GA typically maximizes fitness)
     % Use negative of objective or inverse transformation
     fitness = 1 / (1 + fitness); % Higher fitness = better solution

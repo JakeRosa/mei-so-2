@@ -10,16 +10,16 @@ function selectedParent = tournamentSelection(population, fitnessValues, tournam
     if nargin < 3
         tournamentSize = 3;
     end
-    
+
     populationSize = length(population);
-    
+
     % Randomly select individuals for tournament
     tournamentIndices = randperm(populationSize, min(tournamentSize, populationSize));
     tournamentFitness = fitnessValues(tournamentIndices);
-    
+
     % Find the best individual in tournament (highest fitness)
     [~, bestIdx] = max(tournamentFitness);
     winnerIdx = tournamentIndices(bestIdx);
-    
+
     selectedParent = population{winnerIdx};
 end
