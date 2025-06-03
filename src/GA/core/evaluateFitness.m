@@ -21,12 +21,12 @@ function [fitness, avgSP, maxSP] = evaluateFitness(individual, G, Cmax, penaltyF
     if maxSP > Cmax
         % Apply penalty for constraint violation
         penalty = penaltyFactor * (maxSP - Cmax);
-        fitness = avgSP + penalty;
+        penalty = avgSP + penalty;
     else
-        fitness = avgSP;
+        penalty = avgSP;
     end
 
     % Convert to maximization problem (GA typically maximizes fitness)
     % Use negative of objective or inverse transformation
-    fitness = 1 / (1 + fitness); % Higher fitness = better solution
+    fitness = 1 / (1 + penalty); % Higher fitness = better solution
 end
