@@ -82,8 +82,8 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GA(G, n, Cmax, popu
         
         for i = 1:populationSize
             % Parent selection using tournament selection
-            parent1 = tournamentSelection(population, fitnessValues, 3);
-            parent2 = tournamentSelection(population, fitnessValues, 3);
+            parent1 = tournamentSelection(population, fitnessValues, 2);
+            parent2 = tournamentSelection(population, fitnessValues, 2);
             
             % Crossover
             offspring = crossover(parent1, parent2, n, nNodes);
