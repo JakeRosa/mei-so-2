@@ -66,19 +66,4 @@ function createConvergencePlot(results, runNumber, timestamp)
         close(gcf);
     end
     
-    % Additional plots for optimized GA with cache statistics
-    if isfield(results, 'cacheHitRate') && ~isempty(results.cacheHitRate)
-´´´        % Diversity metrics plot
-        if isfield(results, 'diversityMetrics') && ~isempty(results.diversityMetrics)
-            figure('Position', [100, 100, 800, 600]);
-            plot(generations, results.diversityMetrics, 'g-', 'LineWidth', 2);
-            xlabel('Generation');
-            ylabel('Population Diversity');
-            title(sprintf('Genetic Diversity - Run %d', runNumber));
-            grid on;
-            ylim([0, 1]);
-            saveas(gcf, sprintf('plots/convergence/diversity_metrics_run_%d_%s.png', runNumber, timestamp));
-            close(gcf);
-        end
-    end
 end

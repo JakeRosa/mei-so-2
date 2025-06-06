@@ -168,31 +168,6 @@ function createPhaseAnalysisPlots(allResults, timestamp)
         end
     end
     
-    %% Plot 6: Early vs Late generation performance
-    figure('Position', [100, 100, 800, 600]);
-    earlyGens = [];
-    lateGens = [];
-    
-    for i = 1:length(validResults)
-        if isfield(validResults(i).runResults, 'objectives')
-            objectives = validResults(i).runResults.objectives;
-            if length(objectives) >= 20
-                earlyGens = [earlyGens, mean(objectives(1:10))];
-                lateGens = [lateGens, mean(objectives(end-9:end))];
-            end
-        end
-    end
-    
-    if ~isempty(earlyGens) && ~isempty(lateGens)
-        data = [earlyGens', lateGens'];
-        boxplot(data, {'Early (1-10)', 'Late (last 10)'});
-        ylabel('Average Objective');
-        title('Early vs Late Generation Performance');
-        grid on;
-        saveas(gcf, sprintf('plots/phases/early_vs_late_performance_%s.png', timestamp));
-        close(gcf);
-    end
-    
     %% Plot 8: Stagnation analysis
     figure('Position', [100, 100, 800, 600]);
     stagnationLengths = [];
@@ -231,40 +206,6 @@ function createPhaseAnalysisPlots(allResults, timestamp)
         close(gcf);
     end
     
-    %% Plot 9: Final improvement potential
-    figure('Position', [100, 100, 800, 600]);
-    improvementRatios = [];
-    
-    for i = 1:length(validResults)
-        if isfield(validResults(i).runResults, 'objectives')
-            objectives = validResults(i).runResults.objectives;
-            
-            if length(objectives) > 10
-                % Compare last 10% to previous 10%
-                n = length(objectives);
-                early = mean(objectives(round(0.8*n):round(0.9*n)));
-                late = mean(objectives(round(0.9*n):n));
-                
-                if early > 0
-                    improvementRatios(end+1) = (early - late) / early * 100;
-                end
-            end
-        end
-    end
-    
-    if ~isempty(improvementRatios)
-        bar(improvementRatios);
-        xlabel('Run Number');
-        ylabel('Improvement in Last 10% (%)');
-        title('Late-Stage Improvement Potential');
-        grid on;
-        
-        % Add zero line
-        hold on;
-        plot([0.5, length(improvementRatios)+0.5], [0, 0], 'k--', 'LineWidth', 1);
-        saveas(gcf, sprintf('plots/phases/late_stage_improvement_%s.png', timestamp));
-        close(gcf);
-    end
     
     %% Summary statistics plot
     figure('Position', [100, 100, 800, 600]);
