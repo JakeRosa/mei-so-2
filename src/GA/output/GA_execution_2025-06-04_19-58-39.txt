@@ -1,0 +1,1053 @@
+=== GA EXECUTION ===
+Date and Time: 04-Jun-2025 19:58:39
+====================
+
+Loaded network with 200 nodes and 500 links
+Network loaded: 200 nodes, 500 links
+Problem parameters: n=12, Cmax=1000
+
+GA Parameters:
+Population Size: 20
+Mutation Rate: 0.10
+Elite Count: 1
+Number of runs: 10
+Time per run: 30 seconds
+
+
+--- RUN 1/10 ---
+Starting GA with popSize=20, mutRate=0.10, eliteCount=1, maxTime=30 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+New best solution found at generation 3: 253.0450 (maxSP: 936.0000)
+New best solution found at generation 4: 225.7050 (maxSP: 1000.0000)
+New best solution found at generation 5: 203.1950 (maxSP: 983.0000)
+New best solution found at generation 10: 198.7100 (maxSP: 983.0000)
+New best solution found at generation 12: 194.5200 (maxSP: 985.0000)
+New best solution found at generation 17: 190.8300 (maxSP: 985.0000)
+New best solution found at generation 24: 185.2150 (maxSP: 985.0000)
+New best solution found at generation 30: 183.0000 (maxSP: 985.0000)
+New best solution found at generation 36: 180.3800 (maxSP: 985.0000)
+New best solution found at generation 37: 175.2850 (maxSP: 985.0000)
+New best solution found at generation 48: 171.4000 (maxSP: 983.0000)
+Generation 50, Time: 0.65 s, Best: 171.4000, Avg fitness: 0.0057
+New best solution found at generation 60: 169.2200 (maxSP: 977.0000)
+New best solution found at generation 68: 168.6200 (maxSP: 982.0000)
+New best solution found at generation 72: 164.7550 (maxSP: 982.0000)
+New best solution found at generation 75: 162.4600 (maxSP: 992.0000)
+New best solution found at generation 77: 160.8400 (maxSP: 996.0000)
+New best solution found at generation 83: 159.8400 (maxSP: 992.0000)
+New best solution found at generation 87: 159.6600 (maxSP: 996.0000)
+New best solution found at generation 92: 159.2250 (maxSP: 992.0000)
+Generation 100, Time: 1.31 s, Best: 159.2250, Avg fitness: 0.0062
+Generation 150, Time: 1.88 s, Best: 159.2250, Avg fitness: 0.0059
+Generation 200, Time: 2.48 s, Best: 159.2250, Avg fitness: 0.0062
+Generation 250, Time: 3.07 s, Best: 159.2250, Avg fitness: 0.0062
+Generation 300, Time: 3.68 s, Best: 159.2250, Avg fitness: 0.0062
+Generation 350, Time: 4.28 s, Best: 159.2250, Avg fitness: 0.0059
+Generation 400, Time: 4.90 s, Best: 159.2250, Avg fitness: 0.0062
+New best solution found at generation 408: 157.8700 (maxSP: 992.0000)
+Generation 450, Time: 5.50 s, Best: 157.8700, Avg fitness: 0.0050
+New best solution found at generation 482: 157.7550 (maxSP: 992.0000)
+New best solution found at generation 485: 157.4300 (maxSP: 992.0000)
+Generation 500, Time: 6.13 s, Best: 157.4300, Avg fitness: 0.0063
+New best solution found at generation 511: 156.8550 (maxSP: 992.0000)
+Generation 550, Time: 6.69 s, Best: 156.8550, Avg fitness: 0.0060
+Generation 600, Time: 7.27 s, Best: 156.8550, Avg fitness: 0.0063
+New best solution found at generation 615: 156.0900 (maxSP: 992.0000)
+Generation 650, Time: 7.88 s, Best: 156.0900, Avg fitness: 0.0060
+Generation 700, Time: 8.50 s, Best: 156.0900, Avg fitness: 0.0060
+Generation 750, Time: 9.09 s, Best: 156.0900, Avg fitness: 0.0064
+New best solution found at generation 761: 155.3250 (maxSP: 992.0000)
+New best solution found at generation 771: 154.6400 (maxSP: 992.0000)
+Generation 800, Time: 9.69 s, Best: 154.6400, Avg fitness: 0.0061
+Generation 850, Time: 10.27 s, Best: 154.6400, Avg fitness: 0.0064
+New best solution found at generation 896: 153.2500 (maxSP: 992.0000)
+Generation 900, Time: 10.84 s, Best: 153.2500, Avg fitness: 0.0064
+New best solution found at generation 922: 152.4000 (maxSP: 992.0000)
+Generation 950, Time: 11.43 s, Best: 152.4000, Avg fitness: 0.0059
+New best solution found at generation 995: 152.2150 (maxSP: 992.0000)
+Generation 1000, Time: 11.99 s, Best: 152.2150, Avg fitness: 0.0065
+Generation 1050, Time: 12.56 s, Best: 152.2150, Avg fitness: 0.0065
+Generation 1100, Time: 13.10 s, Best: 152.2150, Avg fitness: 0.0065
+Generation 1150, Time: 13.66 s, Best: 152.2150, Avg fitness: 0.0062
+Generation 1200, Time: 14.25 s, Best: 152.2150, Avg fitness: 0.0065
+Generation 1250, Time: 14.83 s, Best: 152.2150, Avg fitness: 0.0062
+Generation 1300, Time: 15.36 s, Best: 152.2150, Avg fitness: 0.0065
+Generation 1350, Time: 15.92 s, Best: 152.2150, Avg fitness: 0.0065
+Generation 1400, Time: 16.47 s, Best: 152.2150, Avg fitness: 0.0062
+New best solution found at generation 1407: 152.1950 (maxSP: 992.0000)
+Generation 1450, Time: 17.01 s, Best: 152.1950, Avg fitness: 0.0065
+Generation 1500, Time: 17.61 s, Best: 152.1950, Avg fitness: 0.0065
+Generation 1550, Time: 18.18 s, Best: 152.1950, Avg fitness: 0.0062
+Generation 1600, Time: 18.77 s, Best: 152.1950, Avg fitness: 0.0065
+Generation 1650, Time: 19.36 s, Best: 152.1950, Avg fitness: 0.0065
+Generation 1700, Time: 19.93 s, Best: 152.1950, Avg fitness: 0.0065
+Generation 1750, Time: 20.53 s, Best: 152.1950, Avg fitness: 0.0061
+Generation 1800, Time: 21.07 s, Best: 152.1950, Avg fitness: 0.0065
+Generation 1850, Time: 21.63 s, Best: 152.1950, Avg fitness: 0.0065
+Generation 1900, Time: 22.18 s, Best: 152.1950, Avg fitness: 0.0065
+Generation 1950, Time: 22.73 s, Best: 152.1950, Avg fitness: 0.0059
+Generation 2000, Time: 23.29 s, Best: 152.1950, Avg fitness: 0.0065
+Generation 2050, Time: 23.85 s, Best: 152.1950, Avg fitness: 0.0065
+New best solution found at generation 2089: 151.9750 (maxSP: 992.0000)
+Generation 2100, Time: 24.48 s, Best: 151.9750, Avg fitness: 0.0065
+Generation 2150, Time: 25.04 s, Best: 151.9750, Avg fitness: 0.0062
+New best solution found at generation 2160: 151.4550 (maxSP: 992.0000)
+Generation 2200, Time: 25.63 s, Best: 151.4550, Avg fitness: 0.0066
+Generation 2250, Time: 26.20 s, Best: 151.4550, Avg fitness: 0.0062
+Generation 2300, Time: 26.78 s, Best: 151.4550, Avg fitness: 0.0066
+Generation 2350, Time: 27.41 s, Best: 151.4550, Avg fitness: 0.0065
+Generation 2400, Time: 27.97 s, Best: 151.4550, Avg fitness: 0.0062
+New best solution found at generation 2444: 150.6550 (maxSP: 992.0000)
+Generation 2450, Time: 28.57 s, Best: 150.6550, Avg fitness: 0.0065
+Generation 2500, Time: 29.15 s, Best: 150.6550, Avg fitness: 0.0063
+Generation 2550, Time: 29.71 s, Best: 150.6550, Avg fitness: 0.0062
+
+GA completed:
+Total generations: 2574
+Total time: 30.00 seconds
+Best objective: 150.6550
+Best max shortest path: 992.0000
+Best solution: [14   18   36   56   59   78  104  112  123  138  154  163]
+Run 1 completed in 30.03 seconds
+Objective: 150.6550, MaxSP: 992.0000, Valid: true
+
+--- RUN 2/10 ---
+Starting GA with popSize=20, mutRate=0.10, eliteCount=1, maxTime=30 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+New best solution found at generation 1: 202.3700 (maxSP: 985.0000)
+New best solution found at generation 3: 199.4900 (maxSP: 985.0000)
+New best solution found at generation 10: 198.4500 (maxSP: 985.0000)
+New best solution found at generation 12: 191.4050 (maxSP: 985.0000)
+New best solution found at generation 19: 189.1600 (maxSP: 985.0000)
+New best solution found at generation 23: 187.3000 (maxSP: 928.0000)
+New best solution found at generation 25: 185.1050 (maxSP: 985.0000)
+New best solution found at generation 27: 183.3700 (maxSP: 985.0000)
+New best solution found at generation 29: 182.9000 (maxSP: 985.0000)
+New best solution found at generation 32: 181.9950 (maxSP: 985.0000)
+New best solution found at generation 38: 180.6000 (maxSP: 936.0000)
+Generation 50, Time: 0.70 s, Best: 180.6000, Avg fitness: 0.0055
+New best solution found at generation 69: 177.3900 (maxSP: 936.0000)
+New best solution found at generation 76: 175.2600 (maxSP: 952.0000)
+New best solution found at generation 78: 172.3650 (maxSP: 992.0000)
+New best solution found at generation 82: 171.9050 (maxSP: 992.0000)
+New best solution found at generation 86: 170.3800 (maxSP: 992.0000)
+New best solution found at generation 87: 166.4900 (maxSP: 990.0000)
+Generation 100, Time: 1.31 s, Best: 166.4900, Avg fitness: 0.0060
+New best solution found at generation 101: 165.0500 (maxSP: 1000.0000)
+New best solution found at generation 104: 164.7400 (maxSP: 1000.0000)
+New best solution found at generation 143: 163.7100 (maxSP: 997.0000)
+Generation 150, Time: 1.89 s, Best: 163.7100, Avg fitness: 0.0061
+New best solution found at generation 153: 162.0200 (maxSP: 997.0000)
+New best solution found at generation 163: 161.2300 (maxSP: 997.0000)
+Generation 200, Time: 2.51 s, Best: 161.2300, Avg fitness: 0.0061
+New best solution found at generation 201: 159.9900 (maxSP: 997.0000)
+New best solution found at generation 224: 158.5100 (maxSP: 997.0000)
+Generation 250, Time: 3.08 s, Best: 158.5100, Avg fitness: 0.0062
+New best solution found at generation 279: 158.1100 (maxSP: 997.0000)
+New best solution found at generation 296: 157.6350 (maxSP: 997.0000)
+Generation 300, Time: 3.70 s, Best: 157.6350, Avg fitness: 0.0062
+New best solution found at generation 301: 157.2350 (maxSP: 997.0000)
+New best solution found at generation 342: 156.2100 (maxSP: 997.0000)
+Generation 350, Time: 4.31 s, Best: 156.2100, Avg fitness: 0.0060
+Generation 400, Time: 4.93 s, Best: 156.2100, Avg fitness: 0.0063
+New best solution found at generation 417: 155.2350 (maxSP: 997.0000)
+New best solution found at generation 436: 154.7950 (maxSP: 997.0000)
+Generation 450, Time: 5.56 s, Best: 154.7950, Avg fitness: 0.0064
+New best solution found at generation 498: 153.9500 (maxSP: 997.0000)
+Generation 500, Time: 6.11 s, Best: 153.9500, Avg fitness: 0.0064
+New best solution found at generation 503: 153.2750 (maxSP: 997.0000)
+Generation 550, Time: 6.66 s, Best: 153.2750, Avg fitness: 0.0065
+Generation 600, Time: 7.21 s, Best: 153.2750, Avg fitness: 0.0065
+New best solution found at generation 633: 153.2500 (maxSP: 997.0000)
+Generation 650, Time: 7.76 s, Best: 153.2500, Avg fitness: 0.0065
+Generation 700, Time: 8.31 s, Best: 153.2500, Avg fitness: 0.0064
+New best solution found at generation 741: 152.7850 (maxSP: 997.0000)
+Generation 750, Time: 8.88 s, Best: 152.7850, Avg fitness: 0.0065
+Generation 800, Time: 9.47 s, Best: 152.7850, Avg fitness: 0.0065
+Generation 850, Time: 10.10 s, Best: 152.7850, Avg fitness: 0.0065
+Generation 900, Time: 10.70 s, Best: 152.7850, Avg fitness: 0.0058
+Generation 950, Time: 11.27 s, Best: 152.7850, Avg fitness: 0.0065
+Generation 1000, Time: 11.85 s, Best: 152.7850, Avg fitness: 0.0055
+New best solution found at generation 1011: 152.7400 (maxSP: 997.0000)
+Generation 1050, Time: 12.43 s, Best: 152.7400, Avg fitness: 0.0065
+Generation 1100, Time: 13.02 s, Best: 152.7400, Avg fitness: 0.0065
+New best solution found at generation 1140: 152.6450 (maxSP: 997.0000)
+Generation 1150, Time: 13.62 s, Best: 152.6450, Avg fitness: 0.0065
+Generation 1200, Time: 14.16 s, Best: 152.6450, Avg fitness: 0.0065
+New best solution found at generation 1247: 152.6000 (maxSP: 997.0000)
+Generation 1250, Time: 14.74 s, Best: 152.6000, Avg fitness: 0.0065
+New best solution found at generation 1257: 151.7100 (maxSP: 997.0000)
+Generation 1300, Time: 15.31 s, Best: 151.7100, Avg fitness: 0.0065
+Generation 1350, Time: 15.92 s, Best: 151.7100, Avg fitness: 0.0065
+New best solution found at generation 1383: 151.3650 (maxSP: 997.0000)
+Generation 1400, Time: 16.48 s, Best: 151.3650, Avg fitness: 0.0062
+Generation 1450, Time: 17.07 s, Best: 151.3650, Avg fitness: 0.0066
+New best solution found at generation 1486: 151.1650 (maxSP: 997.0000)
+Generation 1500, Time: 17.65 s, Best: 151.1650, Avg fitness: 0.0059
+New best solution found at generation 1510: 150.1200 (maxSP: 997.0000)
+Generation 1550, Time: 18.26 s, Best: 150.1200, Avg fitness: 0.0059
+Generation 1600, Time: 18.85 s, Best: 150.1200, Avg fitness: 0.0062
+Generation 1650, Time: 19.43 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 1700, Time: 20.01 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 1750, Time: 20.59 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 1800, Time: 21.24 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 1850, Time: 21.83 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 1900, Time: 22.41 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 1950, Time: 23.03 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 2000, Time: 23.64 s, Best: 150.1200, Avg fitness: 0.0063
+Generation 2050, Time: 24.23 s, Best: 150.1200, Avg fitness: 0.0053
+Generation 2100, Time: 24.88 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 2150, Time: 25.54 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 2200, Time: 26.17 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 2250, Time: 26.70 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 2300, Time: 27.33 s, Best: 150.1200, Avg fitness: 0.0062
+Generation 2350, Time: 27.88 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 2400, Time: 28.46 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 2450, Time: 29.05 s, Best: 150.1200, Avg fitness: 0.0066
+Generation 2500, Time: 29.65 s, Best: 150.1200, Avg fitness: 0.0065
+
+GA completed:
+Total generations: 2531
+Total time: 30.01 seconds
+Best objective: 150.1200
+Best max shortest path: 997.0000
+Best solution: [18   30   58   63   90  106  107  110  140  155  163  173]
+Run 2 completed in 30.03 seconds
+Objective: 150.1200, MaxSP: 997.0000, Valid: true
+
+--- RUN 3/10 ---
+Starting GA with popSize=20, mutRate=0.10, eliteCount=1, maxTime=30 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+Initial best solution found: 291.8500 (maxSP: 871.0000)
+New best solution found at generation 1: 218.1100 (maxSP: 995.0000)
+New best solution found at generation 2: 208.6050 (maxSP: 982.0000)
+New best solution found at generation 9: 198.1600 (maxSP: 986.0000)
+New best solution found at generation 11: 191.8550 (maxSP: 986.0000)
+New best solution found at generation 15: 189.4700 (maxSP: 986.0000)
+New best solution found at generation 17: 187.2300 (maxSP: 986.0000)
+New best solution found at generation 19: 183.6700 (maxSP: 986.0000)
+New best solution found at generation 21: 182.9700 (maxSP: 986.0000)
+New best solution found at generation 31: 181.7000 (maxSP: 982.0000)
+New best solution found at generation 41: 180.5350 (maxSP: 982.0000)
+New best solution found at generation 44: 180.4300 (maxSP: 982.0000)
+New best solution found at generation 45: 179.2100 (maxSP: 982.0000)
+Generation 50, Time: 0.61 s, Best: 179.2100, Avg fitness: 0.0054
+New best solution found at generation 69: 178.2850 (maxSP: 982.0000)
+New best solution found at generation 100: 177.1400 (maxSP: 982.0000)
+Generation 100, Time: 1.18 s, Best: 177.1400, Avg fitness: 0.0056
+New best solution found at generation 110: 175.3400 (maxSP: 982.0000)
+New best solution found at generation 113: 174.6600 (maxSP: 985.0000)
+New best solution found at generation 118: 173.0450 (maxSP: 985.0000)
+New best solution found at generation 124: 171.9500 (maxSP: 985.0000)
+New best solution found at generation 140: 171.2150 (maxSP: 985.0000)
+New best solution found at generation 150: 168.2900 (maxSP: 985.0000)
+Generation 150, Time: 1.80 s, Best: 168.2900, Avg fitness: 0.0058
+New best solution found at generation 154: 166.4150 (maxSP: 972.0000)
+New best solution found at generation 178: 165.4750 (maxSP: 972.0000)
+New best solution found at generation 191: 163.9450 (maxSP: 972.0000)
+New best solution found at generation 194: 163.5150 (maxSP: 972.0000)
+Generation 200, Time: 2.45 s, Best: 163.5150, Avg fitness: 0.0061
+New best solution found at generation 216: 162.2850 (maxSP: 972.0000)
+Generation 250, Time: 3.00 s, Best: 162.2850, Avg fitness: 0.0061
+New best solution found at generation 266: 162.2750 (maxSP: 983.0000)
+Generation 300, Time: 3.58 s, Best: 162.2750, Avg fitness: 0.0061
+New best solution found at generation 304: 160.4800 (maxSP: 983.0000)
+New best solution found at generation 323: 159.8700 (maxSP: 965.0000)
+Generation 350, Time: 4.15 s, Best: 159.8700, Avg fitness: 0.0059
+New best solution found at generation 391: 157.1000 (maxSP: 996.0000)
+New best solution found at generation 397: 152.3300 (maxSP: 996.0000)
+Generation 400, Time: 4.80 s, Best: 152.3300, Avg fitness: 0.0064
+Generation 450, Time: 5.56 s, Best: 152.3300, Avg fitness: 0.0062
+Generation 500, Time: 6.23 s, Best: 152.3300, Avg fitness: 0.0062
+New best solution found at generation 512: 152.2450 (maxSP: 996.0000)
+Generation 550, Time: 6.99 s, Best: 152.2450, Avg fitness: 0.0065
+New best solution found at generation 572: 151.8250 (maxSP: 996.0000)
+Generation 600, Time: 7.66 s, Best: 151.8250, Avg fitness: 0.0065
+Generation 650, Time: 8.23 s, Best: 151.8250, Avg fitness: 0.0065
+Generation 700, Time: 8.92 s, Best: 151.8250, Avg fitness: 0.0062
+Generation 750, Time: 9.60 s, Best: 151.8250, Avg fitness: 0.0065
+Generation 800, Time: 10.30 s, Best: 151.8250, Avg fitness: 0.0059
+Generation 850, Time: 10.87 s, Best: 151.8250, Avg fitness: 0.0065
+New best solution found at generation 897: 151.5150 (maxSP: 996.0000)
+Generation 900, Time: 11.53 s, Best: 151.5150, Avg fitness: 0.0065
+New best solution found at generation 941: 151.3150 (maxSP: 996.0000)
+Generation 950, Time: 12.14 s, Best: 151.3150, Avg fitness: 0.0062
+Generation 1000, Time: 12.80 s, Best: 151.3150, Avg fitness: 0.0066
+New best solution found at generation 1019: 150.5650 (maxSP: 996.0000)
+Generation 1050, Time: 13.41 s, Best: 150.5650, Avg fitness: 0.0066
+Generation 1100, Time: 14.00 s, Best: 150.5650, Avg fitness: 0.0066
+Generation 1150, Time: 14.62 s, Best: 150.5650, Avg fitness: 0.0066
+Generation 1200, Time: 15.23 s, Best: 150.5650, Avg fitness: 0.0066
+Generation 1250, Time: 15.83 s, Best: 150.5650, Avg fitness: 0.0066
+Generation 1300, Time: 16.39 s, Best: 150.5650, Avg fitness: 0.0066
+Generation 1350, Time: 16.95 s, Best: 150.5650, Avg fitness: 0.0063
+Generation 1400, Time: 17.53 s, Best: 150.5650, Avg fitness: 0.0066
+Generation 1450, Time: 18.10 s, Best: 150.5650, Avg fitness: 0.0056
+Generation 1500, Time: 18.73 s, Best: 150.5650, Avg fitness: 0.0063
+Generation 1550, Time: 19.32 s, Best: 150.5650, Avg fitness: 0.0066
+Generation 1600, Time: 19.92 s, Best: 150.5650, Avg fitness: 0.0066
+Generation 1650, Time: 20.50 s, Best: 150.5650, Avg fitness: 0.0066
+New best solution found at generation 1654: 149.6200 (maxSP: 996.0000)
+Generation 1700, Time: 21.06 s, Best: 149.6200, Avg fitness: 0.0060
+Generation 1750, Time: 21.66 s, Best: 149.6200, Avg fitness: 0.0066
+Generation 1800, Time: 22.27 s, Best: 149.6200, Avg fitness: 0.0063
+Generation 1850, Time: 22.89 s, Best: 149.6200, Avg fitness: 0.0066
+Generation 1900, Time: 23.54 s, Best: 149.6200, Avg fitness: 0.0066
+Generation 1950, Time: 24.22 s, Best: 149.6200, Avg fitness: 0.0060
+Generation 2000, Time: 24.78 s, Best: 149.6200, Avg fitness: 0.0066
+Generation 2050, Time: 25.35 s, Best: 149.6200, Avg fitness: 0.0066
+Generation 2100, Time: 25.92 s, Best: 149.6200, Avg fitness: 0.0063
+Generation 2150, Time: 26.55 s, Best: 149.6200, Avg fitness: 0.0066
+Generation 2200, Time: 27.18 s, Best: 149.6200, Avg fitness: 0.0066
+Generation 2250, Time: 27.78 s, Best: 149.6200, Avg fitness: 0.0066
+Generation 2300, Time: 28.37 s, Best: 149.6200, Avg fitness: 0.0065
+Generation 2350, Time: 28.93 s, Best: 149.6200, Avg fitness: 0.0066
+Generation 2400, Time: 29.50 s, Best: 149.6200, Avg fitness: 0.0063
+
+GA completed:
+Total generations: 2444
+Total time: 30.01 seconds
+Best objective: 149.6200
+Best max shortest path: 996.0000
+Best solution: [18   36   38   59   78   94  104  112  134  138  161  177]
+Run 3 completed in 30.03 seconds
+Objective: 149.6200, MaxSP: 996.0000, Valid: true
+
+--- RUN 4/10 ---
+Starting GA with popSize=20, mutRate=0.10, eliteCount=1, maxTime=30 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+New best solution found at generation 6: 287.6850 (maxSP: 987.0000)
+New best solution found at generation 10: 264.6550 (maxSP: 936.0000)
+New best solution found at generation 11: 245.3800 (maxSP: 987.0000)
+New best solution found at generation 13: 224.9200 (maxSP: 987.0000)
+New best solution found at generation 14: 214.5000 (maxSP: 987.0000)
+New best solution found at generation 17: 214.1250 (maxSP: 984.0000)
+New best solution found at generation 20: 212.8200 (maxSP: 984.0000)
+New best solution found at generation 24: 212.5400 (maxSP: 984.0000)
+New best solution found at generation 25: 201.9550 (maxSP: 993.0000)
+New best solution found at generation 27: 195.9550 (maxSP: 993.0000)
+Generation 50, Time: 0.68 s, Best: 195.9550, Avg fitness: 0.0048
+New best solution found at generation 51: 193.6750 (maxSP: 993.0000)
+New best solution found at generation 58: 192.8700 (maxSP: 993.0000)
+New best solution found at generation 70: 190.3400 (maxSP: 993.0000)
+New best solution found at generation 72: 190.3200 (maxSP: 993.0000)
+New best solution found at generation 77: 184.4200 (maxSP: 993.0000)
+New best solution found at generation 84: 182.4600 (maxSP: 993.0000)
+Generation 100, Time: 1.33 s, Best: 182.4600, Avg fitness: 0.0055
+New best solution found at generation 104: 182.4200 (maxSP: 993.0000)
+New best solution found at generation 105: 182.3100 (maxSP: 993.0000)
+New best solution found at generation 106: 181.9850 (maxSP: 993.0000)
+New best solution found at generation 137: 177.6250 (maxSP: 993.0000)
+New best solution found at generation 138: 175.5400 (maxSP: 993.0000)
+New best solution found at generation 139: 174.8300 (maxSP: 991.0000)
+New best solution found at generation 140: 172.7450 (maxSP: 991.0000)
+Generation 150, Time: 1.94 s, Best: 172.7450, Avg fitness: 0.0058
+New best solution found at generation 197: 172.3950 (maxSP: 991.0000)
+Generation 200, Time: 2.53 s, Best: 172.3950, Avg fitness: 0.0054
+New best solution found at generation 216: 171.1550 (maxSP: 991.0000)
+Generation 250, Time: 3.12 s, Best: 171.1550, Avg fitness: 0.0058
+Generation 300, Time: 3.80 s, Best: 171.1550, Avg fitness: 0.0058
+Generation 350, Time: 4.38 s, Best: 171.1550, Avg fitness: 0.0058
+Generation 400, Time: 4.96 s, Best: 171.1550, Avg fitness: 0.0058
+Generation 450, Time: 5.68 s, Best: 171.1550, Avg fitness: 0.0052
+Generation 500, Time: 6.28 s, Best: 171.1550, Avg fitness: 0.0058
+New best solution found at generation 534: 170.2000 (maxSP: 994.0000)
+Generation 550, Time: 6.83 s, Best: 170.2000, Avg fitness: 0.0058
+New best solution found at generation 560: 162.2250 (maxSP: 994.0000)
+Generation 600, Time: 7.40 s, Best: 162.2250, Avg fitness: 0.0061
+New best solution found at generation 617: 162.0750 (maxSP: 994.0000)
+Generation 650, Time: 8.00 s, Best: 162.0750, Avg fitness: 0.0061
+New best solution found at generation 683: 160.9700 (maxSP: 994.0000)
+Generation 700, Time: 8.62 s, Best: 160.9700, Avg fitness: 0.0059
+Generation 750, Time: 9.26 s, Best: 160.9700, Avg fitness: 0.0062
+New best solution found at generation 766: 160.2950 (maxSP: 994.0000)
+New best solution found at generation 768: 160.2200 (maxSP: 994.0000)
+Generation 800, Time: 9.92 s, Best: 160.2200, Avg fitness: 0.0059
+Generation 850, Time: 10.58 s, Best: 160.2200, Avg fitness: 0.0062
+Generation 900, Time: 11.22 s, Best: 160.2200, Avg fitness: 0.0062
+New best solution found at generation 933: 158.8550 (maxSP: 1000.0000)
+Generation 950, Time: 11.84 s, Best: 158.8550, Avg fitness: 0.0063
+Generation 1000, Time: 12.47 s, Best: 158.8550, Avg fitness: 0.0063
+Generation 1050, Time: 13.14 s, Best: 158.8550, Avg fitness: 0.0063
+Generation 1100, Time: 13.78 s, Best: 158.8550, Avg fitness: 0.0059
+Generation 1150, Time: 14.39 s, Best: 158.8550, Avg fitness: 0.0056
+New best solution found at generation 1184: 155.0350 (maxSP: 1000.0000)
+Generation 1200, Time: 15.04 s, Best: 155.0350, Avg fitness: 0.0064
+Generation 1250, Time: 15.68 s, Best: 155.0350, Avg fitness: 0.0064
+New best solution found at generation 1279: 154.8900 (maxSP: 1000.0000)
+Generation 1300, Time: 16.29 s, Best: 154.8900, Avg fitness: 0.0064
+New best solution found at generation 1321: 154.2100 (maxSP: 970.0000)
+Generation 1350, Time: 16.85 s, Best: 154.2100, Avg fitness: 0.0064
+Generation 1400, Time: 17.44 s, Best: 154.2100, Avg fitness: 0.0064
+Generation 1450, Time: 18.00 s, Best: 154.2100, Avg fitness: 0.0064
+Generation 1500, Time: 18.63 s, Best: 154.2100, Avg fitness: 0.0064
+Generation 1550, Time: 19.21 s, Best: 154.2100, Avg fitness: 0.0058
+Generation 1600, Time: 19.96 s, Best: 154.2100, Avg fitness: 0.0064
+Generation 1650, Time: 20.58 s, Best: 154.2100, Avg fitness: 0.0064
+Generation 1700, Time: 21.22 s, Best: 154.2100, Avg fitness: 0.0064
+New best solution found at generation 1709: 149.4700 (maxSP: 980.0000)
+Generation 1750, Time: 21.84 s, Best: 149.4700, Avg fitness: 0.0066
+New best solution found at generation 1757: 148.9850 (maxSP: 980.0000)
+Generation 1800, Time: 22.45 s, Best: 148.9850, Avg fitness: 0.0063
+Generation 1850, Time: 23.04 s, Best: 148.9850, Avg fitness: 0.0067
+Generation 1900, Time: 23.63 s, Best: 148.9850, Avg fitness: 0.0059
+Generation 1950, Time: 24.21 s, Best: 148.9850, Avg fitness: 0.0066
+Generation 2000, Time: 24.77 s, Best: 148.9850, Avg fitness: 0.0066
+Generation 2050, Time: 25.38 s, Best: 148.9850, Avg fitness: 0.0063
+Generation 2100, Time: 25.99 s, Best: 148.9850, Avg fitness: 0.0067
+Generation 2150, Time: 26.58 s, Best: 148.9850, Avg fitness: 0.0066
+Generation 2200, Time: 27.15 s, Best: 148.9850, Avg fitness: 0.0067
+Generation 2250, Time: 27.79 s, Best: 148.9850, Avg fitness: 0.0063
+Generation 2300, Time: 28.37 s, Best: 148.9850, Avg fitness: 0.0067
+Generation 2350, Time: 29.00 s, Best: 148.9850, Avg fitness: 0.0067
+Generation 2400, Time: 29.55 s, Best: 148.9850, Avg fitness: 0.0063
+
+GA completed:
+Total generations: 2440
+Total time: 30.00 seconds
+Best objective: 148.9850
+Best max shortest path: 980.0000
+Best solution: [14   18   36   40   62   78  107  108  112  138  154  163]
+Run 4 completed in 30.03 seconds
+Objective: 148.9850, MaxSP: 980.0000, Valid: true
+
+--- RUN 5/10 ---
+Starting GA with popSize=20, mutRate=0.10, eliteCount=1, maxTime=30 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+Initial best solution found: 214.8500 (maxSP: 879.0000)
+New best solution found at generation 19: 208.0350 (maxSP: 929.0000)
+New best solution found at generation 20: 199.8750 (maxSP: 929.0000)
+New best solution found at generation 25: 191.3050 (maxSP: 968.0000)
+New best solution found at generation 31: 173.7950 (maxSP: 997.0000)
+New best solution found at generation 39: 172.4750 (maxSP: 997.0000)
+New best solution found at generation 40: 166.9850 (maxSP: 929.0000)
+New best solution found at generation 41: 166.1450 (maxSP: 997.0000)
+New best solution found at generation 47: 166.1050 (maxSP: 997.0000)
+Generation 50, Time: 0.68 s, Best: 166.1050, Avg fitness: 0.0059
+New best solution found at generation 56: 165.0850 (maxSP: 997.0000)
+New best solution found at generation 61: 163.9400 (maxSP: 965.0000)
+New best solution found at generation 68: 163.3450 (maxSP: 965.0000)
+New best solution found at generation 84: 163.0000 (maxSP: 965.0000)
+New best solution found at generation 89: 161.3350 (maxSP: 972.0000)
+Generation 100, Time: 1.24 s, Best: 161.3350, Avg fitness: 0.0055
+Generation 150, Time: 1.83 s, Best: 161.3350, Avg fitness: 0.0062
+Generation 200, Time: 2.39 s, Best: 161.3350, Avg fitness: 0.0058
+New best solution found at generation 201: 161.1100 (maxSP: 976.0000)
+New best solution found at generation 218: 158.9000 (maxSP: 990.0000)
+New best solution found at generation 220: 158.2050 (maxSP: 986.0000)
+New best solution found at generation 223: 155.9950 (maxSP: 990.0000)
+Generation 250, Time: 3.06 s, Best: 155.9950, Avg fitness: 0.0060
+New best solution found at generation 259: 155.1450 (maxSP: 990.0000)
+Generation 300, Time: 3.67 s, Best: 155.1450, Avg fitness: 0.0061
+New best solution found at generation 312: 154.7050 (maxSP: 990.0000)
+New best solution found at generation 315: 153.6400 (maxSP: 990.0000)
+New best solution found at generation 343: 153.3000 (maxSP: 990.0000)
+Generation 350, Time: 4.34 s, Best: 153.3000, Avg fitness: 0.0065
+New best solution found at generation 366: 153.2400 (maxSP: 990.0000)
+New best solution found at generation 388: 152.6850 (maxSP: 990.0000)
+Generation 400, Time: 5.00 s, Best: 152.6850, Avg fitness: 0.0065
+New best solution found at generation 446: 151.3550 (maxSP: 990.0000)
+Generation 450, Time: 5.60 s, Best: 151.3550, Avg fitness: 0.0065
+New best solution found at generation 498: 151.0900 (maxSP: 990.0000)
+Generation 500, Time: 6.27 s, Best: 151.0900, Avg fitness: 0.0065
+New best solution found at generation 542: 150.7850 (maxSP: 990.0000)
+Generation 550, Time: 6.88 s, Best: 150.7850, Avg fitness: 0.0063
+Generation 600, Time: 7.47 s, Best: 150.7850, Avg fitness: 0.0066
+New best solution found at generation 607: 149.5800 (maxSP: 990.0000)
+Generation 650, Time: 8.03 s, Best: 149.5800, Avg fitness: 0.0066
+Generation 700, Time: 8.71 s, Best: 149.5800, Avg fitness: 0.0063
+Generation 750, Time: 9.37 s, Best: 149.5800, Avg fitness: 0.0066
+New best solution found at generation 781: 149.3450 (maxSP: 990.0000)
+Generation 800, Time: 10.00 s, Best: 149.3450, Avg fitness: 0.0066
+New best solution found at generation 838: 148.3500 (maxSP: 990.0000)
+Generation 850, Time: 10.61 s, Best: 148.3500, Avg fitness: 0.0067
+New best solution found at generation 881: 148.2900 (maxSP: 990.0000)
+New best solution found at generation 893: 147.2500 (maxSP: 992.0000)
+Generation 900, Time: 11.21 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 950, Time: 11.84 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1000, Time: 12.45 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1050, Time: 13.02 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1100, Time: 13.59 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1150, Time: 14.15 s, Best: 147.2500, Avg fitness: 0.0066
+Generation 1200, Time: 14.70 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1250, Time: 15.32 s, Best: 147.2500, Avg fitness: 0.0064
+Generation 1300, Time: 15.90 s, Best: 147.2500, Avg fitness: 0.0060
+Generation 1350, Time: 16.46 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1400, Time: 17.06 s, Best: 147.2500, Avg fitness: 0.0064
+Generation 1450, Time: 17.67 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1500, Time: 18.30 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1550, Time: 18.87 s, Best: 147.2500, Avg fitness: 0.0061
+Generation 1600, Time: 19.44 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1650, Time: 20.00 s, Best: 147.2500, Avg fitness: 0.0061
+Generation 1700, Time: 20.56 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1750, Time: 21.13 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1800, Time: 21.70 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1850, Time: 22.25 s, Best: 147.2500, Avg fitness: 0.0064
+Generation 1900, Time: 22.79 s, Best: 147.2500, Avg fitness: 0.0067
+Generation 1950, Time: 23.33 s, Best: 147.2500, Avg fitness: 0.0067
+New best solution found at generation 1971: 147.1100 (maxSP: 992.0000)
+Generation 2000, Time: 23.87 s, Best: 147.1100, Avg fitness: 0.0068
+Generation 2050, Time: 24.43 s, Best: 147.1100, Avg fitness: 0.0061
+Generation 2100, Time: 25.01 s, Best: 147.1100, Avg fitness: 0.0067
+Generation 2150, Time: 25.56 s, Best: 147.1100, Avg fitness: 0.0068
+Generation 2200, Time: 26.16 s, Best: 147.1100, Avg fitness: 0.0067
+Generation 2250, Time: 26.78 s, Best: 147.1100, Avg fitness: 0.0064
+Generation 2300, Time: 27.37 s, Best: 147.1100, Avg fitness: 0.0067
+Generation 2350, Time: 27.92 s, Best: 147.1100, Avg fitness: 0.0068
+Generation 2400, Time: 28.48 s, Best: 147.1100, Avg fitness: 0.0067
+Generation 2450, Time: 29.06 s, Best: 147.1100, Avg fitness: 0.0064
+Generation 2500, Time: 29.61 s, Best: 147.1100, Avg fitness: 0.0067
+
+GA completed:
+Total generations: 2533
+Total time: 30.00 seconds
+Best objective: 147.1100
+Best max shortest path: 992.0000
+Best solution: [26   33   56   65   83  107  110  123  129  167  169  173]
+Run 5 completed in 30.03 seconds
+Objective: 147.1100, MaxSP: 992.0000, Valid: true
+
+--- RUN 6/10 ---
+Starting GA with popSize=20, mutRate=0.10, eliteCount=1, maxTime=30 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+New best solution found at generation 2: 205.4250 (maxSP: 966.0000)
+New best solution found at generation 3: 204.1900 (maxSP: 966.0000)
+New best solution found at generation 4: 200.7000 (maxSP: 966.0000)
+New best solution found at generation 7: 200.5300 (maxSP: 966.0000)
+New best solution found at generation 10: 194.8200 (maxSP: 957.0000)
+New best solution found at generation 20: 189.7600 (maxSP: 957.0000)
+New best solution found at generation 21: 176.4850 (maxSP: 957.0000)
+New best solution found at generation 37: 169.3650 (maxSP: 957.0000)
+New best solution found at generation 50: 165.0650 (maxSP: 957.0000)
+Generation 50, Time: 0.63 s, Best: 165.0650, Avg fitness: 0.0059
+New best solution found at generation 58: 164.7750 (maxSP: 957.0000)
+New best solution found at generation 79: 163.9050 (maxSP: 957.0000)
+Generation 100, Time: 1.21 s, Best: 163.9050, Avg fitness: 0.0061
+New best solution found at generation 111: 160.9850 (maxSP: 975.0000)
+New best solution found at generation 117: 160.7500 (maxSP: 975.0000)
+New best solution found at generation 120: 157.1900 (maxSP: 975.0000)
+New best solution found at generation 124: 155.0200 (maxSP: 975.0000)
+New best solution found at generation 132: 151.2550 (maxSP: 975.0000)
+Generation 150, Time: 1.82 s, Best: 151.2550, Avg fitness: 0.0059
+New best solution found at generation 194: 149.9800 (maxSP: 975.0000)
+Generation 200, Time: 2.49 s, Best: 149.9800, Avg fitness: 0.0063
+Generation 250, Time: 3.19 s, Best: 149.9800, Avg fitness: 0.0066
+New best solution found at generation 297: 149.3150 (maxSP: 1000.0000)
+Generation 300, Time: 3.80 s, Best: 149.3150, Avg fitness: 0.0066
+New best solution found at generation 312: 146.6300 (maxSP: 1000.0000)
+Generation 350, Time: 4.38 s, Best: 146.6300, Avg fitness: 0.0068
+Generation 400, Time: 4.96 s, Best: 146.6300, Avg fitness: 0.0068
+New best solution found at generation 427: 144.9050 (maxSP: 1000.0000)
+Generation 450, Time: 5.55 s, Best: 144.9050, Avg fitness: 0.0068
+Generation 500, Time: 6.10 s, Best: 144.9050, Avg fitness: 0.0069
+Generation 550, Time: 6.71 s, Best: 144.9050, Avg fitness: 0.0069
+Generation 600, Time: 7.32 s, Best: 144.9050, Avg fitness: 0.0058
+Generation 650, Time: 7.93 s, Best: 144.9050, Avg fitness: 0.0065
+Generation 700, Time: 8.51 s, Best: 144.9050, Avg fitness: 0.0061
+Generation 750, Time: 9.14 s, Best: 144.9050, Avg fitness: 0.0069
+Generation 800, Time: 9.72 s, Best: 144.9050, Avg fitness: 0.0069
+New best solution found at generation 816: 144.9000 (maxSP: 1000.0000)
+Generation 850, Time: 10.51 s, Best: 144.9000, Avg fitness: 0.0069
+Generation 900, Time: 11.10 s, Best: 144.9000, Avg fitness: 0.0068
+Generation 950, Time: 11.76 s, Best: 144.9000, Avg fitness: 0.0048
+Generation 1000, Time: 12.35 s, Best: 144.9000, Avg fitness: 0.0065
+New best solution found at generation 1003: 144.8650 (maxSP: 1000.0000)
+Generation 1050, Time: 12.92 s, Best: 144.8650, Avg fitness: 0.0068
+Generation 1100, Time: 13.48 s, Best: 144.8650, Avg fitness: 0.0062
+Generation 1150, Time: 14.07 s, Best: 144.8650, Avg fitness: 0.0065
+Generation 1200, Time: 14.65 s, Best: 144.8650, Avg fitness: 0.0068
+Generation 1250, Time: 15.22 s, Best: 144.8650, Avg fitness: 0.0068
+Generation 1300, Time: 15.79 s, Best: 144.8650, Avg fitness: 0.0068
+New best solution found at generation 1342: 144.7650 (maxSP: 1000.0000)
+Generation 1350, Time: 16.36 s, Best: 144.7650, Avg fitness: 0.0065
+Generation 1400, Time: 16.94 s, Best: 144.7650, Avg fitness: 0.0068
+Generation 1450, Time: 17.52 s, Best: 144.7650, Avg fitness: 0.0069
+New best solution found at generation 1497: 144.7150 (maxSP: 1000.0000)
+Generation 1500, Time: 18.08 s, Best: 144.7150, Avg fitness: 0.0061
+Generation 1550, Time: 18.70 s, Best: 144.7150, Avg fitness: 0.0065
+Generation 1600, Time: 19.33 s, Best: 144.7150, Avg fitness: 0.0068
+Generation 1650, Time: 19.90 s, Best: 144.7150, Avg fitness: 0.0065
+Generation 1700, Time: 20.47 s, Best: 144.7150, Avg fitness: 0.0069
+Generation 1750, Time: 21.05 s, Best: 144.7150, Avg fitness: 0.0068
+Generation 1800, Time: 21.59 s, Best: 144.7150, Avg fitness: 0.0065
+Generation 1850, Time: 22.16 s, Best: 144.7150, Avg fitness: 0.0068
+Generation 1900, Time: 22.75 s, Best: 144.7150, Avg fitness: 0.0068
+Generation 1950, Time: 23.33 s, Best: 144.7150, Avg fitness: 0.0058
+Generation 2000, Time: 23.90 s, Best: 144.7150, Avg fitness: 0.0069
+Generation 2050, Time: 24.46 s, Best: 144.7150, Avg fitness: 0.0055
+Generation 2100, Time: 25.01 s, Best: 144.7150, Avg fitness: 0.0065
+Generation 2150, Time: 25.55 s, Best: 144.7150, Avg fitness: 0.0068
+Generation 2200, Time: 26.10 s, Best: 144.7150, Avg fitness: 0.0069
+Generation 2250, Time: 26.66 s, Best: 144.7150, Avg fitness: 0.0065
+Generation 2300, Time: 27.23 s, Best: 144.7150, Avg fitness: 0.0069
+Generation 2350, Time: 27.79 s, Best: 144.7150, Avg fitness: 0.0069
+Generation 2400, Time: 28.34 s, Best: 144.7150, Avg fitness: 0.0069
+Generation 2450, Time: 28.89 s, Best: 144.7150, Avg fitness: 0.0068
+Generation 2500, Time: 29.45 s, Best: 144.7150, Avg fitness: 0.0069
+
+GA completed:
+Total generations: 2549
+Total time: 30.00 seconds
+Best objective: 144.7150
+Best max shortest path: 1000.0000
+Best solution: [21   30   52   68   89  103  107  122  129  150  163  171]
+Run 6 completed in 30.02 seconds
+Objective: 144.7150, MaxSP: 1000.0000, Valid: true
+
+--- RUN 7/10 ---
+Starting GA with popSize=20, mutRate=0.10, eliteCount=1, maxTime=30 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+New best solution found at generation 1: 208.5750 (maxSP: 973.0000)
+New best solution found at generation 6: 207.7150 (maxSP: 973.0000)
+New best solution found at generation 9: 201.9750 (maxSP: 975.0000)
+New best solution found at generation 14: 187.2950 (maxSP: 983.0000)
+New best solution found at generation 18: 183.5500 (maxSP: 983.0000)
+New best solution found at generation 26: 183.0850 (maxSP: 983.0000)
+New best solution found at generation 27: 176.9150 (maxSP: 983.0000)
+New best solution found at generation 31: 176.6150 (maxSP: 983.0000)
+New best solution found at generation 35: 176.0600 (maxSP: 983.0000)
+New best solution found at generation 40: 173.8800 (maxSP: 984.0000)
+Generation 50, Time: 0.62 s, Best: 173.8800, Avg fitness: 0.0057
+New best solution found at generation 53: 168.2500 (maxSP: 992.0000)
+New best solution found at generation 71: 168.0300 (maxSP: 992.0000)
+New best solution found at generation 84: 165.7350 (maxSP: 992.0000)
+New best solution found at generation 90: 165.6750 (maxSP: 992.0000)
+Generation 100, Time: 1.21 s, Best: 165.6750, Avg fitness: 0.0057
+New best solution found at generation 111: 160.3400 (maxSP: 992.0000)
+New best solution found at generation 120: 160.1450 (maxSP: 992.0000)
+New best solution found at generation 134: 160.1050 (maxSP: 992.0000)
+Generation 150, Time: 1.81 s, Best: 160.1050, Avg fitness: 0.0062
+Generation 200, Time: 2.38 s, Best: 160.1050, Avg fitness: 0.0059
+Generation 250, Time: 2.96 s, Best: 160.1050, Avg fitness: 0.0059
+New best solution found at generation 261: 159.2550 (maxSP: 992.0000)
+New best solution found at generation 279: 157.7650 (maxSP: 992.0000)
+Generation 300, Time: 3.55 s, Best: 157.7650, Avg fitness: 0.0060
+Generation 350, Time: 4.13 s, Best: 157.7650, Avg fitness: 0.0053
+New best solution found at generation 357: 157.6050 (maxSP: 992.0000)
+New best solution found at generation 384: 157.1800 (maxSP: 992.0000)
+Generation 400, Time: 4.72 s, Best: 157.1800, Avg fitness: 0.0063
+New best solution found at generation 420: 156.4050 (maxSP: 998.0000)
+New best solution found at generation 423: 155.6850 (maxSP: 998.0000)
+Generation 450, Time: 5.32 s, Best: 155.6850, Avg fitness: 0.0064
+New best solution found at generation 477: 154.2200 (maxSP: 998.0000)
+Generation 500, Time: 5.91 s, Best: 154.2200, Avg fitness: 0.0064
+New best solution found at generation 515: 153.6100 (maxSP: 998.0000)
+Generation 550, Time: 6.48 s, Best: 153.6100, Avg fitness: 0.0065
+Generation 600, Time: 7.02 s, Best: 153.6100, Avg fitness: 0.0061
+Generation 650, Time: 7.57 s, Best: 153.6100, Avg fitness: 0.0061
+New best solution found at generation 682: 150.8100 (maxSP: 998.0000)
+Generation 700, Time: 8.13 s, Best: 150.8100, Avg fitness: 0.0066
+New best solution found at generation 729: 150.7800 (maxSP: 998.0000)
+Generation 750, Time: 8.72 s, Best: 150.7800, Avg fitness: 0.0065
+Generation 800, Time: 9.26 s, Best: 150.7800, Avg fitness: 0.0066
+Generation 850, Time: 9.82 s, Best: 150.7800, Avg fitness: 0.0059
+Generation 900, Time: 10.38 s, Best: 150.7800, Avg fitness: 0.0066
+Generation 950, Time: 10.98 s, Best: 150.7800, Avg fitness: 0.0065
+Generation 1000, Time: 11.58 s, Best: 150.7800, Avg fitness: 0.0066
+Generation 1050, Time: 12.14 s, Best: 150.7800, Avg fitness: 0.0062
+Generation 1100, Time: 12.71 s, Best: 150.7800, Avg fitness: 0.0062
+Generation 1150, Time: 13.27 s, Best: 150.7800, Avg fitness: 0.0066
+New best solution found at generation 1162: 150.7500 (maxSP: 998.0000)
+Generation 1200, Time: 13.86 s, Best: 150.7500, Avg fitness: 0.0066
+Generation 1250, Time: 14.40 s, Best: 150.7500, Avg fitness: 0.0066
+Generation 1300, Time: 14.95 s, Best: 150.7500, Avg fitness: 0.0066
+Generation 1350, Time: 15.49 s, Best: 150.7500, Avg fitness: 0.0066
+Generation 1400, Time: 16.08 s, Best: 150.7500, Avg fitness: 0.0066
+Generation 1450, Time: 16.65 s, Best: 150.7500, Avg fitness: 0.0066
+Generation 1500, Time: 17.20 s, Best: 150.7500, Avg fitness: 0.0066
+Generation 1550, Time: 17.77 s, Best: 150.7500, Avg fitness: 0.0056
+Generation 1600, Time: 18.31 s, Best: 150.7500, Avg fitness: 0.0062
+Generation 1650, Time: 18.91 s, Best: 150.7500, Avg fitness: 0.0066
+Generation 1700, Time: 19.49 s, Best: 150.7500, Avg fitness: 0.0062
+Generation 1750, Time: 20.07 s, Best: 150.7500, Avg fitness: 0.0066
+Generation 1800, Time: 20.65 s, Best: 150.7500, Avg fitness: 0.0066
+New best solution found at generation 1836: 146.4250 (maxSP: 998.0000)
+Generation 1850, Time: 21.24 s, Best: 146.4250, Avg fitness: 0.0068
+Generation 1900, Time: 21.84 s, Best: 146.4250, Avg fitness: 0.0068
+Generation 1950, Time: 22.43 s, Best: 146.4250, Avg fitness: 0.0064
+Generation 2000, Time: 23.04 s, Best: 146.4250, Avg fitness: 0.0068
+Generation 2050, Time: 23.63 s, Best: 146.4250, Avg fitness: 0.0064
+Generation 2100, Time: 24.22 s, Best: 146.4250, Avg fitness: 0.0068
+Generation 2150, Time: 24.77 s, Best: 146.4250, Avg fitness: 0.0068
+Generation 2200, Time: 25.34 s, Best: 146.4250, Avg fitness: 0.0068
+New best solution found at generation 2233: 146.2250 (maxSP: 998.0000)
+Generation 2250, Time: 25.89 s, Best: 146.2250, Avg fitness: 0.0068
+Generation 2300, Time: 26.46 s, Best: 146.2250, Avg fitness: 0.0068
+Generation 2350, Time: 27.05 s, Best: 146.2250, Avg fitness: 0.0060
+Generation 2400, Time: 27.64 s, Best: 146.2250, Avg fitness: 0.0068
+Generation 2450, Time: 28.21 s, Best: 146.2250, Avg fitness: 0.0064
+Generation 2500, Time: 28.77 s, Best: 146.2250, Avg fitness: 0.0067
+Generation 2550, Time: 29.33 s, Best: 146.2250, Avg fitness: 0.0068
+Generation 2600, Time: 29.89 s, Best: 146.2250, Avg fitness: 0.0061
+
+GA completed:
+Total generations: 2611
+Total time: 30.01 seconds
+Best objective: 146.2250
+Best max shortest path: 998.0000
+Best solution: [14   18   28   40   60   90   91  108  129  148  154  163]
+Run 7 completed in 30.03 seconds
+Objective: 146.2250, MaxSP: 998.0000, Valid: true
+
+--- RUN 8/10 ---
+Starting GA with popSize=20, mutRate=0.10, eliteCount=1, maxTime=30 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+New best solution found at generation 1: 268.1350 (maxSP: 926.0000)
+New best solution found at generation 2: 239.8400 (maxSP: 947.0000)
+New best solution found at generation 4: 218.5000 (maxSP: 957.0000)
+New best solution found at generation 8: 217.3100 (maxSP: 889.0000)
+New best solution found at generation 12: 202.4750 (maxSP: 987.0000)
+New best solution found at generation 13: 182.7500 (maxSP: 989.0000)
+New best solution found at generation 18: 170.2100 (maxSP: 989.0000)
+New best solution found at generation 21: 169.6950 (maxSP: 989.0000)
+New best solution found at generation 22: 169.1650 (maxSP: 989.0000)
+New best solution found at generation 30: 169.1000 (maxSP: 989.0000)
+New best solution found at generation 42: 168.4150 (maxSP: 989.0000)
+Generation 50, Time: 0.61 s, Best: 168.4150, Avg fitness: 0.0059
+New best solution found at generation 51: 166.5250 (maxSP: 989.0000)
+New best solution found at generation 56: 164.9850 (maxSP: 989.0000)
+New best solution found at generation 65: 163.1700 (maxSP: 989.0000)
+Generation 100, Time: 1.19 s, Best: 163.1700, Avg fitness: 0.0060
+Generation 150, Time: 1.76 s, Best: 163.1700, Avg fitness: 0.0061
+New best solution found at generation 168: 161.8950 (maxSP: 989.0000)
+New best solution found at generation 183: 159.2400 (maxSP: 989.0000)
+Generation 200, Time: 2.31 s, Best: 159.2400, Avg fitness: 0.0062
+New best solution found at generation 220: 158.6750 (maxSP: 989.0000)
+New best solution found at generation 227: 158.1500 (maxSP: 989.0000)
+New best solution found at generation 228: 156.2250 (maxSP: 989.0000)
+New best solution found at generation 229: 155.6600 (maxSP: 989.0000)
+New best solution found at generation 246: 154.9100 (maxSP: 989.0000)
+Generation 250, Time: 2.86 s, Best: 154.9100, Avg fitness: 0.0064
+New best solution found at generation 288: 153.8700 (maxSP: 989.0000)
+New best solution found at generation 296: 151.5200 (maxSP: 956.0000)
+Generation 300, Time: 3.43 s, Best: 151.5200, Avg fitness: 0.0064
+Generation 350, Time: 3.97 s, Best: 151.5200, Avg fitness: 0.0065
+Generation 400, Time: 4.51 s, Best: 151.5200, Avg fitness: 0.0066
+New best solution found at generation 424: 151.4250 (maxSP: 956.0000)
+New best solution found at generation 430: 151.3600 (maxSP: 956.0000)
+Generation 450, Time: 5.05 s, Best: 151.3600, Avg fitness: 0.0065
+New best solution found at generation 452: 150.8800 (maxSP: 966.0000)
+New best solution found at generation 476: 150.1500 (maxSP: 966.0000)
+Generation 500, Time: 5.61 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 550, Time: 6.18 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 600, Time: 6.72 s, Best: 150.1500, Avg fitness: 0.0063
+Generation 650, Time: 7.29 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 700, Time: 7.87 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 750, Time: 8.42 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 800, Time: 9.03 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 850, Time: 9.58 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 900, Time: 10.13 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 950, Time: 10.67 s, Best: 150.1500, Avg fitness: 0.0065
+Generation 1000, Time: 11.22 s, Best: 150.1500, Avg fitness: 0.0059
+Generation 1050, Time: 11.77 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 1100, Time: 12.33 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 1150, Time: 12.87 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 1200, Time: 13.45 s, Best: 150.1500, Avg fitness: 0.0066
+Generation 1250, Time: 14.00 s, Best: 150.1500, Avg fitness: 0.0059
+Generation 1300, Time: 14.55 s, Best: 150.1500, Avg fitness: 0.0056
+New best solution found at generation 1325: 147.4650 (maxSP: 1000.0000)
+Generation 1350, Time: 15.13 s, Best: 147.4650, Avg fitness: 0.0067
+Generation 1400, Time: 15.67 s, Best: 147.4650, Avg fitness: 0.0067
+New best solution found at generation 1432: 147.3450 (maxSP: 1000.0000)
+Generation 1450, Time: 16.25 s, Best: 147.3450, Avg fitness: 0.0067
+Generation 1500, Time: 16.79 s, Best: 147.3450, Avg fitness: 0.0067
+New best solution found at generation 1517: 147.2700 (maxSP: 1000.0000)
+Generation 1550, Time: 17.33 s, Best: 147.2700, Avg fitness: 0.0067
+Generation 1600, Time: 17.90 s, Best: 147.2700, Avg fitness: 0.0067
+Generation 1650, Time: 18.46 s, Best: 147.2700, Avg fitness: 0.0066
+Generation 1700, Time: 19.04 s, Best: 147.2700, Avg fitness: 0.0067
+Generation 1750, Time: 19.59 s, Best: 147.2700, Avg fitness: 0.0067
+Generation 1800, Time: 20.18 s, Best: 147.2700, Avg fitness: 0.0067
+Generation 1850, Time: 20.76 s, Best: 147.2700, Avg fitness: 0.0067
+Generation 1900, Time: 21.31 s, Best: 147.2700, Avg fitness: 0.0064
+Generation 1950, Time: 21.86 s, Best: 147.2700, Avg fitness: 0.0064
+Generation 2000, Time: 22.42 s, Best: 147.2700, Avg fitness: 0.0067
+Generation 2050, Time: 22.97 s, Best: 147.2700, Avg fitness: 0.0067
+Generation 2100, Time: 23.55 s, Best: 147.2700, Avg fitness: 0.0067
+New best solution found at generation 2104: 146.7900 (maxSP: 1000.0000)
+Generation 2150, Time: 24.12 s, Best: 146.7900, Avg fitness: 0.0068
+Generation 2200, Time: 24.66 s, Best: 146.7900, Avg fitness: 0.0067
+Generation 2250, Time: 25.25 s, Best: 146.7900, Avg fitness: 0.0068
+Generation 2300, Time: 25.79 s, Best: 146.7900, Avg fitness: 0.0058
+Generation 2350, Time: 26.33 s, Best: 146.7900, Avg fitness: 0.0067
+Generation 2400, Time: 26.88 s, Best: 146.7900, Avg fitness: 0.0067
+Generation 2450, Time: 27.42 s, Best: 146.7900, Avg fitness: 0.0068
+Generation 2500, Time: 27.96 s, Best: 146.7900, Avg fitness: 0.0064
+Generation 2550, Time: 28.53 s, Best: 146.7900, Avg fitness: 0.0068
+Generation 2600, Time: 29.13 s, Best: 146.7900, Avg fitness: 0.0067
+Generation 2650, Time: 29.72 s, Best: 146.7900, Avg fitness: 0.0064
+
+GA completed:
+Total generations: 2676
+Total time: 30.00 seconds
+Best objective: 146.7900
+Best max shortest path: 1000.0000
+Best solution: [18   30   52   62   87   91   93  107  121  144  150  177]
+Run 8 completed in 30.02 seconds
+Objective: 146.7900, MaxSP: 1000.0000, Valid: true
+
+--- RUN 9/10 ---
+Starting GA with popSize=20, mutRate=0.10, eliteCount=1, maxTime=30 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+New best solution found at generation 2: 340.5700 (maxSP: 927.0000)
+New best solution found at generation 5: 227.4850 (maxSP: 859.0000)
+New best solution found at generation 6: 227.1050 (maxSP: 859.0000)
+New best solution found at generation 14: 226.8850 (maxSP: 859.0000)
+New best solution found at generation 19: 226.0200 (maxSP: 859.0000)
+New best solution found at generation 22: 217.5300 (maxSP: 776.0000)
+New best solution found at generation 25: 190.2400 (maxSP: 991.0000)
+New best solution found at generation 33: 189.4100 (maxSP: 991.0000)
+New best solution found at generation 34: 186.7400 (maxSP: 991.0000)
+New best solution found at generation 36: 184.4700 (maxSP: 991.0000)
+New best solution found at generation 39: 182.1750 (maxSP: 991.0000)
+New best solution found at generation 45: 181.7400 (maxSP: 991.0000)
+New best solution found at generation 49: 180.4950 (maxSP: 991.0000)
+Generation 50, Time: 0.58 s, Best: 180.4950, Avg fitness: 0.0054
+New best solution found at generation 51: 178.8900 (maxSP: 991.0000)
+New best solution found at generation 53: 177.6450 (maxSP: 991.0000)
+New best solution found at generation 54: 176.7550 (maxSP: 991.0000)
+New best solution found at generation 61: 176.2450 (maxSP: 991.0000)
+New best solution found at generation 66: 174.3300 (maxSP: 991.0000)
+New best solution found at generation 69: 171.7050 (maxSP: 991.0000)
+New best solution found at generation 72: 167.7450 (maxSP: 991.0000)
+New best solution found at generation 73: 163.9700 (maxSP: 991.0000)
+Generation 100, Time: 1.16 s, Best: 163.9700, Avg fitness: 0.0061
+New best solution found at generation 123: 160.2700 (maxSP: 991.0000)
+New best solution found at generation 133: 159.5200 (maxSP: 991.0000)
+Generation 150, Time: 1.73 s, Best: 159.5200, Avg fitness: 0.0062
+Generation 200, Time: 2.28 s, Best: 159.5200, Avg fitness: 0.0062
+Generation 250, Time: 2.86 s, Best: 159.5200, Avg fitness: 0.0062
+New best solution found at generation 263: 159.1100 (maxSP: 960.0000)
+Generation 300, Time: 3.43 s, Best: 159.1100, Avg fitness: 0.0062
+Generation 350, Time: 3.98 s, Best: 159.1100, Avg fitness: 0.0059
+Generation 400, Time: 4.53 s, Best: 159.1100, Avg fitness: 0.0059
+Generation 450, Time: 5.11 s, Best: 159.1100, Avg fitness: 0.0062
+New best solution found at generation 458: 158.6750 (maxSP: 960.0000)
+New best solution found at generation 474: 157.8100 (maxSP: 960.0000)
+Generation 500, Time: 5.68 s, Best: 157.8100, Avg fitness: 0.0063
+New best solution found at generation 503: 157.7000 (maxSP: 960.0000)
+Generation 550, Time: 6.25 s, Best: 157.7000, Avg fitness: 0.0056
+New best solution found at generation 557: 156.9200 (maxSP: 992.0000)
+New best solution found at generation 569: 154.5950 (maxSP: 992.0000)
+New best solution found at generation 575: 154.0150 (maxSP: 992.0000)
+New best solution found at generation 586: 153.2300 (maxSP: 992.0000)
+New best solution found at generation 596: 152.7850 (maxSP: 992.0000)
+Generation 600, Time: 6.82 s, Best: 152.7850, Avg fitness: 0.0063
+New best solution found at generation 626: 149.3600 (maxSP: 992.0000)
+Generation 650, Time: 7.41 s, Best: 149.3600, Avg fitness: 0.0063
+Generation 700, Time: 7.96 s, Best: 149.3600, Avg fitness: 0.0057
+Generation 750, Time: 8.50 s, Best: 149.3600, Avg fitness: 0.0067
+Generation 800, Time: 9.07 s, Best: 149.3600, Avg fitness: 0.0063
+New best solution found at generation 837: 148.5100 (maxSP: 992.0000)
+Generation 850, Time: 9.65 s, Best: 148.5100, Avg fitness: 0.0067
+New best solution found at generation 897: 148.4100 (maxSP: 992.0000)
+Generation 900, Time: 10.21 s, Best: 148.4100, Avg fitness: 0.0065
+Generation 950, Time: 10.79 s, Best: 148.4100, Avg fitness: 0.0067
+Generation 1000, Time: 11.34 s, Best: 148.4100, Avg fitness: 0.0066
+Generation 1050, Time: 11.90 s, Best: 148.4100, Avg fitness: 0.0067
+Generation 1100, Time: 12.45 s, Best: 148.4100, Avg fitness: 0.0067
+Generation 1150, Time: 13.02 s, Best: 148.4100, Avg fitness: 0.0066
+Generation 1200, Time: 13.61 s, Best: 148.4100, Avg fitness: 0.0067
+Generation 1250, Time: 14.16 s, Best: 148.4100, Avg fitness: 0.0067
+Generation 1300, Time: 14.73 s, Best: 148.4100, Avg fitness: 0.0060
+New best solution found at generation 1324: 147.9300 (maxSP: 992.0000)
+Generation 1350, Time: 15.29 s, Best: 147.9300, Avg fitness: 0.0067
+Generation 1400, Time: 15.86 s, Best: 147.9300, Avg fitness: 0.0067
+New best solution found at generation 1441: 147.6750 (maxSP: 992.0000)
+Generation 1450, Time: 16.43 s, Best: 147.6750, Avg fitness: 0.0066
+Generation 1500, Time: 16.98 s, Best: 147.6750, Avg fitness: 0.0067
+New best solution found at generation 1534: 147.5550 (maxSP: 992.0000)
+Generation 1550, Time: 17.53 s, Best: 147.5550, Avg fitness: 0.0067
+Generation 1600, Time: 18.08 s, Best: 147.5550, Avg fitness: 0.0063
+Generation 1650, Time: 18.63 s, Best: 147.5550, Avg fitness: 0.0067
+Generation 1700, Time: 19.19 s, Best: 147.5550, Avg fitness: 0.0067
+Generation 1750, Time: 19.73 s, Best: 147.5550, Avg fitness: 0.0064
+Generation 1800, Time: 20.28 s, Best: 147.5550, Avg fitness: 0.0067
+Generation 1850, Time: 20.87 s, Best: 147.5550, Avg fitness: 0.0067
+New best solution found at generation 1868: 147.0850 (maxSP: 992.0000)
+Generation 1900, Time: 21.45 s, Best: 147.0850, Avg fitness: 0.0068
+Generation 1950, Time: 22.02 s, Best: 147.0850, Avg fitness: 0.0068
+Generation 2000, Time: 22.58 s, Best: 147.0850, Avg fitness: 0.0067
+Generation 2050, Time: 23.14 s, Best: 147.0850, Avg fitness: 0.0064
+Generation 2100, Time: 23.71 s, Best: 147.0850, Avg fitness: 0.0067
+Generation 2150, Time: 24.28 s, Best: 147.0850, Avg fitness: 0.0068
+Generation 2200, Time: 24.82 s, Best: 147.0850, Avg fitness: 0.0064
+Generation 2250, Time: 25.38 s, Best: 147.0850, Avg fitness: 0.0067
+Generation 2300, Time: 25.94 s, Best: 147.0850, Avg fitness: 0.0064
+Generation 2350, Time: 26.49 s, Best: 147.0850, Avg fitness: 0.0068
+Generation 2400, Time: 27.04 s, Best: 147.0850, Avg fitness: 0.0068
+Generation 2450, Time: 27.59 s, Best: 147.0850, Avg fitness: 0.0068
+Generation 2500, Time: 28.13 s, Best: 147.0850, Avg fitness: 0.0067
+Generation 2550, Time: 28.67 s, Best: 147.0850, Avg fitness: 0.0068
+Generation 2600, Time: 29.21 s, Best: 147.0850, Avg fitness: 0.0064
+Generation 2650, Time: 29.78 s, Best: 147.0850, Avg fitness: 0.0068
+
+GA completed:
+Total generations: 2669
+Total time: 30.01 seconds
+Best objective: 147.0850
+Best max shortest path: 992.0000
+Best solution: [14   18   28   40   59   90   91  107  108  129  148  163]
+Run 9 completed in 30.03 seconds
+Objective: 147.0850, MaxSP: 992.0000, Valid: true
+
+--- RUN 10/10 ---
+Starting GA with popSize=20, mutRate=0.10, eliteCount=1, maxTime=30 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+New best solution found at generation 3: 266.8350 (maxSP: 973.0000)
+New best solution found at generation 4: 245.1500 (maxSP: 907.0000)
+New best solution found at generation 12: 239.5850 (maxSP: 907.0000)
+New best solution found at generation 15: 239.3500 (maxSP: 970.0000)
+New best solution found at generation 17: 238.8900 (maxSP: 970.0000)
+New best solution found at generation 18: 234.9050 (maxSP: 970.0000)
+New best solution found at generation 22: 217.0550 (maxSP: 970.0000)
+New best solution found at generation 26: 205.6700 (maxSP: 970.0000)
+New best solution found at generation 36: 204.1150 (maxSP: 970.0000)
+Generation 50, Time: 0.63 s, Best: 204.1150, Avg fitness: 0.0046
+New best solution found at generation 63: 195.7150 (maxSP: 985.0000)
+New best solution found at generation 66: 190.7850 (maxSP: 985.0000)
+New best solution found at generation 78: 181.1650 (maxSP: 948.0000)
+New best solution found at generation 94: 179.3700 (maxSP: 948.0000)
+Generation 100, Time: 1.24 s, Best: 179.3700, Avg fitness: 0.0054
+New best solution found at generation 106: 178.7850 (maxSP: 948.0000)
+New best solution found at generation 116: 177.9650 (maxSP: 948.0000)
+Generation 150, Time: 1.80 s, Best: 177.9650, Avg fitness: 0.0056
+New best solution found at generation 153: 176.8900 (maxSP: 948.0000)
+New best solution found at generation 169: 175.1450 (maxSP: 988.0000)
+New best solution found at generation 180: 171.8800 (maxSP: 988.0000)
+New best solution found at generation 185: 171.3350 (maxSP: 988.0000)
+Generation 200, Time: 2.39 s, Best: 171.3350, Avg fitness: 0.0058
+New best solution found at generation 203: 168.3050 (maxSP: 988.0000)
+New best solution found at generation 204: 159.9400 (maxSP: 988.0000)
+New best solution found at generation 250: 159.4900 (maxSP: 988.0000)
+Generation 250, Time: 2.96 s, Best: 159.4900, Avg fitness: 0.0053
+Generation 300, Time: 3.54 s, Best: 159.4900, Avg fitness: 0.0062
+Generation 350, Time: 4.09 s, Best: 159.4900, Avg fitness: 0.0062
+Generation 400, Time: 4.63 s, Best: 159.4900, Avg fitness: 0.0062
+Generation 450, Time: 5.17 s, Best: 159.4900, Avg fitness: 0.0062
+Generation 500, Time: 5.77 s, Best: 159.4900, Avg fitness: 0.0062
+Generation 550, Time: 6.35 s, Best: 159.4900, Avg fitness: 0.0056
+Generation 600, Time: 6.93 s, Best: 159.4900, Avg fitness: 0.0062
+New best solution found at generation 643: 158.2400 (maxSP: 988.0000)
+Generation 650, Time: 7.50 s, Best: 158.2400, Avg fitness: 0.0062
+Generation 700, Time: 8.07 s, Best: 158.2400, Avg fitness: 0.0062
+New best solution found at generation 705: 158.1600 (maxSP: 988.0000)
+New best solution found at generation 727: 158.0400 (maxSP: 994.0000)
+Generation 750, Time: 8.63 s, Best: 158.0400, Avg fitness: 0.0063
+Generation 800, Time: 9.18 s, Best: 158.0400, Avg fitness: 0.0063
+Generation 850, Time: 9.74 s, Best: 158.0400, Avg fitness: 0.0060
+New best solution found at generation 876: 156.9850 (maxSP: 994.0000)
+Generation 900, Time: 10.28 s, Best: 156.9850, Avg fitness: 0.0063
+Generation 950, Time: 10.84 s, Best: 156.9850, Avg fitness: 0.0063
+Generation 1000, Time: 11.38 s, Best: 156.9850, Avg fitness: 0.0063
+New best solution found at generation 1011: 156.6750 (maxSP: 998.0000)
+Generation 1050, Time: 11.93 s, Best: 156.6750, Avg fitness: 0.0060
+Generation 1100, Time: 12.50 s, Best: 156.6750, Avg fitness: 0.0063
+Generation 1150, Time: 13.08 s, Best: 156.6750, Avg fitness: 0.0063
+Generation 1200, Time: 13.65 s, Best: 156.6750, Avg fitness: 0.0063
+Generation 1250, Time: 14.20 s, Best: 156.6750, Avg fitness: 0.0060
+Generation 1300, Time: 14.74 s, Best: 156.6750, Avg fitness: 0.0063
+New best solution found at generation 1330: 155.8400 (maxSP: 998.0000)
+New best solution found at generation 1343: 155.2350 (maxSP: 998.0000)
+Generation 1350, Time: 15.30 s, Best: 155.2350, Avg fitness: 0.0063
+Generation 1400, Time: 15.89 s, Best: 155.2350, Avg fitness: 0.0064
+New best solution found at generation 1414: 155.0600 (maxSP: 998.0000)
+Generation 1450, Time: 16.45 s, Best: 155.0600, Avg fitness: 0.0064
+Generation 1500, Time: 17.04 s, Best: 155.0600, Avg fitness: 0.0061
+Generation 1550, Time: 17.59 s, Best: 155.0600, Avg fitness: 0.0061
+New best solution found at generation 1569: 154.5000 (maxSP: 998.0000)
+Generation 1600, Time: 18.18 s, Best: 154.5000, Avg fitness: 0.0064
+Generation 1650, Time: 18.79 s, Best: 154.5000, Avg fitness: 0.0061
+Generation 1700, Time: 19.34 s, Best: 154.5000, Avg fitness: 0.0064
+Generation 1750, Time: 19.90 s, Best: 154.5000, Avg fitness: 0.0064
+Generation 1800, Time: 20.47 s, Best: 154.5000, Avg fitness: 0.0064
+Generation 1850, Time: 21.03 s, Best: 154.5000, Avg fitness: 0.0064
+Generation 1900, Time: 21.60 s, Best: 154.5000, Avg fitness: 0.0064
+Generation 1950, Time: 22.15 s, Best: 154.5000, Avg fitness: 0.0064
+Generation 2000, Time: 22.73 s, Best: 154.5000, Avg fitness: 0.0064
+New best solution found at generation 2049: 154.3550 (maxSP: 998.0000)
+Generation 2050, Time: 23.28 s, Best: 154.3550, Avg fitness: 0.0061
+Generation 2100, Time: 23.85 s, Best: 154.3550, Avg fitness: 0.0064
+Generation 2150, Time: 24.41 s, Best: 154.3550, Avg fitness: 0.0064
+Generation 2200, Time: 24.96 s, Best: 154.3550, Avg fitness: 0.0064
+New best solution found at generation 2224: 154.1100 (maxSP: 998.0000)
+Generation 2250, Time: 25.53 s, Best: 154.1100, Avg fitness: 0.0061
+Generation 2300, Time: 26.09 s, Best: 154.1100, Avg fitness: 0.0064
+Generation 2350, Time: 26.64 s, Best: 154.1100, Avg fitness: 0.0061
+Generation 2400, Time: 27.18 s, Best: 154.1100, Avg fitness: 0.0064
+Generation 2450, Time: 27.73 s, Best: 154.1100, Avg fitness: 0.0061
+Generation 2500, Time: 28.27 s, Best: 154.1100, Avg fitness: 0.0064
+Generation 2550, Time: 28.83 s, Best: 154.1100, Avg fitness: 0.0061
+Generation 2600, Time: 29.38 s, Best: 154.1100, Avg fitness: 0.0058
+New best solution found at generation 2643: 148.9800 (maxSP: 998.0000)
+Generation 2650, Time: 29.94 s, Best: 148.9800, Avg fitness: 0.0067
+
+GA completed:
+Total generations: 2656
+Total time: 30.01 seconds
+Best objective: 148.9800
+Best max shortest path: 998.0000
+Best solution: [18   28   30   59   78   82  107  108  129  138  154  163]
+Run 10 completed in 30.03 seconds
+Objective: 148.9800, MaxSP: 998.0000, Valid: true
+
+=== RESULTS ANALYSIS ===
+
+Valid runs: 10/10 (100%)
+
+Objective statistics:
+  Minimum: 144.7150
+  Average: 148.0285
+  Maximum: 150.6550
+  Std Dev: 1.9185
+
+Max shortest path statistics:
+  Minimum: 980.0000
+  Average: 994.5000
+  Maximum: 1000.0000
+
+=== BEST SOLUTION ===
+Run: 6
+Objective: 144.7150
+Max shortest path: 1000.0000
+Solution: [21   30   52   68   89  103  107  122  129  150  163  171]
+Plot saved to: plots//ga_solution_run_6.png
+Creating GA summary plots...
+[Warning: Ignoring extra legend entries.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('legend>process_inputs', 'D:\Program Files\MATLAB\R2024b\toolbox\matlab\graphics\graphics\scribe\legend.m', 567)" style="font-weight:bold">legend>process_inputs</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2024b\toolbox\matlab\graphics\graphics\scribe\legend.m',567,0)">line 567</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('legend>make_legend', 'D:\Program Files\MATLAB\R2024b\toolbox\matlab\graphics\graphics\scribe\legend.m', 294)" style="font-weight:bold">legend>make_legend</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2024b\toolbox\matlab\graphics\graphics\scribe\legend.m',294,0)">line 294</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('legend', 'D:\Program Files\MATLAB\R2024b\toolbox\matlab\graphics\graphics\scribe\legend.m', 245)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2024b\toolbox\matlab\graphics\graphics\scribe\legend.m',245,0)">line 245</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createGASummaryPlots', 'D:\mei-so-2\src\GA\analysis\createGASummaryPlots.m', 46)" style="font-weight:bold">createGASummaryPlots</a> (<a href="matlab: opentoline('D:\mei-so-2\src\GA\analysis\createGASummaryPlots.m',46,0)">line 46</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('runGA_standard', 'D:\mei-so-2\src\GA\runners\runGA_standard.m', 114)" style="font-weight:bold">runGA_standard</a> (<a href="matlab: opentoline('D:\mei-so-2\src\GA\runners\runGA_standard.m',114,0)">line 114</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main', 'D:\mei-so-2\src\GA\main.m', 73)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('D:\mei-so-2\src\GA\main.m',73,0)">line 73</a>)] 
+GA summary plots created successfully.
+Creating GA phase analysis plots...
+GA phase analysis plots created successfully.
+Exporting GA results to CSV...
+GA results exported successfully.
+
+Results saved to:
+  MAT file: results/GA_results_2025-06-04_19-58-39.mat
+  CSV files: results/GA_summary_2025-06-04_19-58-39.csv
+
+=== CONVERGENCE ANALYSIS ===
+Run 1: 2574 generations, final objective: 150.6550
+Run 2: 2531 generations, final objective: 150.1200
+Run 3: 2444 generations, final objective: 149.6200
+Run 4: 2440 generations, final objective: 148.9850
+Run 5: 2533 generations, final objective: 147.1100
+Run 6: 2549 generations, final objective: 144.7150
+Run 7: 2611 generations, final objective: 146.2250
+Run 8: 2676 generations, final objective: 146.7900
+Run 9: 2669 generations, final objective: 147.0850
+Run 10: 2656 generations, final objective: 148.9800

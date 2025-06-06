@@ -1,0 +1,476 @@
+=== OPTIMIZED GA EXECUTION ===
+Date and Time: 04-Jun-2025 04:38:59
+===============================
+
+Loaded network with 200 nodes and 500 links
+Network loaded: 200 nodes, 500 links
+Problem parameters: n=12, Cmax=1000
+
+Optimized GA Parameters:
+Population Size: 20
+Mutation Rate: 0.30
+Elite Count: 10
+Number of runs: 10
+Time per run: 30 seconds
+
+
+--- OPTIMIZED RUN 1/10 ---
+Starting Optimized GA with popSize=20, mutRate=0.30, eliteCount=10, maxTime=30 seconds
+Pre-computing all shortest path distances...
+Distance pre-computation completed in 0.00 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+New best solution found at generation 4: 289.8900 (maxSP: 877.0000)
+New best solution found at generation 5: 258.9650 (maxSP: 962.0000)
+New best solution found at generation 6: 239.9650 (maxSP: 943.0000)
+New best solution found at generation 9: 239.3550 (maxSP: 962.0000)
+New best solution found at generation 11: 209.5500 (maxSP: 952.0000)
+New best solution found at generation 22: 207.9500 (maxSP: 952.0000)
+New best solution found at generation 26: 187.0850 (maxSP: 980.0000)
+New best solution found at generation 29: 186.5350 (maxSP: 980.0000)
+New best solution found at generation 31: 183.0050 (maxSP: 980.0000)
+New best solution found at generation 35: 182.9950 (maxSP: 980.0000)
+New best solution found at generation 36: 182.1850 (maxSP: 980.0000)
+New best solution found at generation 42: 180.1100 (maxSP: 980.0000)
+New best solution found at generation 45: 177.5800 (maxSP: 980.0000)
+New best solution found at generation 50: 177.2900 (maxSP: 980.0000)
+Generation 50, Time: 0.29 s, Best: 177.2900, Avg fitness: 0.0050, Cache hit rate: 98.04%
+New best solution found at generation 59: 175.8550 (maxSP: 980.0000)
+New best solution found at generation 70: 174.2300 (maxSP: 980.0000)
+New best solution found at generation 88: 171.6500 (maxSP: 980.0000)
+New best solution found at generation 99: 167.8600 (maxSP: 980.0000)
+Generation 100, Time: 0.52 s, Best: 167.8600, Avg fitness: 0.0055, Cache hit rate: 99.01%
+New best solution found at generation 103: 167.8450 (maxSP: 980.0000)
+New best solution found at generation 105: 166.9250 (maxSP: 980.0000)
+New best solution found at generation 107: 166.6050 (maxSP: 980.0000)
+New best solution found at generation 133: 165.2950 (maxSP: 980.0000)
+Generation 150, Time: 0.74 s, Best: 165.2950, Avg fitness: 0.0060, Cache hit rate: 99.34%
+New best solution found at generation 160: 162.9000 (maxSP: 980.0000)
+New best solution found at generation 165: 160.9750 (maxSP: 980.0000)
+New best solution found at generation 178: 160.9100 (maxSP: 980.0000)
+Generation 200, Time: 0.96 s, Best: 160.9100, Avg fitness: 0.0058, Cache hit rate: 99.50%
+New best solution found at generation 214: 160.5600 (maxSP: 980.0000)
+Generation 250, Time: 1.18 s, Best: 160.5600, Avg fitness: 0.0062, Cache hit rate: 99.60%
+New best solution found at generation 253: 160.5250 (maxSP: 980.0000)
+New best solution found at generation 262: 160.1850 (maxSP: 980.0000)
+Generation 300, Time: 1.40 s, Best: 160.1850, Avg fitness: 0.0053, Cache hit rate: 99.67%
+Generation 350, Time: 1.61 s, Best: 160.1850, Avg fitness: 0.0058, Cache hit rate: 99.72%
+New best solution found at generation 362: 158.6650 (maxSP: 994.0000)
+New best solution found at generation 395: 158.2750 (maxSP: 994.0000)
+Generation 400, Time: 1.83 s, Best: 158.2750, Avg fitness: 0.0059, Cache hit rate: 99.75%
+Generation 450, Time: 2.04 s, Best: 158.2750, Avg fitness: 0.0053, Cache hit rate: 99.78%
+Generation 500, Time: 2.26 s, Best: 158.2750, Avg fitness: 0.0050, Cache hit rate: 99.80%
+Generation 550, Time: 2.47 s, Best: 158.2750, Avg fitness: 0.0059, Cache hit rate: 99.82%
+Generation 600, Time: 2.69 s, Best: 158.2750, Avg fitness: 0.0059, Cache hit rate: 99.83%
+New best solution found at generation 607: 157.7900 (maxSP: 994.0000)
+Generation 650, Time: 2.90 s, Best: 157.7900, Avg fitness: 0.0054, Cache hit rate: 99.85%
+Generation 700, Time: 3.12 s, Best: 157.7900, Avg fitness: 0.0053, Cache hit rate: 99.86%
+Generation 750, Time: 3.34 s, Best: 157.7900, Avg fitness: 0.0060, Cache hit rate: 99.87%
+Generation 800, Time: 3.55 s, Best: 157.7900, Avg fitness: 0.0060, Cache hit rate: 99.88%
+Generation 850, Time: 3.76 s, Best: 157.7900, Avg fitness: 0.0054, Cache hit rate: 99.88%
+Generation 900, Time: 3.97 s, Best: 157.7900, Avg fitness: 0.0053, Cache hit rate: 99.89%
+New best solution found at generation 932: 157.5350 (maxSP: 994.0000)
+Generation 950, Time: 4.18 s, Best: 157.5350, Avg fitness: 0.0063, Cache hit rate: 99.89%
+Generation 1000, Time: 4.39 s, Best: 157.5350, Avg fitness: 0.0063, Cache hit rate: 99.90%
+Generation 1050, Time: 4.61 s, Best: 157.5350, Avg fitness: 0.0060, Cache hit rate: 99.90%
+Generation 1100, Time: 4.82 s, Best: 157.5350, Avg fitness: 0.0050, Cache hit rate: 99.91%
+Generation 1150, Time: 5.02 s, Best: 157.5350, Avg fitness: 0.0056, Cache hit rate: 99.91%
+Generation 1200, Time: 5.23 s, Best: 157.5350, Avg fitness: 0.0057, Cache hit rate: 99.92%
+Generation 1250, Time: 5.43 s, Best: 157.5350, Avg fitness: 0.0056, Cache hit rate: 99.92%
+New best solution found at generation 1262: 157.3600 (maxSP: 994.0000)
+New best solution found at generation 1280: 156.1850 (maxSP: 994.0000)
+New best solution found at generation 1299: 154.4900 (maxSP: 1000.0000)
+Generation 1300, Time: 5.64 s, Best: 154.4900, Avg fitness: 0.0054, Cache hit rate: 99.92%
+New best solution found at generation 1305: 153.9500 (maxSP: 1000.0000)
+New best solution found at generation 1311: 153.5950 (maxSP: 1000.0000)
+New best solution found at generation 1319: 149.5550 (maxSP: 1000.0000)
+Generation 1350, Time: 5.86 s, Best: 149.5550, Avg fitness: 0.0063, Cache hit rate: 99.93%
+Generation 1400, Time: 6.07 s, Best: 149.5550, Avg fitness: 0.0059, Cache hit rate: 99.93%
+Generation 1450, Time: 6.28 s, Best: 149.5550, Avg fitness: 0.0053, Cache hit rate: 99.93%
+Generation 1500, Time: 6.49 s, Best: 149.5550, Avg fitness: 0.0059, Cache hit rate: 99.93%
+Generation 1550, Time: 6.70 s, Best: 149.5550, Avg fitness: 0.0060, Cache hit rate: 99.94%
+Generation 1600, Time: 6.91 s, Best: 149.5550, Avg fitness: 0.0053, Cache hit rate: 99.94%
+New best solution found at generation 1610: 149.4400 (maxSP: 1000.0000)
+Generation 1650, Time: 7.12 s, Best: 149.4400, Avg fitness: 0.0056, Cache hit rate: 99.94%
+Generation 1700, Time: 7.34 s, Best: 149.4400, Avg fitness: 0.0063, Cache hit rate: 99.94%
+Generation 1750, Time: 7.55 s, Best: 149.4400, Avg fitness: 0.0060, Cache hit rate: 99.94%
+New best solution found at generation 1763: 149.2350 (maxSP: 1000.0000)
+Generation 1800, Time: 7.77 s, Best: 149.2350, Avg fitness: 0.0057, Cache hit rate: 99.94%
+Generation 1850, Time: 7.99 s, Best: 149.2350, Avg fitness: 0.0063, Cache hit rate: 99.95%
+Generation 1900, Time: 8.21 s, Best: 149.2350, Avg fitness: 0.0063, Cache hit rate: 99.95%
+Generation 1950, Time: 8.41 s, Best: 149.2350, Avg fitness: 0.0060, Cache hit rate: 99.95%
+Generation 2000, Time: 8.62 s, Best: 149.2350, Avg fitness: 0.0063, Cache hit rate: 99.95%
+Generation 2050, Time: 8.82 s, Best: 149.2350, Avg fitness: 0.0066, Cache hit rate: 99.95%
+New best solution found at generation 2077: 149.2200 (maxSP: 1000.0000)
+Generation 2100, Time: 9.02 s, Best: 149.2200, Avg fitness: 0.0062, Cache hit rate: 99.95%
+New best solution found at generation 2140: 148.6200 (maxSP: 1000.0000)
+Generation 2150, Time: 9.22 s, Best: 148.6200, Avg fitness: 0.0067, Cache hit rate: 99.95%
+Generation 2200, Time: 9.43 s, Best: 148.6200, Avg fitness: 0.0063, Cache hit rate: 99.95%
+New best solution found at generation 2214: 148.1250 (maxSP: 1000.0000)
+Generation 2250, Time: 9.63 s, Best: 148.1250, Avg fitness: 0.0057, Cache hit rate: 99.96%
+Generation 2300, Time: 9.84 s, Best: 148.1250, Avg fitness: 0.0064, Cache hit rate: 99.96%
+Generation 2350, Time: 10.05 s, Best: 148.1250, Avg fitness: 0.0064, Cache hit rate: 99.96%
+Generation 2400, Time: 10.27 s, Best: 148.1250, Avg fitness: 0.0067, Cache hit rate: 99.96%
+Generation 2450, Time: 10.48 s, Best: 148.1250, Avg fitness: 0.0060, Cache hit rate: 99.96%
+Generation 2500, Time: 10.69 s, Best: 148.1250, Avg fitness: 0.0050, Cache hit rate: 99.96%
+New best solution found at generation 2512: 147.4750 (maxSP: 1000.0000)
+Generation 2550, Time: 10.92 s, Best: 147.4750, Avg fitness: 0.0061, Cache hit rate: 99.96%
+Generation 2600, Time: 11.14 s, Best: 147.4750, Avg fitness: 0.0061, Cache hit rate: 99.96%
+Generation 2650, Time: 11.37 s, Best: 147.4750, Avg fitness: 0.0064, Cache hit rate: 99.96%
+New best solution found at generation 2700: 147.4000 (maxSP: 1000.0000)
+Generation 2700, Time: 11.60 s, Best: 147.4000, Avg fitness: 0.0067, Cache hit rate: 99.96%
+Generation 2750, Time: 11.82 s, Best: 147.4000, Avg fitness: 0.0063, Cache hit rate: 99.96%
+Generation 2800, Time: 12.04 s, Best: 147.4000, Avg fitness: 0.0057, Cache hit rate: 99.96%
+Generation 2850, Time: 12.26 s, Best: 147.4000, Avg fitness: 0.0054, Cache hit rate: 99.96%
+Generation 2900, Time: 12.48 s, Best: 147.4000, Avg fitness: 0.0067, Cache hit rate: 99.97%
+Generation 2950, Time: 12.69 s, Best: 147.4000, Avg fitness: 0.0061, Cache hit rate: 99.97%
+Generation 3000, Time: 12.90 s, Best: 147.4000, Avg fitness: 0.0064, Cache hit rate: 99.97%
+Generation 3050, Time: 13.11 s, Best: 147.4000, Avg fitness: 0.0066, Cache hit rate: 99.97%
+Generation 3100, Time: 13.33 s, Best: 147.4000, Avg fitness: 0.0064, Cache hit rate: 99.97%
+Generation 3150, Time: 13.54 s, Best: 147.4000, Avg fitness: 0.0063, Cache hit rate: 99.97%
+Generation 3200, Time: 13.75 s, Best: 147.4000, Avg fitness: 0.0061, Cache hit rate: 99.97%
+Generation 3250, Time: 13.96 s, Best: 147.4000, Avg fitness: 0.0060, Cache hit rate: 99.97%
+New best solution found at generation 3257: 147.1550 (maxSP: 1000.0000)
+Generation 3300, Time: 14.18 s, Best: 147.1550, Avg fitness: 0.0063, Cache hit rate: 99.97%
+Generation 3350, Time: 14.39 s, Best: 147.1550, Avg fitness: 0.0064, Cache hit rate: 99.97%
+Generation 3400, Time: 14.61 s, Best: 147.1550, Avg fitness: 0.0064, Cache hit rate: 99.97%
+Generation 3450, Time: 14.82 s, Best: 147.1550, Avg fitness: 0.0063, Cache hit rate: 99.97%
+Generation 3500, Time: 15.03 s, Best: 147.1550, Avg fitness: 0.0061, Cache hit rate: 99.97%
+Generation 3550, Time: 15.25 s, Best: 147.1550, Avg fitness: 0.0061, Cache hit rate: 99.97%
+Generation 3600, Time: 15.47 s, Best: 147.1550, Avg fitness: 0.0057, Cache hit rate: 99.97%
+Generation 3650, Time: 15.68 s, Best: 147.1550, Avg fitness: 0.0064, Cache hit rate: 99.97%
+Generation 3700, Time: 15.90 s, Best: 147.1550, Avg fitness: 0.0051, Cache hit rate: 99.97%
+Generation 3750, Time: 16.10 s, Best: 147.1550, Avg fitness: 0.0061, Cache hit rate: 99.97%
+Generation 3800, Time: 16.32 s, Best: 147.1550, Avg fitness: 0.0061, Cache hit rate: 99.97%
+Generation 3850, Time: 16.53 s, Best: 147.1550, Avg fitness: 0.0064, Cache hit rate: 99.97%
+Generation 3900, Time: 16.74 s, Best: 147.1550, Avg fitness: 0.0057, Cache hit rate: 99.97%
+Generation 3950, Time: 16.95 s, Best: 147.1550, Avg fitness: 0.0061, Cache hit rate: 99.97%
+New best solution found at generation 3978: 144.6950 (maxSP: 1000.0000)
+Generation 4000, Time: 17.17 s, Best: 144.6950, Avg fitness: 0.0064, Cache hit rate: 99.98%
+Generation 4050, Time: 17.40 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 4100, Time: 17.62 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 4150, Time: 17.84 s, Best: 144.6950, Avg fitness: 0.0061, Cache hit rate: 99.98%
+Generation 4200, Time: 18.06 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 4250, Time: 18.28 s, Best: 144.6950, Avg fitness: 0.0064, Cache hit rate: 99.98%
+Generation 4300, Time: 18.50 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 4350, Time: 18.72 s, Best: 144.6950, Avg fitness: 0.0068, Cache hit rate: 99.98%
+Generation 4400, Time: 18.98 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 4450, Time: 19.20 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 4500, Time: 19.41 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 4550, Time: 19.63 s, Best: 144.6950, Avg fitness: 0.0064, Cache hit rate: 99.98%
+Generation 4600, Time: 19.85 s, Best: 144.6950, Avg fitness: 0.0061, Cache hit rate: 99.98%
+Generation 4650, Time: 20.07 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 4700, Time: 20.30 s, Best: 144.6950, Avg fitness: 0.0061, Cache hit rate: 99.98%
+Generation 4750, Time: 20.53 s, Best: 144.6950, Avg fitness: 0.0068, Cache hit rate: 99.98%
+Generation 4800, Time: 20.76 s, Best: 144.6950, Avg fitness: 0.0055, Cache hit rate: 99.98%
+Generation 4850, Time: 20.99 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 4900, Time: 21.21 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 4950, Time: 21.41 s, Best: 144.6950, Avg fitness: 0.0069, Cache hit rate: 99.98%
+Generation 5000, Time: 21.62 s, Best: 144.6950, Avg fitness: 0.0061, Cache hit rate: 99.98%
+Generation 5050, Time: 21.83 s, Best: 144.6950, Avg fitness: 0.0058, Cache hit rate: 99.98%
+Generation 5100, Time: 22.04 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 5150, Time: 22.26 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 5200, Time: 22.47 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 5250, Time: 22.68 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 5300, Time: 22.89 s, Best: 144.6950, Avg fitness: 0.0058, Cache hit rate: 99.98%
+Generation 5350, Time: 23.09 s, Best: 144.6950, Avg fitness: 0.0064, Cache hit rate: 99.98%
+Generation 5400, Time: 23.28 s, Best: 144.6950, Avg fitness: 0.0061, Cache hit rate: 99.98%
+Generation 5450, Time: 23.47 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 5500, Time: 23.67 s, Best: 144.6950, Avg fitness: 0.0058, Cache hit rate: 99.98%
+Generation 5550, Time: 23.86 s, Best: 144.6950, Avg fitness: 0.0058, Cache hit rate: 99.98%
+Generation 5600, Time: 24.05 s, Best: 144.6950, Avg fitness: 0.0069, Cache hit rate: 99.98%
+Generation 5650, Time: 24.25 s, Best: 144.6950, Avg fitness: 0.0068, Cache hit rate: 99.98%
+Generation 5700, Time: 24.45 s, Best: 144.6950, Avg fitness: 0.0066, Cache hit rate: 99.98%
+Generation 5750, Time: 24.64 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 5800, Time: 24.83 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 5850, Time: 25.02 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 5900, Time: 25.22 s, Best: 144.6950, Avg fitness: 0.0068, Cache hit rate: 99.98%
+Generation 5950, Time: 25.42 s, Best: 144.6950, Avg fitness: 0.0061, Cache hit rate: 99.98%
+Generation 6000, Time: 25.61 s, Best: 144.6950, Avg fitness: 0.0064, Cache hit rate: 99.98%
+Generation 6050, Time: 25.81 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 6100, Time: 26.00 s, Best: 144.6950, Avg fitness: 0.0061, Cache hit rate: 99.98%
+Generation 6150, Time: 26.19 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 6200, Time: 26.38 s, Best: 144.6950, Avg fitness: 0.0058, Cache hit rate: 99.98%
+Generation 6250, Time: 26.58 s, Best: 144.6950, Avg fitness: 0.0061, Cache hit rate: 99.98%
+Generation 6300, Time: 26.77 s, Best: 144.6950, Avg fitness: 0.0061, Cache hit rate: 99.98%
+Generation 6350, Time: 26.96 s, Best: 144.6950, Avg fitness: 0.0061, Cache hit rate: 99.98%
+Generation 6400, Time: 27.15 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 6450, Time: 27.36 s, Best: 144.6950, Avg fitness: 0.0061, Cache hit rate: 99.98%
+Generation 6500, Time: 27.57 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 6550, Time: 27.78 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 6600, Time: 27.98 s, Best: 144.6950, Avg fitness: 0.0068, Cache hit rate: 99.98%
+Generation 6650, Time: 28.19 s, Best: 144.6950, Avg fitness: 0.0068, Cache hit rate: 99.98%
+Generation 6700, Time: 28.39 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.99%
+Generation 6750, Time: 28.59 s, Best: 144.6950, Avg fitness: 0.0068, Cache hit rate: 99.99%
+Generation 6800, Time: 28.80 s, Best: 144.6950, Avg fitness: 0.0058, Cache hit rate: 99.99%
+Generation 6850, Time: 29.02 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.99%
+Generation 6900, Time: 29.23 s, Best: 144.6950, Avg fitness: 0.0058, Cache hit rate: 99.99%
+Generation 6950, Time: 29.43 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.99%
+Generation 7000, Time: 29.62 s, Best: 144.6950, Avg fitness: 0.0065, Cache hit rate: 99.99%
+Generation 7050, Time: 29.81 s, Best: 144.6950, Avg fitness: 0.0062, Cache hit rate: 99.99%
+
+Optimized GA completed:
+Total generations: 7096
+Total time: 30.00 seconds
+Total evaluations: 141940
+Cache hits: 141920 (99.99%)
+Best objective: 144.6950
+Best max shortest path: 1000.0000
+Best solution: [20   30   65   67   83   94  107  110  129  144  173  177]
+Optimized Run 1 completed in 30.05 seconds
+Objective: 144.6950, MaxSP: 1000.0000, Valid: true
+
+--- OPTIMIZED RUN 2/10 ---
+Starting Optimized GA with popSize=20, mutRate=0.30, eliteCount=10, maxTime=30 seconds
+Pre-computing all shortest path distances...
+Distance pre-computation completed in 0.00 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+New best solution found at generation 4: 256.9150 (maxSP: 953.0000)
+New best solution found at generation 7: 256.5450 (maxSP: 953.0000)
+New best solution found at generation 8: 253.8550 (maxSP: 923.0000)
+New best solution found at generation 15: 245.1200 (maxSP: 934.0000)
+New best solution found at generation 19: 231.5300 (maxSP: 958.0000)
+New best solution found at generation 23: 227.1850 (maxSP: 969.0000)
+New best solution found at generation 27: 227.0300 (maxSP: 969.0000)
+New best solution found at generation 28: 223.2050 (maxSP: 969.0000)
+New best solution found at generation 31: 216.2350 (maxSP: 989.0000)
+New best solution found at generation 40: 205.5450 (maxSP: 989.0000)
+New best solution found at generation 49: 204.4350 (maxSP: 989.0000)
+Generation 50, Time: 0.24 s, Best: 204.4350, Avg fitness: 0.0045, Cache hit rate: 98.04%
+New best solution found at generation 53: 201.5650 (maxSP: 989.0000)
+New best solution found at generation 56: 201.0150 (maxSP: 989.0000)
+New best solution found at generation 60: 192.1500 (maxSP: 989.0000)
+New best solution found at generation 64: 191.8100 (maxSP: 989.0000)
+New best solution found at generation 93: 191.7000 (maxSP: 989.0000)
+New best solution found at generation 97: 190.8650 (maxSP: 989.0000)
+Generation 100, Time: 0.45 s, Best: 190.8650, Avg fitness: 0.0049, Cache hit rate: 99.01%
+New best solution found at generation 110: 189.9700 (maxSP: 989.0000)
+New best solution found at generation 113: 187.8700 (maxSP: 989.0000)
+New best solution found at generation 120: 186.9000 (maxSP: 989.0000)
+New best solution found at generation 128: 186.8050 (maxSP: 989.0000)
+New best solution found at generation 131: 184.1700 (maxSP: 989.0000)
+New best solution found at generation 138: 181.9400 (maxSP: 989.0000)
+New best solution found at generation 144: 179.7700 (maxSP: 963.0000)
+Generation 150, Time: 0.66 s, Best: 179.7700, Avg fitness: 0.0050, Cache hit rate: 99.34%
+New best solution found at generation 168: 179.5450 (maxSP: 963.0000)
+New best solution found at generation 174: 178.6850 (maxSP: 963.0000)
+New best solution found at generation 177: 178.2750 (maxSP: 963.0000)
+New best solution found at generation 183: 177.7800 (maxSP: 963.0000)
+New best solution found at generation 184: 175.7250 (maxSP: 992.0000)
+New best solution found at generation 198: 173.2950 (maxSP: 992.0000)
+Generation 200, Time: 0.87 s, Best: 173.2950, Avg fitness: 0.0053, Cache hit rate: 99.50%
+New best solution found at generation 205: 166.2500 (maxSP: 992.0000)
+Generation 250, Time: 1.07 s, Best: 166.2500, Avg fitness: 0.0054, Cache hit rate: 99.60%
+New best solution found at generation 264: 163.7000 (maxSP: 992.0000)
+New best solution found at generation 269: 163.6350 (maxSP: 992.0000)
+Generation 300, Time: 1.28 s, Best: 163.6350, Avg fitness: 0.0049, Cache hit rate: 99.67%
+New best solution found at generation 311: 159.5750 (maxSP: 992.0000)
+New best solution found at generation 337: 158.6700 (maxSP: 992.0000)
+Generation 350, Time: 1.49 s, Best: 158.6700, Avg fitness: 0.0056, Cache hit rate: 99.72%
+New best solution found at generation 369: 158.2450 (maxSP: 992.0000)
+New best solution found at generation 386: 157.9650 (maxSP: 992.0000)
+Generation 400, Time: 1.70 s, Best: 157.9650, Avg fitness: 0.0053, Cache hit rate: 99.75%
+New best solution found at generation 402: 157.8300 (maxSP: 992.0000)
+New best solution found at generation 408: 156.4200 (maxSP: 992.0000)
+New best solution found at generation 421: 155.9600 (maxSP: 992.0000)
+Generation 450, Time: 1.90 s, Best: 155.9600, Avg fitness: 0.0060, Cache hit rate: 99.78%
+New best solution found at generation 497: 155.6100 (maxSP: 992.0000)
+Generation 500, Time: 2.10 s, Best: 155.6100, Avg fitness: 0.0060, Cache hit rate: 99.80%
+New best solution found at generation 501: 155.0300 (maxSP: 992.0000)
+New best solution found at generation 520: 154.9250 (maxSP: 992.0000)
+Generation 550, Time: 2.32 s, Best: 154.9250, Avg fitness: 0.0064, Cache hit rate: 99.82%
+New best solution found at generation 557: 154.9050 (maxSP: 992.0000)
+Generation 600, Time: 2.52 s, Best: 154.9050, Avg fitness: 0.0064, Cache hit rate: 99.83%
+New best solution found at generation 626: 154.6250 (maxSP: 997.0000)
+New best solution found at generation 633: 153.6900 (maxSP: 997.0000)
+Generation 650, Time: 2.73 s, Best: 153.6900, Avg fitness: 0.0055, Cache hit rate: 99.85%
+Generation 700, Time: 2.93 s, Best: 153.6900, Avg fitness: 0.0058, Cache hit rate: 99.86%
+Generation 750, Time: 3.13 s, Best: 153.6900, Avg fitness: 0.0061, Cache hit rate: 99.87%
+New best solution found at generation 797: 152.6350 (maxSP: 997.0000)
+Generation 800, Time: 3.36 s, Best: 152.6350, Avg fitness: 0.0061, Cache hit rate: 99.88%
+New best solution found at generation 839: 151.8600 (maxSP: 997.0000)
+Generation 850, Time: 3.56 s, Best: 151.8600, Avg fitness: 0.0062, Cache hit rate: 99.88%
+New best solution found at generation 857: 151.7500 (maxSP: 997.0000)
+New best solution found at generation 881: 150.2100 (maxSP: 998.0000)
+Generation 900, Time: 3.78 s, Best: 150.2100, Avg fitness: 0.0063, Cache hit rate: 99.89%
+Generation 950, Time: 3.99 s, Best: 150.2100, Avg fitness: 0.0063, Cache hit rate: 99.89%
+Generation 1000, Time: 4.20 s, Best: 150.2100, Avg fitness: 0.0066, Cache hit rate: 99.90%
+New best solution found at generation 1024: 150.0850 (maxSP: 998.0000)
+Generation 1050, Time: 4.42 s, Best: 150.0850, Avg fitness: 0.0063, Cache hit rate: 99.90%
+Generation 1100, Time: 4.63 s, Best: 150.0850, Avg fitness: 0.0053, Cache hit rate: 99.91%
+Generation 1150, Time: 4.84 s, Best: 150.0850, Avg fitness: 0.0059, Cache hit rate: 99.91%
+Generation 1200, Time: 5.05 s, Best: 150.0850, Avg fitness: 0.0056, Cache hit rate: 99.92%
+Generation 1250, Time: 5.25 s, Best: 150.0850, Avg fitness: 0.0059, Cache hit rate: 99.92%
+Generation 1300, Time: 5.47 s, Best: 150.0850, Avg fitness: 0.0059, Cache hit rate: 99.92%
+Generation 1350, Time: 5.67 s, Best: 150.0850, Avg fitness: 0.0059, Cache hit rate: 99.93%
+Generation 1400, Time: 5.87 s, Best: 150.0850, Avg fitness: 0.0059, Cache hit rate: 99.93%
+Generation 1450, Time: 6.08 s, Best: 150.0850, Avg fitness: 0.0060, Cache hit rate: 99.93%
+Generation 1500, Time: 6.30 s, Best: 150.0850, Avg fitness: 0.0066, Cache hit rate: 99.93%
+Generation 1550, Time: 6.50 s, Best: 150.0850, Avg fitness: 0.0056, Cache hit rate: 99.94%
+New best solution found at generation 1586: 149.9450 (maxSP: 998.0000)
+Generation 1600, Time: 6.72 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.94%
+Generation 1650, Time: 6.93 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.94%
+Generation 1700, Time: 7.14 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.94%
+Generation 1750, Time: 7.35 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.94%
+Generation 1800, Time: 7.56 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.94%
+Generation 1850, Time: 7.76 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.95%
+Generation 1900, Time: 7.97 s, Best: 149.9450, Avg fitness: 0.0060, Cache hit rate: 99.95%
+Generation 1950, Time: 8.17 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.95%
+Generation 2000, Time: 8.37 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.95%
+Generation 2050, Time: 8.58 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.95%
+Generation 2100, Time: 8.78 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.95%
+Generation 2150, Time: 8.98 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.95%
+Generation 2200, Time: 9.18 s, Best: 149.9450, Avg fitness: 0.0060, Cache hit rate: 99.95%
+Generation 2250, Time: 9.38 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.96%
+Generation 2300, Time: 9.58 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.96%
+Generation 2350, Time: 9.78 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.96%
+Generation 2400, Time: 9.98 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.96%
+Generation 2450, Time: 10.18 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.96%
+Generation 2500, Time: 10.37 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.96%
+Generation 2550, Time: 10.57 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.96%
+Generation 2600, Time: 10.77 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.96%
+Generation 2650, Time: 10.98 s, Best: 149.9450, Avg fitness: 0.0060, Cache hit rate: 99.96%
+Generation 2700, Time: 11.17 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.96%
+Generation 2750, Time: 11.37 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.96%
+Generation 2800, Time: 11.58 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.96%
+Generation 2850, Time: 11.77 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.96%
+Generation 2900, Time: 11.96 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.97%
+Generation 2950, Time: 12.16 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.97%
+Generation 3000, Time: 12.35 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.97%
+Generation 3050, Time: 12.55 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.97%
+Generation 3100, Time: 12.74 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.97%
+Generation 3150, Time: 12.93 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.97%
+Generation 3200, Time: 13.12 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.97%
+Generation 3250, Time: 13.31 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.97%
+Generation 3300, Time: 13.50 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.97%
+Generation 3350, Time: 13.69 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.97%
+Generation 3400, Time: 13.88 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.97%
+Generation 3450, Time: 14.08 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.97%
+Generation 3500, Time: 14.27 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.97%
+Generation 3550, Time: 14.46 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.97%
+Generation 3600, Time: 14.65 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.97%
+Generation 3650, Time: 14.84 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.97%
+Generation 3700, Time: 15.03 s, Best: 149.9450, Avg fitness: 0.0050, Cache hit rate: 99.97%
+Generation 3750, Time: 15.22 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.97%
+Generation 3800, Time: 15.41 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.97%
+Generation 3850, Time: 15.61 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.97%
+Generation 3900, Time: 15.80 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.97%
+Generation 3950, Time: 15.99 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.97%
+Generation 4000, Time: 16.19 s, Best: 149.9450, Avg fitness: 0.0060, Cache hit rate: 99.98%
+Generation 4050, Time: 16.38 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 4100, Time: 16.57 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.98%
+Generation 4150, Time: 16.77 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 4200, Time: 16.96 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.98%
+Generation 4250, Time: 17.15 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 4300, Time: 17.35 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.98%
+Generation 4350, Time: 17.54 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.98%
+Generation 4400, Time: 17.74 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 4450, Time: 17.93 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.98%
+Generation 4500, Time: 18.12 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.98%
+Generation 4550, Time: 18.32 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.98%
+Generation 4600, Time: 18.51 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.98%
+Generation 4650, Time: 18.70 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.98%
+Generation 4700, Time: 18.89 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.98%
+Generation 4750, Time: 19.09 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.98%
+Generation 4800, Time: 19.28 s, Best: 149.9450, Avg fitness: 0.0065, Cache hit rate: 99.98%
+Generation 4850, Time: 19.47 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.98%
+Generation 4900, Time: 19.67 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.98%
+Generation 4950, Time: 19.86 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.98%
+Generation 5000, Time: 20.05 s, Best: 149.9450, Avg fitness: 0.0053, Cache hit rate: 99.98%
+Generation 5050, Time: 20.25 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 5100, Time: 20.44 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.98%
+Generation 5150, Time: 20.64 s, Best: 149.9450, Avg fitness: 0.0060, Cache hit rate: 99.98%
+Generation 5200, Time: 20.83 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.98%
+Generation 5250, Time: 21.02 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.98%
+Generation 5300, Time: 21.22 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.98%
+Generation 5350, Time: 21.41 s, Best: 149.9450, Avg fitness: 0.0050, Cache hit rate: 99.98%
+Generation 5400, Time: 21.61 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.98%
+Generation 5450, Time: 21.80 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.98%
+Generation 5500, Time: 21.99 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.98%
+Generation 5550, Time: 22.19 s, Best: 149.9450, Avg fitness: 0.0043, Cache hit rate: 99.98%
+Generation 5600, Time: 22.38 s, Best: 149.9450, Avg fitness: 0.0060, Cache hit rate: 99.98%
+Generation 5650, Time: 22.57 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.98%
+Generation 5700, Time: 22.77 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.98%
+Generation 5750, Time: 22.96 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.98%
+Generation 5800, Time: 23.15 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.98%
+Generation 5850, Time: 23.35 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.98%
+Generation 5900, Time: 23.54 s, Best: 149.9450, Avg fitness: 0.0060, Cache hit rate: 99.98%
+Generation 5950, Time: 23.73 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.98%
+Generation 6000, Time: 23.93 s, Best: 149.9450, Avg fitness: 0.0053, Cache hit rate: 99.98%
+Generation 6050, Time: 24.12 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.98%
+Generation 6100, Time: 24.32 s, Best: 149.9450, Avg fitness: 0.0060, Cache hit rate: 99.98%
+Generation 6150, Time: 24.51 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.98%
+Generation 6200, Time: 24.71 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 6250, Time: 24.91 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.98%
+Generation 6300, Time: 25.10 s, Best: 149.9450, Avg fitness: 0.0053, Cache hit rate: 99.98%
+Generation 6350, Time: 25.30 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.98%
+Generation 6400, Time: 25.49 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.98%
+Generation 6450, Time: 25.68 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 6500, Time: 25.88 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.98%
+Generation 6550, Time: 26.07 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 6600, Time: 26.26 s, Best: 149.9450, Avg fitness: 0.0066, Cache hit rate: 99.98%
+Generation 6650, Time: 26.46 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.98%
+Generation 6700, Time: 26.65 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.99%
+Generation 6750, Time: 26.85 s, Best: 149.9450, Avg fitness: 0.0053, Cache hit rate: 99.99%
+Generation 6800, Time: 27.04 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.99%
+Generation 6850, Time: 27.24 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.99%
+Generation 6900, Time: 27.43 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.99%
+Generation 6950, Time: 27.63 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.99%
+Generation 7000, Time: 27.82 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.99%
+Generation 7050, Time: 28.02 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.99%
+Generation 7100, Time: 28.21 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.99%
+Generation 7150, Time: 28.41 s, Best: 149.9450, Avg fitness: 0.0060, Cache hit rate: 99.99%
+Generation 7200, Time: 28.60 s, Best: 149.9450, Avg fitness: 0.0060, Cache hit rate: 99.99%
+Generation 7250, Time: 28.79 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.99%
+Generation 7300, Time: 28.99 s, Best: 149.9450, Avg fitness: 0.0062, Cache hit rate: 99.99%
+Generation 7350, Time: 29.18 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.99%
+Generation 7400, Time: 29.37 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.99%
+Generation 7450, Time: 29.57 s, Best: 149.9450, Avg fitness: 0.0056, Cache hit rate: 99.99%
+Generation 7500, Time: 29.76 s, Best: 149.9450, Avg fitness: 0.0059, Cache hit rate: 99.99%
+Generation 7550, Time: 29.96 s, Best: 149.9450, Avg fitness: 0.0063, Cache hit rate: 99.99%
+
+Optimized GA completed:
+Total generations: 7561
+Total time: 30.00 seconds
+Total evaluations: 151240
+Cache hits: 151220 (99.99%)
+Best objective: 149.9450
+Best max shortest path: 998.0000
+Best solution: [18   29   30   59   63  107  110  111  122  138  154  163]
+Optimized Run 2 completed in 30.03 seconds
+Objective: 149.9450, MaxSP: 998.0000, Valid: true
+{Operation terminated by user during <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('writepng', 'D:\Program Files\MATLAB\R2024b\toolbox\matlab\matlab_im\private\writepng.m', 316)" style="font-weight:bold">writepng</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2024b\toolbox\matlab\matlab_im\private\writepng.m',316,0)">line 316</a>)
+
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('imwrite', 'D:\Program Files\MATLAB\R2024b\toolbox\matlab\matlab_im\imwrite.m', 575)" style="font-weight:bold">imwrite</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2024b\toolbox\matlab\matlab_im\imwrite.m',575,0)">line 575</a>)
+        feval(fmt_s.write, data, map, filename, paramPairs{:});
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In matlab.graphics.internal.mlprintjob/writeRaster
+
+In printingGenerateOutput
+
+In alternatePrintPath
+
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('print', 'D:\Program Files\MATLAB\R2024b\toolbox\matlab\graphics\graphics\printing\print.m', 90)" style="font-weight:bold">print</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2024b\toolbox\matlab\graphics\graphics\printing\print.m',90,0)">line 90</a>)
+pj = alternatePrintPath(pj);
+     ^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('saveas', 'D:\Program Files\MATLAB\R2024b\toolbox\matlab\general\saveas.m', 181)" style="font-weight:bold">saveas</a> (<a href="matlab: opentoline('D:\Program Files\MATLAB\R2024b\toolbox\matlab\general\saveas.m',181,0)">line 181</a>)
+        print( h, name, ['-d' dev{i}] )
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('createConvergencePlot', 'D:\mei-so-2\src\GA\analysis\createConvergencePlot.m', 58)" style="font-weight:bold">createConvergencePlot</a> (<a href="matlab: opentoline('D:\mei-so-2\src\GA\analysis\createConvergencePlot.m',58,0)">line 58</a>)
+    saveas(gcf, sprintf('plots/convergence/time_convergence_run_%d_%s.png', runNumber, timestamp));
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('runGA_optimized', 'D:\mei-so-2\src\GA\runners\runGA_optimized.m', 62)" style="font-weight:bold">runGA_optimized</a> (<a href="matlab: opentoline('D:\mei-so-2\src\GA\runners\runGA_optimized.m',62,0)">line 62</a>)
+            createConvergencePlot(runResults, run, timestamp);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main', 'D:\mei-so-2\src\GA\main.m', 73)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('D:\mei-so-2\src\GA\main.m',73,0)">line 73</a>)
+            runGA_optimized(config);
+            ^^^^^^^^^^^^^^^^^^^^^^^
+} 
+main('full')
+Loaded best parameters from previous tuning.
+=== GA FULL EXECUTION MODE ===
+Date and Time: 04-Jun-2025 04:53:19
+==============================
+

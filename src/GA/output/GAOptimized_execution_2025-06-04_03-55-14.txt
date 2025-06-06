@@ -1,0 +1,40 @@
+=== OPTIMIZED GA EXECUTION ===
+Date and Time: 04-Jun-2025 03:55:14
+===============================
+
+Loaded network with 200 nodes and 500 links
+Network loaded: 200 nodes, 500 links
+Problem parameters: n=12, Cmax=1000
+
+Optimized GA Parameters:
+Population Size: 20
+Mutation Rate: 0.30
+Elite Count: 10
+Number of runs: 10
+Time per run: 30 seconds
+
+
+--- OPTIMIZED RUN 1/10 ---
+Starting Optimized GA with popSize=20, mutRate=0.30, eliteCount=10, maxTime=30 seconds
+Pre-computing all shortest path distances...
+Distance pre-computation completed in 0.00 seconds
+Initializing 20 random individuals...
+Population initialization completed.
+{Unrecognized function or variable 'evaluateFitnessCached'.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('GAOptimized', 'D:\mei-so-2\src\GA\core\GAOptimized.m', 61)" style="font-weight:bold">GAOptimized</a> (<a href="matlab: opentoline('D:\mei-so-2\src\GA\core\GAOptimized.m',61,0)">line 61</a>)
+            evaluateFitnessCached(population{i}, D, nNodes, Cmax, fitnessCache);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('runGA_optimized', 'D:\mei-so-2\src\GA\runners\runGA_optimized.m', 38)" style="font-weight:bold">runGA_optimized</a> (<a href="matlab: opentoline('D:\mei-so-2\src\GA\runners\runGA_optimized.m',38,0)">line 38</a>)
+        [solution, objective, maxSP, runResults] = GAOptimized(G, config.problem.n, config.problem.Cmax, ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main', 'D:\mei-so-2\src\GA\main.m', 62)" style="font-weight:bold">main</a> (<a href="matlab: opentoline('D:\mei-so-2\src\GA\main.m',62,0)">line 62</a>)
+            runGA_optimized(config);
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+main('full')
+Loaded best parameters from previous tuning.
+=== GA FULL EXECUTION MODE ===
+Date and Time: 04-Jun-2025 04:12:24
+==============================
+
