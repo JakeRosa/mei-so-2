@@ -1,4 +1,4 @@
-function solution = greedyRandomizedOptimized(G, n, r, Cmax, cache)
+function solution = greedyRandomizedOptimized(G, D, n, r, Cmax, cache)
 % Optimized Greedy Randomized construction with caching for the Server Node Selection problem
 % Inputs:
 %   G - graph representing the network
@@ -41,7 +41,7 @@ function solution = greedyRandomizedOptimized(G, n, r, Cmax, cache)
                 stats.hits = stats.hits + 1;
             else
                 % Evaluate objective function
-                [avgSP, maxSP] = PerfSNS(G, tempSolution);
+                [avgSP, maxSP] = optimizedPerfSNS(D, tempSolution);
                 
                 % Store in cache
                 result = struct('avgSP', avgSP, 'maxSP', maxSP);

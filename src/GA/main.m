@@ -112,11 +112,16 @@ function main(varargin)
             fprintf('Date and Time: %s\n', datestr(now));
             fprintf('========================\n\n');
             
-            if exist('results/GA_results.mat', 'file') || exist('results/GAOptimized_results.mat', 'file')
-                runStandaloneAnalysis();
-            else
-                fprintf('Error: No results found. Please run GA first.\n');
-            end
+            runStandaloneAnalysis(false);
+        
+
+        case "analysis-opt"
+            fprintf('=== GA OPTIMIZED ANALYSIS MODE ===\n');
+            fprintf('Date and Time: %s\n', datestr(now));
+            fprintf('==================================\n\n');
+            
+            runStandaloneAnalysis(true);
+            
             
         case 'compare'
             fprintf('=== GA COMPARISON MODE ===\n');

@@ -1,12 +1,21 @@
-function runStandaloneAnalysis()
+function runStandaloneAnalysis(isOptimized)
 % Run standalone analysis on existing GA results
+
+    addpath("plots\")
 
     fprintf('=== GA STANDALONE ANALYSIS ===\n');
     fprintf('Date and Time: %s\n', datestr(now));
     fprintf('==============================\n\n');
     
     % Load most recent results
-    resultFiles = dir('results/GA_results_*.mat');
+
+    if isOptimized
+        fprintf('Loading optimized GA results...\n');
+        resultFiles = dir('results/GAOptimized_results_2025-06-06_18-50-26.mat');
+    else
+        fprintf('Loading standard GA results...\n');
+        resultFiles = dir('results/GA_results_*.mat');
+    end
     
     if isempty(resultFiles)
         fprintf('No GA results found in results directory.\n');
@@ -222,6 +231,9 @@ function analyzeNodeFrequency(allResults)
 end
 
 function createDetailedAnalysisPlots(allResults, timestamp)
+
+    addpath("..\plots\")
+
     % Create additional detailed analysis plots
     
     validResults = allResults([allResults.valid]);

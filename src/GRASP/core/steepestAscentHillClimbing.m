@@ -1,4 +1,4 @@
-function bestSolution = steepestAscentHillClimbing(G, initialSolution, Cmax)
+function bestSolution = steepestAscentHillClimbing(G, D, initialSolution, Cmax)
 % Steepest Ascent Hill Climbing for local search improvement
 % Inputs:
 %   G - graph representing the network
@@ -8,7 +8,7 @@ function bestSolution = steepestAscentHillClimbing(G, initialSolution, Cmax)
 %   bestSolution - improved solution after local search
 
     bestSolution = initialSolution;
-    [bestObjective, ~] = PerfSNS(G, bestSolution);
+    [bestObjective, ~] = optimizedPerfSNS(D, bestSolution);
     
     improved = true;
     
@@ -30,7 +30,7 @@ function bestSolution = steepestAscentHillClimbing(G, initialSolution, Cmax)
                 neighbor(i) = notSelected(j);
                 
                 % Check Cmax constraint
-                [avgSP, maxSP] = PerfSNS(G, neighbor);
+                [avgSP, maxSP] = optimizedPerfSNS(D, neighbor);
                 if maxSP > Cmax
                     continue; % Skip this neighbor as it violates constraint
                 end

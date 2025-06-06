@@ -79,26 +79,26 @@ end
 function showHelp()
     fprintf('GRASP Implementation - Available Commands:\n\n');
     
-    fprintf('📊 QUICK ANALYSIS:\n');
+    fprintf('QUICK ANALYSIS:\n');
     fprintf('  main(''existing'')     - Analyze existing results (fast)\n');
     fprintf('  main(''fresh'')        - Run fresh GRASP + analysis\n\n');
     
-    fprintf('🔬 SPECIFIC ANALYSIS:\n');
+    fprintf('SPECIFIC ANALYSIS:\n');
     fprintf('  main(''phase'')        - Phase contribution analysis\n');
     fprintf('  main(''nodes'')        - Node frequency analysis\n');
     fprintf('  main(''comparison'')   - Implementation comparison\n');
     fprintf('  main(''sensitivity'')  - Parameter sensitivity (slow)\n\n');
     
-    fprintf('🚀 FULL RUNS:\n');
+    fprintf('FULL RUNS:\n');
     fprintf('  main(''optimized'', ''analysis'')  - Optimized GRASP + all analysis\n');
     fprintf('  main(''analysis'')                 - Original GRASP + all analysis\n');
     fprintf('  main(''optimized'')                - Optimized GRASP only\n\n');
     
-    fprintf('💡 INTERACTIVE:\n');
+    fprintf('INTERACTIVE:\n');
     fprintf('  main(''menu'')         - Interactive menu\n');
     fprintf('  main(''help'')         - Show this help\n\n');
     
-    fprintf('📂 FILE ORGANIZATION:\n');
+    fprintf('FILE ORGANIZATION:\n');
     fprintf('  core/       - GRASP algorithm implementations\n');
     fprintf('  analysis/   - Analysis and visualization functions\n');
     fprintf('  runners/    - Main execution scripts\n');
@@ -113,9 +113,9 @@ function showInteractiveMenu()
     % Check for existing results
     hasResults = exist('results/GRASP_results.mat', 'file') == 2;
     if hasResults
-        fprintf('✓ Found existing GRASP results\n');
+        fprintf('Found existing GRASP results\n');
     else
-        fprintf('⚠ No existing results found\n');
+        fprintf('No existing results found\n');
     end
     
     fprintf('\nSelect an option:\n');
@@ -172,14 +172,14 @@ function runExistingAnalysis()
     fprintf('=== Quick Analysis of Existing Results ===\n');
     
     if exist('results/GRASP_results.mat', 'file') ~= 2
-        fprintf('❌ No existing results found.\n');
+        fprintf('No existing results found.\n');
         fprintf('Run main(''fresh'') to generate results first.\n');
         return;
     end
     
     fprintf('Analyzing existing GRASP results...\n');
     analyzeExistingResults();
-    fprintf('✓ Analysis complete! Check plots/ directory for visualizations.\n');
+    fprintf('Analysis complete! Check plots/ directory for visualizations.\n');
 end
 
 function runFreshAnalysis()
@@ -208,7 +208,7 @@ function runComparisonOnly()
             n, Cmax, r, maxTime, numRuns);
     
     compareOptimizations(G, n, Cmax, r, maxTime, numRuns);
-    fprintf('✓ Comparison complete!\n');
+    fprintf('Comparison complete!\n');
 end
 
 function runPhaseAnalysisOnly()
@@ -222,7 +222,7 @@ function runPhaseAnalysisOnly()
     fprintf('Parameters: n=%d, Cmax=%d, r=%d, numRuns=%d\n', n, Cmax, r, numRuns);
     
     analyzePhaseContribution(G, n, Cmax, r, numRuns);
-    fprintf('✓ Phase analysis complete!\n');
+    fprintf('Phase analysis complete!\n');
 end
 
 function runNodeAnalysisOnly()
@@ -253,7 +253,7 @@ end
 
 function runSensitivityOnly()
     fprintf('=== Parameter Sensitivity Analysis ===\n');
-    fprintf('⚠ Warning: This analysis may take 10-20 minutes to complete.\n');
+    fprintf('Warning: This analysis may take 10-20 minutes to complete.\n');
     
     proceed = input('Continue? (y/n): ', 's');
     if ~strcmpi(proceed, 'y')
@@ -267,5 +267,5 @@ function runSensitivityOnly()
     fprintf('Testing multiple r values and time limits...\n');
     
     plotParameterSensitivityHeatMap(G, n, Cmax);
-    fprintf('✓ Sensitivity analysis complete!\n');
+    fprintf('Sensitivity analysis complete!\n');
 end

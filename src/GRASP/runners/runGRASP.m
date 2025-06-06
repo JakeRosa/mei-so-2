@@ -64,7 +64,7 @@ function runGRASP(varargin)
     % Add parent directory for shared functions (loadData, PerfSNS, etc.)
     addpath(fullfile(graspDir, '..'));
     
-    fprintf('✓ Paths configured for organized GRASP structure\n');
+    fprintf('Paths configured for organized GRASP structure\n');
 
     % Load network data
     [G, nNodes, nLinks] = loadData();
@@ -77,7 +77,7 @@ function runGRASP(varargin)
     fprintf('=== PARAMETER TUNING ===\n');
 
     % Test different r values with multiple runs per parameter
-    rValues = [1, 2, 3, 5, 8, 10];
+    rValues = [2, 3, 5, 8, 10];
     testTime = 30; % seconds for each test run
     runsPerParameter = 5; % Number of runs per r value
 
