@@ -46,7 +46,7 @@ function sensitivityResults = plotParameterSensitivityHeatMap(G, n, Cmax, timeLi
                     configCount, totalConfigs, r, maxTime);
             
             % Run multiple GRASP instances for this configuration
-            numRuns = max(3, min(10, floor(60 / maxTime))); % Adaptive number of runs
+            numRuns = max(3, min(10, floor(60 / maxTime))); % Adaptive number of runs Example
             qualities = [];
             iterations = [];
             cacheHitRates = [];
@@ -292,18 +292,6 @@ function sensitivityResults = plotParameterSensitivityHeatMap(G, n, Cmax, timeLi
     fprintf('\nParameter sensitivity analysis complete!\n');
     fprintf('Results saved as: %s\n', resultsFilename);
     fprintf('Individual plots saved in: plots/parameters/\n');
-    
-    % Create individual detailed analysis plots
-    
-    % R parameter profile
-    figure('Position', [350, 350, 2200, 1600]);
-    errorbar(rValues, avgByR, nanstd(avgQuality, 0, 2), 'bo-', 'LineWidth', 3, 'MarkerSize', 10);
-    title('Solution Quality vs r Parameter', 'FontSize', 16, 'FontWeight', 'bold');
-    xlabel('r Parameter', 'FontSize', 14);
-    ylabel('Average Quality', 'FontSize', 14);
-    set(gca, 'FontSize', 12);
-    grid on; grid minor;
-    saveAnalysisPlot(gcf, 'parameters', 'quality_vs_r_parameter', timestamp);
     
     % Time parameter profile  
     figure('Position', [400, 400, 2200, 1600]);

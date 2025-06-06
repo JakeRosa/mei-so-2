@@ -193,40 +193,6 @@ function createPhaseAnalysisPlots(allResults, timestamp)
         close(gcf);
     end
     
-    %% Plot 7: Convergence speed analysis
-    figure('Position', [100, 100, 800, 600]);
-    convergenceSpeeds = [];
-    
-    for i = 1:length(validResults)
-        if isfield(validResults(i).runResults, 'objectives') && ...
-           isfield(validResults(i).runResults, 'times')
-            objectives = validResults(i).runResults.objectives;
-            times = validResults(i).runResults.times;
-            
-            if length(objectives) > 1 && length(times) > 1
-                % Find 90% convergence point
-                initialObj = objectives(1);
-                finalObj = objectives(end);
-                target = initialObj - 0.9 * (initialObj - finalObj);
-                
-                idx = find(objectives <= target, 1);
-                if ~isempty(idx) && idx <= length(times)
-                    convergenceSpeeds(end+1) = times(idx);
-                end
-            end
-        end
-    end
-    
-    if ~isempty(convergenceSpeeds)
-        histogram(convergenceSpeeds, 'BinMethod', 'auto');
-        xlabel('Time to 90% Convergence (seconds)');
-        ylabel('Frequency');
-        title('Convergence Speed Distribution');
-        grid on;
-        saveas(gcf, sprintf('plots/phases/convergence_speed_%s.png', timestamp));
-        close(gcf);
-    end
-    
     %% Plot 8: Stagnation analysis
     figure('Position', [100, 100, 800, 600]);
     stagnationLengths = [];

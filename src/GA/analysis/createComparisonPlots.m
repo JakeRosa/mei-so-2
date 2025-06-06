@@ -49,27 +49,6 @@ function createComparisonPlots(standardResults, optimizedResults, timestamp)
     saveas(gcf, sprintf('plots/comparison/runtime_comparison_%s.png', timestamp));
     close(gcf);
     
-    %% Plot 3: Success rate
-    figure('Position', [100, 100, 800, 600]);
-    successRates = [sum(standardValid)/length(standardValid), ...
-                    sum(optimizedValid)/length(optimizedValid)] * 100;
-    
-    bar(successRates);
-    set(gca, 'XTickLabel', labels);
-    ylabel('Success Rate (%)');
-    title('Solution Validity Comparison');
-    ylim([0, 110]);
-    grid on;
-    
-    % Add value labels
-    for i = 1:length(successRates)
-        text(i, successRates(i) + 2, sprintf('%.1f%%', successRates(i)), ...
-            'HorizontalAlignment', 'center');
-    end
-    
-    saveas(gcf, sprintf('plots/comparison/success_rate_%s.png', timestamp));
-    close(gcf);
-    
     %% Plot 4: Convergence comparison
     figure('Position', [100, 100, 800, 600]);
     

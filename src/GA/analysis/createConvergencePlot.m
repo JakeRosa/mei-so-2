@@ -35,19 +35,6 @@ function createConvergencePlot(results, runNumber, timestamp)
     saveas(gcf, sprintf('plots/convergence/objective_convergence_run_%d_%s.png', runNumber, timestamp));
     close(gcf);
     
-    % Plot 2: Fitness evolution
-    figure('Position', [100, 100, 800, 600]);
-    plot(generations, avgFitness, 'g-', 'LineWidth', 1.5);
-    hold on;
-    plot(generations, bestFitness, 'b-', 'LineWidth', 1.5);
-    xlabel('Generation');
-    ylabel('Fitness Value');
-    title(sprintf('Fitness Evolution - Run %d', runNumber));
-    legend('Average Fitness', 'Best Fitness', 'Location', 'best');
-    grid on;
-    saveas(gcf, sprintf('plots/convergence/fitness_evolution_run_%d_%s.png', runNumber, timestamp));
-    close(gcf);
-    
     % Plot 3: Objective value over time
     figure('Position', [100, 100, 800, 600]);
     plot(times, objectives, 'r-', 'LineWidth', 2);
@@ -81,18 +68,7 @@ function createConvergencePlot(results, runNumber, timestamp)
     
     % Additional plots for optimized GA with cache statistics
     if isfield(results, 'cacheHitRate') && ~isempty(results.cacheHitRate)
-        % Cache performance plot
-        figure('Position', [100, 100, 800, 600]);
-        plot(generations, results.cacheHitRate * 100, 'b-', 'LineWidth', 2);
-        xlabel('Generation');
-        ylabel('Cache Hit Rate (%)');
-        title(sprintf('Cache Performance - Run %d', runNumber));
-        grid on;
-        ylim([0, 100]);
-        saveas(gcf, sprintf('plots/convergence/cache_performance_run_%d_%s.png', runNumber, timestamp));
-        close(gcf);
-        
-        % Diversity metrics plot
+´´´        % Diversity metrics plot
         if isfield(results, 'diversityMetrics') && ~isempty(results.diversityMetrics)
             figure('Position', [100, 100, 800, 600]);
             plot(generations, results.diversityMetrics, 'g-', 'LineWidth', 2);

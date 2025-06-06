@@ -66,14 +66,6 @@ function createGASummaryPlots(allResults, timestamp)
     saveas(gcf, sprintf('plots/summary/max_shortest_path_%s.png', timestamp));
     close(gcf);
     
-    % Plot 3: Runtime analysis
-    figure('Position', [100, 100, 800, 600]);
-    bar(1:length(runTimes), runTimes);
-    xlabel('Run Number');
-    ylabel('Runtime (seconds)');
-    title('GA Execution Time by Run');
-    grid on;
-    
     % Add average line
     avgTime = mean(runTimes);
     hold on;
@@ -217,16 +209,6 @@ function createGASummaryPlots(allResults, timestamp)
                 'Units', 'normalized', 'VerticalAlignment', 'top');
         end
         saveas(gcf, sprintf('plots/summary/objective_vs_maxsp_%s.png', timestamp));
-        close(gcf);
-        
-        % Runtime vs Quality
-        figure('Position', [100, 100, 800, 600]);
-        scatter(validRunTimes, validObjectives, 50, 'filled');
-        xlabel('Runtime (seconds)');
-        ylabel('Objective Value');
-        title('Runtime vs Solution Quality');
-        grid on;
-        saveas(gcf, sprintf('plots/summary/runtime_vs_quality_%s.png', timestamp));
         close(gcf);
         
         % Cumulative best objective

@@ -61,13 +61,6 @@ function createParameterAnalysisPlots(results, timestamp)
     saveas(gcf, sprintf('plots/parameters/heatmap_mutrate_elitecount_%s.png', timestamp));
     close(gcf);
     
-    % Success Rate heatmap
-    figure('Position', [100, 100, 800, 600]);
-    createHeatmap(popSizes, mutRates, successRates, uniquePopSizes, uniqueMutRates, ...
-        'Population Size', 'Mutation Rate', 'Success Rate');
-    saveas(gcf, sprintf('plots/parameters/heatmap_success_rate_%s.png', timestamp));
-    close(gcf);
-    
     %% 3. Box plots for each parameter
     % Population Size effect
     figure('Position', [100, 100, 800, 600]);
@@ -143,24 +136,6 @@ function createParameterAnalysisPlots(results, timestamp)
     title('Parameter Importance');
     grid on;
     saveas(gcf, sprintf('plots/parameters/parameter_importance_%s.png', timestamp));
-    close(gcf);
-    
-    % Success rate by parameter
-    figure('Position', [100, 100, 800, 600]);
-    successByPop = arrayfun(@(ps) mean(successRates(popSizes == ps)), uniquePopSizes);
-    successByMut = arrayfun(@(mr) mean(successRates(mutRates == mr)), uniqueMutRates);
-    successByElite = arrayfun(@(ec) mean(successRates(eliteCounts == ec)), uniqueEliteCounts);
-    
-    plot(uniquePopSizes, successByPop, 'o-', 'LineWidth', 2);
-    hold on;
-    plot(uniqueMutRates * 1000, successByMut, 's-', 'LineWidth', 2);  % Scale for visibility
-    plot(uniqueEliteCounts * 10, successByElite, '^-', 'LineWidth', 2);  % Scale for visibility
-    xlabel('Parameter Value (scaled)');
-    ylabel('Average Success Rate');
-    title('Success Rate by Parameter');
-    legend('Pop Size', 'Mut Rate (×1000)', 'Elite Count (×10)');
-    grid on;
-    saveas(gcf, sprintf('plots/parameters/success_rate_by_parameter_%s.png', timestamp));
     close(gcf);
     
     % Top configurations table
