@@ -7,9 +7,6 @@ function offspring = crossover(parent1, parent2, n, nNodes)
 % Output:
 %   offspring - new individual created from parents
 
-    % Use Order Crossover (OX) adapted for set-based representation
-    % Since we need exactly n unique nodes, we'll use a modified approach
-
     % Method: Partially inherit from parents, fill gaps randomly
 
     % Determine crossover points
@@ -50,9 +47,6 @@ function offspring = crossover(parent1, parent2, n, nNodes)
         if length(remainingNodes) >= remainingToFill
             randomNodes = remainingNodes(randperm(length(remainingNodes), remainingToFill));
             offspring(emptyPositions((fillCount+1):end)) = randomNodes;
-        else
-            % Fallback: generate completely random solution
-            offspring = sort(randperm(nNodes, n));
         end
     end
 

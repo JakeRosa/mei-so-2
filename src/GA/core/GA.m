@@ -107,21 +107,7 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GA(G, n, Cmax, popu
         end
         
         % Elitist selection
-        population = elitistSelection(population, newPopulation, fitnessValues, newFitnessValues, eliteCount);
-        
-        % Re-evaluate population after selection (combine old and new evaluations)
-        combinedPopulation = [population; newPopulation];
-        combinedFitness = [fitnessValues; newFitnessValues];
-        combinedAvgSP = [avgSPValues; newAvgSPValues];
-        combinedMaxSP = [maxSPValues; newMaxSPValues];
-        
-        % Get final fitness values for selected population
-        [~, sortedIndices] = sort(combinedFitness, 'descend');
-        selectedIndices = sortedIndices(1:populationSize);
-        
-        fitnessValues = combinedFitness(selectedIndices);
-        avgSPValues = combinedAvgSP(selectedIndices);
-        maxSPValues = combinedMaxSP(selectedIndices);
+        [population, fitnessValues, avgSPValues, maxSPValues] = elitistSelection(population, newPopulation, fitnessValues, newFitnessValues, avgSPValues, newAvgSPValues, maxSPValues, newMaxSPValues, eliteCount);
         
         % Update best solution
         validIndices = maxSPValues <= Cmax;

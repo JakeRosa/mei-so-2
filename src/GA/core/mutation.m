@@ -1,4 +1,4 @@
-function mutatedIndividual = mutation(individual, nNodes, mutationRate)
+function mutatedIndividual = mutation(individual, nNodes)
 % Mutation operator
 % Inputs:
 %   individual - individual to mutate (vector of selected nodes)

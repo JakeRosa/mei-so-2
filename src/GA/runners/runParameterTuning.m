@@ -1,15 +1,28 @@
-function bestParams = runParameterTuning(config)
+function bestParams = runParameterTuning(config, useOptimized)
 % Run parameter tuning for GA
 % Returns the best parameters found
 
+    % Default to standard GA if not specified
+    if nargin < 2
+        useOptimized = false;
+    end
+    
+    % Determine which algorithm to use
+    if useOptimized
+        algorithmName = 'GAOptimized';
+    else
+        algorithmName = 'GA';
+    end
+    
     % Start diary
     timestamp = datestr(now, 'yyyy-mm-dd_HH-MM-SS');
-    diaryFile = sprintf('output/GA_tuning_%s.txt', timestamp);
+    diaryFile = sprintf('output/%s_tuning_%s.txt', algorithmName, timestamp);
     diary(diaryFile);
     diary on;
     
-    fprintf('=== GA PARAMETER TUNING ===\n');
+    fprintf('=== %s PARAMETER TUNING ===\n', algorithmName);
     fprintf('Date and Time: %s\n', datestr(now));
+    fprintf('Algorithm: %s\n', algorithmName);
     fprintf('===========================\n\n');
     
     % Load network data
@@ -40,6 +53,7 @@ function bestParams = runParameterTuning(config)
     
     bestParams = struct();
     bestTestObjective = inf;
+    bestMinObjective = inf;
     
     % Test each parameter combination
     for popSize = populationSizes
@@ -57,9 +71,13 @@ function bestParams = runParameterTuning(config)
                 for test = 1:numberOfTests
                     fprintf('  Test %d/%d: ', test, numberOfTests);
                     testStart = tic;
-                    
-                    [~, objective, maxSP, ~] = GA(G, config.problem.n, config.problem.Cmax, ...
-                        popSize, mutRate, eliteCount, testTime);
+                    if useOptimized
+                        [~, objective, maxSP, ~] = GAOptimized(G, config.problem.n, config.problem.Cmax, ...
+                            popSize, mutRate, eliteCount, testTime);
+                    else
+                        [~, objective, maxSP, ~] = GA(G, config.problem.n, config.problem.Cmax, ...
+                            popSize, mutRate, eliteCount, testTime);
+                    end
                     
                     testTimes(test) = toc(testStart);
                     testObjectives(test) = objective;
@@ -102,8 +120,9 @@ function bestParams = runParameterTuning(config)
                     allResults = [allResults, result];
                     
                     % Update best parameters
-                    if minObjective < bestTestObjective
-                        bestTestObjective = minObjective;
+                    if avgObjective < bestTestObjective
+                        bestTestObjective = avgObjective;
+                        bestMinObjective = minObjective;
                         bestParams.populationSize = popSize;
                         bestParams.mutationRate = mutRate;
                         bestParams.eliteCount = eliteCount;
@@ -117,6 +136,7 @@ function bestParams = runParameterTuning(config)
     
     % Analyze and display results
     fprintf('\n=== TUNING RESULTS SUMMARY ===\n');
+    fprintf('Algorithm: %s\n', algorithmName);
     fprintf('Total configurations tested: %d\n', totalTests);
     fprintf('Total individual tests: %d\n', totalTests * numberOfTests);
     
@@ -132,7 +152,8 @@ function bestParams = runParameterTuning(config)
         fprintf('Population Size: %d\n', bestParams.populationSize);
         fprintf('Mutation Rate: %.2f\n', bestParams.mutationRate);
         fprintf('Elite Count: %d\n', bestParams.eliteCount);
-        fprintf('Best objective achieved: %.4f\n', bestTestObjective);
+        fprintf('Best avg objective achieved: %.4f\n', bestTestObjective);
+        fprintf('Best min objective achieved: %.4f\n', bestMinObjective);
         
         % Find configuration with best average performance
         avgObjectives = [allResults.avgObjective];
@@ -161,11 +182,11 @@ function bestParams = runParameterTuning(config)
         end
         
         % Save best parameters
-        save('results/GA_best_params.mat', 'bestParams');
-        save(sprintf('results/GA_tuning_results_%s.mat', timestamp), 'allResults', 'bestParams');
+        save(sprintf('results/%s_best_params.mat', algorithmName), 'bestParams');
+        save(sprintf('results/%s_tuning_results_%s.mat', algorithmName, timestamp), 'allResults', 'bestParams');
         
-        fprintf('\nTuning results saved to results/GA_tuning_results_%s.mat\n', timestamp);
-        fprintf('Best parameters saved to results/GA_best_params.mat\n');
+        fprintf('\nTuning results saved to results/%s_tuning_results_%s.mat\n', algorithmName, timestamp);
+        fprintf('Best parameters saved to results/%s_best_params.mat\n', algorithmName);
     else
         fprintf('\nNo valid configurations found!\n');
     end

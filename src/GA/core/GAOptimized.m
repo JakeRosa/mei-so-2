@@ -8,6 +8,13 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GAOptimized(G, n, C
     addpath('../../'); % Add path to PerfSNS function
     nNodes = numnodes(G);
 
+    % PRE-COMPUTE ALL DISTANCES (MAJOR OPTIMIZATION)
+    fprintf('Pre-computing all shortest path distances...\n');
+    precomputeStart = tic;
+    D = distances(G); % NxN matrix with all pairwise distances
+    precomputeTime = toc(precomputeStart);
+    fprintf('Distance pre-computation completed in %.2f seconds\n', precomputeTime);
+
     % Initialize
     bestSolution = [];
     bestObjective = inf;
@@ -51,7 +58,7 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GAOptimized(G, n, C
 
     for i = 1:populationSize
         [fitnessValues(i), avgSPValues(i), maxSPValues(i), cacheHit] = ...
-            evaluateFitnessCached(population{i}, G, Cmax, fitnessCache);
+            evaluateFitnessOptimized(population{i}, D, nNodes, Cmax, fitnessCache);
         if cacheHit
             cacheHits = cacheHits + 1;
         end
@@ -104,7 +111,7 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GAOptimized(G, n, C
 
         for i = 1:populationSize
             [newFitnessValues(i), newAvgSPValues(i), newMaxSPValues(i), cacheHit] = ...
-                evaluateFitnessCached(newPopulation{i}, G, Cmax, fitnessCache);
+                evaluateFitnessOptimized(newPopulation{i}, D, nNodes, Cmax, fitnessCache);
             if cacheHit
                 cacheHits = cacheHits + 1;
             end
@@ -113,21 +120,7 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GAOptimized(G, n, C
         end
 
         % Elitist selection
-        population = elitistSelection(population, newPopulation, fitnessValues, newFitnessValues, eliteCount);
-
-        % Re-evaluate population after selection
-        combinedPopulation = [population; newPopulation];
-        combinedFitness = [fitnessValues; newFitnessValues];
-        combinedAvgSP = [avgSPValues; newAvgSPValues];
-        combinedMaxSP = [maxSPValues; newMaxSPValues];
-
-        % Get final fitness values for selected population
-        [~, sortedIndices] = sort(combinedFitness, 'descend');
-        selectedIndices = sortedIndices(1:populationSize);
-
-        fitnessValues = combinedFitness(selectedIndices);
-        avgSPValues = combinedAvgSP(selectedIndices);
-        maxSPValues = combinedMaxSP(selectedIndices);
+        [population, fitnessValues, avgSPValues, maxSPValues] = elitistSelection(population, newPopulation, fitnessValues, newFitnessValues, avgSPValues, newAvgSPValues, maxSPValues, newMaxSPValues, eliteCount);
 
         % Update best solution
         validIndices = maxSPValues <= Cmax;
@@ -191,12 +184,25 @@ function [bestSolution, bestObjective, bestMaxSP, results] = GAOptimized(G, n, C
     end
 end
 
-function [fitness, avgSP, maxSP, cacheHit] = evaluateFitnessCached(individual, G, Cmax, cache)
+function [fitness, avgSP, maxSP, cacheHit] = evaluateFitnessOptimized(individual, D, nNodes, Cmax, cache, penaltyFactor)
+% Optimized fitness evaluation using pre-computed distances
+% Inputs:
+%   individual - vector of selected node indices
+%   D - pre-computed distance matrix (NxN)
+%   nNodes - total number of nodes
+%   Cmax - maximum allowed shortest path length between controllers
+%   cache - fitness cache
+%   penaltyFactor - penalty factor for constraint violations (optional)
+
+    if nargin < 6
+        penaltyFactor = 1000; % Default penalty factor
+    end
+
     % Create cache key from individual
     key = mat2str(individual);
     cacheHit = false;
 
-    % Check cache
+    % Check cache first
     if isKey(cache, key)
         cachedValue = cache(key);
         fitness = cachedValue.fitness;
@@ -206,8 +212,62 @@ function [fitness, avgSP, maxSP, cacheHit] = evaluateFitnessCached(individual, G
         return;
     end
 
-    % Evaluate if not in cache
-    [fitness, avgSP, maxSP] = evaluateFitness(individual, G, Cmax);
+    % OPTIMIZED EVALUATION - no calls to distances() function
+    sNodes = individual;
+    
+    % Validate input (same as PerfSNS)
+    if length(sNodes) < 1
+        avgSP = -1;
+        maxSP = -1;
+        fitness = 0;
+        return;
+    end
+    
+    if (max(sNodes) > nNodes || min(sNodes) < 1 || length(unique(sNodes)) < length(sNodes))
+        avgSP = -1;
+        maxSP = -1;
+        fitness = 0;
+        return;
+    end
+    
+    % Calculate avgSP using pre-computed distances
+    clients = setdiff(1:nNodes, sNodes);
+    
+    if length(sNodes) > 1
+        % Extract distances from servers to clients
+        dist_servers_to_clients = D(sNodes, clients);
+        
+        % For each client, find minimum distance to any server
+        min_distances_clients = min(dist_servers_to_clients, [], 1);
+        
+        % For servers, distance to closest server is 0 (themselves)
+        min_distances_servers = zeros(1, length(sNodes));
+        
+        % Average shortest path for all nodes
+        avgSP = (sum(min_distances_clients) + sum(min_distances_servers)) / nNodes;
+        
+        % Maximum distance between any pair of servers
+        dist_servers_to_servers = D(sNodes, sNodes);
+        maxSP = max(dist_servers_to_servers(:));
+        
+    else
+        % Single server case
+        dist_server_to_clients = D(sNodes, clients);
+        avgSP = sum(dist_server_to_clients) / nNodes;
+        maxSP = 0;
+    end
+
+    % Handle constraint violation
+    if maxSP > Cmax
+        % Apply penalty for constraint violation
+        penalty = penaltyFactor * (maxSP - Cmax);
+        objective = avgSP + penalty;
+    else
+        objective = avgSP;
+    end
+
+    % Convert to maximization problem (GA typically maximizes fitness)
+    fitness = 1 / (1 + objective); % Higher fitness = better solution
 
     % Store in cache
     cachedValue.fitness = fitness;

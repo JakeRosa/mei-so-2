@@ -20,8 +20,7 @@ function [fitness, avgSP, maxSP] = evaluateFitness(individual, G, Cmax, penaltyF
     % Handle constraint violation
     if maxSP > Cmax
         % Apply penalty for constraint violation
-        penalty = penaltyFactor * (maxSP - Cmax);
-        penalty = avgSP + penalty;
+        penalty = avgSP + penaltyFactor * (maxSP - Cmax);
     else
         penalty = avgSP;
     end
