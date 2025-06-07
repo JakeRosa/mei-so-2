@@ -343,7 +343,7 @@ function runGRASP(varargin)
         if runComparison || runAnalysis
             fprintf('\n--- Implementation Comparison ---\n');
             try
-                comparisonResults = compareOptimizations(G, n, Cmax, bestR, runTime, 5);
+                comparisonResults = compareOptimizations(G, n, Cmax, bestR, runTime, 10);
                 fprintf('Implementation comparison completed successfully\n');
             catch ME
                 fprintf('Error in comparison: %s\n', ME.message);

@@ -14,7 +14,7 @@ function checkOrganization()
                              'plotParameterVariation.m'};
     expectedFiles.runners = {'runGRASP.m', 'runStandaloneAnalysis.m'};
     expectedFiles.utilities = {'debugGRASPData.m'};
-    expectedFiles.exports = {'exportGraspResults.m', 'exportParameterStats.m'};
+    expectedFiles.exports = {'exportGraspResults.m'};
     expectedFiles.lib = {'writeCSV.m'};
     
     % Check each folder

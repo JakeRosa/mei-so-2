@@ -125,7 +125,7 @@ Visualiza a rede com os servidores selecionados.
 
 ## Autores
 
-Projeto desenvolvido no âmbito da UC de Sistemas de Otimização - MEI
+Projeto desenvolvido no âmbito da UC de Simulação e Otimização - MEI
 
 ## Licença
 
