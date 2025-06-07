@@ -37,6 +37,13 @@ function [bestSolution, bestAvgSP, bestMaxSP, results] = GRASPOptimized(G, n, Cm
         end
     end
 
+    % PRE-COMPUTE ALL DISTANCES (MAJOR OPTIMIZATION)
+    fprintf('Pre-computing all shortest path distances...\n');
+    precomputeStart = tic;
+    D = distances(G); % NxN matrix with all pairwise distances
+    precomputeTime = toc(precomputeStart);
+    fprintf('Distance pre-computation completed in %.2f seconds\n', precomputeTime);
+
     % Initialize
     bestSolution = [];
     bestAvgSP = inf;
@@ -75,7 +82,7 @@ function [bestSolution, bestAvgSP, bestMaxSP, results] = GRASPOptimized(G, n, Cm
 
         % Phase 1: Greedy Randomized Construction
         if options.useCaching
-            constructedSolution = greedyRandomizedOptimized(G, n, r, Cmax, cache);
+            constructedSolution = greedyRandomizedOptimized(G, D, n, r, Cmax, cache);
         else
             constructedSolution = greedyRandomized(G, n, r, Cmax);
         end
@@ -88,13 +95,13 @@ function [bestSolution, bestAvgSP, bestMaxSP, results] = GRASPOptimized(G, n, Cm
         end
 
         % Evaluate construction phase
-        [constructionAvgSP, ~] = PerfSNS(G, constructedSolution);
+        [constructionAvgSP, ~] = optimizedPerfSNS(D, constructedSolution);
 
         % Phase 2: Local Search (Steepest Ascent Hill Climbing)
-        solution = steepestAscentHillClimbing(G, constructedSolution, Cmax);
+        solution = steepestAscentHillClimbing(G, D, constructedSolution, Cmax);
 
         % Evaluate final solution
-        [avgSP, maxSP] = PerfSNS(G, solution);
+        [avgSP, maxSP] = optimizedPerfSNS(D, solution);
         improvement = constructionAvgSP - avgSP;
 
         % Update best solution if better

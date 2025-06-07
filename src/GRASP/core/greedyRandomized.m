@@ -20,17 +20,15 @@ function solution = greedyRandomized(G, n, r, Cmax)
         for j = 1:length(E)
             candidate = E(j);
             tempSolution = [solution, candidate];
+
+            [avgSP, maxSP] = PerfSNS(G, tempSolution);
             
             % Check Cmax constraint
             if length(tempSolution) > 1
-                [~, maxSP] = PerfSNS(G, tempSolution);
                 if maxSP > Cmax
                     continue; % Skip this candidate as it violates constraint
                 end
             end
-            
-            % Evaluate objective function (average shortest path)
-            [avgSP, ~] = PerfSNS(G, tempSolution);
             
             R = [R, candidate];
             bestValues = [bestValues, avgSP];

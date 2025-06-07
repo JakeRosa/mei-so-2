@@ -314,27 +314,6 @@ function phaseResults = analyzePhaseContribution(G, n, Cmax, r, numRuns)
     
     saveAnalysisPlot(gcf, 'phases', 'phase_performance_summary', timestamp);
     
-    % 8. Improvement success rate and timing analysis
-    figure('Position', [400, 400, 1200, 800]);
-    
-    % Create two pie charts side by side
-    subplot(1, 2, 1);
-    improvementData = [phaseResults.improvement.improvementRate, 100-phaseResults.improvement.improvementRate];
-    pie(improvementData, {'Improved', 'No Improvement'});
-    title(sprintf('Local Search Success Rate\n%.1f%% of runs improved', phaseResults.improvement.improvementRate), ...
-          'FontSize', 12, 'FontWeight', 'bold');
-    colormap([0.2 0.8 0.4; 0.8 0.8 0.8]);
-    
-    subplot(1, 2, 2);
-    timeData = [phaseResults.timing.constructionPercentage, 100-phaseResults.timing.constructionPercentage];
-    pie(timeData, {'Construction', 'Local Search'});
-    title('Execution Time Distribution', 'FontSize', 12, 'FontWeight', 'bold');
-    colormap([0.3 0.7 0.9; 0.9 0.3 0.3]);
-    
-    sgtitle('GRASP Phase Analysis Summary', 'FontSize', 14, 'FontWeight', 'bold');
-    
-    saveAnalysisPlot(gcf, 'phases', 'success_rate_and_timing', timestamp);
-    
     % 9. Detailed improvement analysis
     figure('Position', [450, 450, 1200, 800]);
     

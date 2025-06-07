@@ -153,22 +153,7 @@ function analyzeExistingResults()
     
     timestamp = datestr(now, 'yyyy-mm-dd_HH-MM-SS');
     
-    % 1. Solution quality distribution
-    figure('Position', [50, 50, 1200, 800]);
-    histogram(validAvgSPs, 'Normalization', 'probability', 'BinWidth', (max(validAvgSPs)-min(validAvgSPs))/15, ...
-              'FaceColor', [0.3 0.6 0.9], 'EdgeColor', [0.2 0.4 0.7]);
-    title('Solution Quality Distribution', 'FontSize', 14, 'FontWeight', 'bold');
-    xlabel('Average Shortest Path', 'FontSize', 12);
-    ylabel('Probability', 'FontSize', 12);
-    hold on;
-    xline(mean(validAvgSPs), 'r--', 'LineWidth', 2, 'Label', 'Mean');
-    xline(threshold, 'g--', 'LineWidth', 2, 'Label', sprintf('Top %d%%', topPercent));
-    legend('show', 'FontSize', 11, 'Location', 'best');
-    grid on;
-    set(gca, 'FontSize', 11);
-    saveAnalysisPlot(gcf, 'analysis', 'solution_quality_distribution', timestamp);
-    
-    % 2. Solution consistency analysis
+    % 1. Solution consistency analysis
     figure('Position', [100, 100, 1200, 800]);
     if numValid > 1
         % Calculate coefficient of variation for solution quality

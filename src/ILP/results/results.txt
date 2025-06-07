@@ -1,6 +1,6 @@
 Min, Avg, Max Average Shortest Path for ILP:
 
-Minimum: 145.09
+Minimum: 145.085
 Average: 149.43
 Maximum: 154.5900
 

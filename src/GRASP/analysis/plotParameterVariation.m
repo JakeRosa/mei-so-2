@@ -90,21 +90,4 @@ function plotParameterVariation(G, n, Cmax, rValues, testResults)
     saveas(gcf, filename);
     fprintf('Parameter variation plot saved to: %s\n', filename);
     
-    % Export statistics to CSV
-    addpath("exports/")
-    exportParameterStats(stats, randomObjectives, testResults, timestamp);
-    
-    % Print statistics to console
-    fprintf('\n=== PARAMETER VARIATION STATISTICS ===\n');
-    for rIdx = 1:length(stats)
-        if isfield(stats, 'r') && ~isempty(stats(rIdx).r)
-            fprintf('r = %d: Min=%.2f, Avg=%.2f, Max=%.2f (%d solutions)\n', ...
-                stats(rIdx).r, stats(rIdx).min, stats(rIdx).avg, ...
-                stats(rIdx).max, stats(rIdx).count);
-        end
-    end
-    
-    if ~isempty(randomObjectives)
-        fprintf('Random: Avg=%.2f (%d solutions)\n', mean(randomObjectives), length(randomObjectives));
-    end
 end

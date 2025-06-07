@@ -310,31 +310,7 @@ function comparisonResults = compareOptimizations(G, n, Cmax, r, maxTime, numRun
     grid on; grid minor;
     saveAnalysisPlot(gcf, 'comparisons', 'time_quality_tradeoff', timestamp);
     
-    % 5. Performance Improvements Summary
-    figure('Position', [250, 250, 2200, 1600]);
-    improvements = [comparisonResults.improvements.timeSpeedup, ...
-                   -comparisonResults.improvements.qualityImprovementPercent, ...
-                   comparisonResults.improvements.iterationsRatio];
-    colors = {'green', 'blue', 'orange'};
-    b = bar(improvements, 'FaceColor', 'flat');
-    for i = 1:length(improvements)
-        b.CData(i,:) = [0.2 0.7 0.3]; % Green for all for now
-    end
-    set(gca, 'XTickLabel', {'Time Speedup (x)', 'Quality Improve (%)', 'Iterations Ratio'});
-    title(sprintf('Performance Improvements Summary (n=%d, Cmax=%d, r=%d)', n, Cmax, r), 'FontSize', 16, 'FontWeight', 'bold');
-    ylabel('Factor / Percentage', 'FontSize', 14);
-    set(gca, 'FontSize', 12);
-    grid on; grid minor;
-    
-    % Add value labels on bars
-    for i = 1:length(improvements)
-        text(i, improvements(i) + sign(improvements(i))*0.05*max(abs(improvements)), ...
-             sprintf('%.2f', improvements(i)), 'HorizontalAlignment', 'center', ...
-             'FontSize', 12, 'FontWeight', 'bold');
-    end
-    saveAnalysisPlot(gcf, 'comparisons', 'performance_improvements', timestamp);
-    
-    % 6. Cache Hit Rate Distribution (if available)
+    % 5. Cache Hit Rate Distribution (if available)
     if ~isempty(optCacheRates) && any(optCacheRates > 0)
         figure('Position', [300, 300, 2200, 1600]);
         histogram(optCacheRates, 'Normalization', 'probability', 'FaceColor', [0.3 0.7 0.9], 'EdgeColor', 'black');

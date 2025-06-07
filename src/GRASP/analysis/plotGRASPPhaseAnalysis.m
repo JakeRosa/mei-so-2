@@ -117,26 +117,6 @@ function plotGRASPPhaseAnalysis(csvFolder, timestamp)
     grid on; grid minor;
     saveAnalysisPlot(gcf, 'convergence', 'best_solution_over_time', timestamp);
     
-    % 2. Constraint Satisfaction Analysis
-    figure('Position', [100, 100, 2200, 1600]);
-    scatter(1:length(maxSPs), maxSPs, 150, 'filled', 'MarkerFaceColor', 'red', 'MarkerEdgeColor', 'black');
-    hold on;
-    plot([0.5, length(maxSPs)+0.5], [Cmax, Cmax], 'k--', 'LineWidth', 3);
-    xlabel('Run Number', 'FontSize', 14);
-    ylabel('Maximum Shortest Path', 'FontSize', 14);
-    title(sprintf('Constraint Satisfaction Analysis (%s)', timestamp), 'FontSize', 16, 'FontWeight', 'bold');
-    legend('MaxSP values', 'Cmax = 1000', 'Location', 'best', 'FontSize', 12);
-    set(gca, 'FontSize', 12);
-    grid on; grid minor;
-    ylim([min(maxSPs)*0.98, max(maxSPs)*1.02]);
-    
-    % Add constraint satisfaction text
-    text(0.5, 0.95, sprintf('All constraints satisfied: %s', constraintStatus), ...
-         'Units', 'normalized', 'HorizontalAlignment', 'center', ...
-         'FontSize', 14, 'FontWeight', 'bold', 'Color', 'blue', ...
-         'BackgroundColor', 'white', 'EdgeColor', 'black');
-    saveAnalysisPlot(gcf, 'quality', 'constraint_satisfaction', timestamp);
-    
     % 3. Iterations per Run Analysis
     figure('Position', [150, 150, 2200, 1600]);
     bar(1:length(numIterations), numIterations, 'FaceColor', [0.5 1 0.5], 'EdgeColor', 'black', 'LineWidth', 1.5);
